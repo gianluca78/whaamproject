@@ -61,7 +61,7 @@ function manageArrowIcons(interventionId, data) {
 function updateStrategyData(interventionId, indexStrategy, animationDirection) {
     $.ajax({
         type: "POST",
-        url: "/app_dev.php/intervention/strategy-data",
+        url: childBehaviorAssessmentInterventionStrategyDataPath,
         data: { "interventionId": interventionId, "indexStrategy": indexStrategy }
     })
         .success(function (data, textStatus, jqXHR) {

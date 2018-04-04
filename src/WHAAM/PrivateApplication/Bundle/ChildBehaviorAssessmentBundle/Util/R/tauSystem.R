@@ -1,4 +1,4 @@
-setwd("/var/www/html/whaam-master/app/data/R/assessment/")
+setwd("/var/www/html/whaamproject/app/data/R/assessment/")
 
 tauSystem<-function(){
   args <- commandArgs(trailingOnly = TRUE)

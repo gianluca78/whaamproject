@@ -34,7 +34,7 @@
             if ($(this).val()) {
                 $.ajax({
                     type: "POST",
-                    url: "/app_dev.php/children/network-data",
+                    url: "{{ path('child_network') }}",
                     data: { 'id': $(this).val() }
                 })
                         .success(function (data, textStatus, jqXHR) {

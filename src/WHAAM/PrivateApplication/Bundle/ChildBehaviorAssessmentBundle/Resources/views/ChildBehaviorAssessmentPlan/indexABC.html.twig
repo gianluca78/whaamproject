@@ -5,6 +5,9 @@
 {% endblock %}
 
 {% block javascripts %}
+    <script>
+        var abcDataPath = '{{ path('child_behavior_assessment_abc_data') }}';
+    </script>
     <script src="{{ asset('public/js/vendor/jquery-ui/jquery-ui.min.js') }}" type="text/javascript"></script>
     <script src="{{ asset('bundles/whaamprivateapplicationchildbehaviorassessment/js/child-behavior-assessment-abc.js') }}"></script>
     <script src="{{ asset('public/js/vendor/momentjs/moment-with-locales.js') }}" type="text/javascript"></script>

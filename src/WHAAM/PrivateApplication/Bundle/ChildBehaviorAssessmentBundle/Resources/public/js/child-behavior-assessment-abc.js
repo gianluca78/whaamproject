@@ -16,7 +16,7 @@ $(document).ready(function() {
 function updateABCdata(ABCid) {
     $.ajax({
         type: "POST",
-        url: "/app_dev.php/assessment-plan/abc-data",
+        url: abcDataPath,
         data: { "ABCid": ABCid }
     })
         .success(function (data, textStatus, jqXHR) {

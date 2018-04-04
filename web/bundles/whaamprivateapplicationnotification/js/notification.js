@@ -13,7 +13,7 @@ function getMessages()
 
     $.ajax({
         type: "GET",
-        url: "/app_dev.php/messages/not-displayed-list"
+        url: messagesNotDisplayedListPath
     })
         .success(function (data, textStatus, jqXHR) {
             messages = $.parseJSON(data);
@@ -48,7 +48,7 @@ function getNotifications()
 
     $.ajax({
         type: "GET",
-        url: "/app_dev.php/notification/not-displayed-list"
+        url: notificationNotDisplayedListPath
     })
         .success(function (data, textStatus, jqXHR) {
             notifications = $.parseJSON(data);
@@ -86,7 +86,7 @@ function updateNotReadMessagesNumber()
 {
     $.ajax({
         type: "GET",
-        url: "/app_dev.php/messages/count-not-read"
+        url: messagesCountNotReadPath
     })
         .success(function (data, textStatus, jqXHR) {
             $(".icon-bar-mail").attr("data-count", data);
@@ -102,7 +102,7 @@ function updateNotReadNotificationsNumber()
 {
     $.ajax({
         type: "GET",
-        url: "/app_dev.php/notification/count-not-read"
+        url: notificationsCountNotReadPath
     })
         .success(function (data, textStatus, jqXHR) {
             $(".icon-bar-notification").attr("data-count", data);
@@ -118,7 +118,7 @@ function updateMessageDisplayedStatus(messageStatusId, answerStatusId)
 {
     $.ajax({
         type: "POST",
-        url: "/app_dev.php/messages/update-displayed-status",
+        url: messagesUpdateDisplayedStatusPath,
         data: {messageStatusId : messageStatusId, answerStatusId: answerStatusId }
     })
         .error(function (xhr, ajaxOptions, thrownError) {
@@ -130,7 +130,7 @@ function updateNotificationDisplayedStatus(notificationId)
 {
     $.ajax({
         type: "POST",
-        url: "/app_dev.php/notification/update-displayed-status",
+        url: notificationUpdateDisplayedStatusPath,
         data: {id : notificationId}
     })
         .error(function (xhr, ajaxOptions, thrownError) {

@@ -48,7 +48,7 @@ function updateBehaviors() {
     if($("#childBehavior_behaviorCategory").val()) {
         $.ajax({
             type: "POST",
-            url: "/app_dev.php/behavior-categories/behaviors",
+            url: behaviorCategoriesListPath,
             data: {"id": $("#childBehavior_behaviorCategory").val()}
         })
             .success(function (data, textStatus, jqXHR) {

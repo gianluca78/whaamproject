@@ -58,6 +58,15 @@
         </div>
     </div>
 
+
+    <script>
+        var messagesNotDisplayedListPath = '{{ path('message_not_displayed_list') }}';
+        var messagesUpdateDisplayedStatusPath = '{{ path('message_update_displayed_status') }}';
+        var notificationNotDisplayedListPath = '{{ path('notification_not_displayed_list') }}';
+        var notificationUpdateDisplayedStatusPath = '{{ path('notification_update_displayed_status') }}';
+        var messagesCountNotReadPath = '{{ path('message_count_not_read') }}';
+        var notificationsCountNotReadPath = '{{ path('notification_count_not_read') }}';
+    </script>
     <script src="{{ asset('public/js/vendor/jquery/jquery-1.11.1.min.js') }}" type="text/javascript"></script>
     <script src="{{ asset('public/js/vendor/jquery-growl/jquery.growl.js') }}" type="text/javascript"></script>
     <script src="{{ asset('bundles/whaamprivateapplicationnotification/js/notification.js') }}"></script>

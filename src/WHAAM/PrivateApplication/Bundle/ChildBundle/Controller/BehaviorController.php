@@ -28,7 +28,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller,
 class BehaviorController extends Controller
 {
     /**
-     * @Route("/behaviors")
+     * @Route("/behaviors", name="behavior-categories-list")
      * @Method({"POST"})
      * @Template
      */

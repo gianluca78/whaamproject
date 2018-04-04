@@ -1,6 +1,9 @@
 {% extends '::base_form_page.html.twig' %}
 
 {% block javascripts %}
+    <script>
+        var behaviorCategoriesListPath = '{{ path('behavior-categories-list') }}';
+    </script>
     <script src="{{ asset('bundles/whaamprivateapplicationchild/js/child-behavior.js') }}"></script>
 {% endblock %}
 

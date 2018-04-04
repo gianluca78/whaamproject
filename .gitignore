@@ -1,0 +1,12 @@
+.idea/*
+.idea/
+*~
+app/bootstrap.php.cache
+app/cache/*
+app/logs/*
+app/config/parameters.yml
+app/phpunit.xml.dist
+bin/*
+composer.phar
+web/bundles
+app/data/*
