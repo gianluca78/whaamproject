@@ -1,7 +1,5 @@
-#The project is no longer maintained
-
-Whaam application
-=================
+Whaam application (the project is no longer maintained)
+=======================================================
 The **WHAAM** (Web Health Application for Adhd Monitoring) project is aimed at diffusing a new culture in the ADHD intervention.
 The rationale is that, technology can promote a better networking among people involved in the care of an ADHD child: parents,
 teachers and health professionals (HPs). During the project, different outcomes have been released, including a theoretical
@@ -13,7 +11,8 @@ Key Activity 3 Multilateral Projects.
 
 http://www.whaamproject.eu
 
-1. Requirements (between brackets the last tested versions)
+Requirements (between brackets the last tested versions)
+--------------------------------------------------------
 
 * Symfony 2.6.5 (included in the repository)
 * Apache 2.4 (2.4.18)
@@ -24,19 +23,23 @@ http://www.whaamproject.eu
 The project originally used Composer as Dependency Manager for PHP. Considering that the WHAAM application is not more
 maintained, please do not use Composer to update the vendors to avoid compatibility issues. The vendors are included in the repository.
 
-2. Installing R for the statistical analyses
+Installing R for the statistical analyses
+-----------------------------------------
+
 Install R with the following packages (installing the packages in a common path so as to let Apache to access them):
 
 * Kendall (install.packages("Kendall", lib="/usr/local/lib/R/site-library"))
 * RJSONIO (install.packages("RJSONIO", lib="/usr/local/lib/R/site-library"))
 
-3. Give the write permissions for your Apache user to the following folders:
+Give the write permissions for your Apache user to the following folders
+------------------------------------------------------------------------
 
 * app/cache
 * app/logs
 * app/data
 
-4. Copy the app/config/parameters.yml.dist, rename it to parameters.yml and fill in it with your personal data.
+Copy the app/config/parameters.yml.dist, rename it to parameters.yml and fill in it with your personal data.
+------------------------------------------------------------------------------------------------------------
 
 * auth_api_doc: #api key to access the webservice documentation
 * auth_api_key_dev: #api key to test the mobile application
@@ -45,9 +48,11 @@ Install R with the following packages (installing the packages in a common path 
 * data_r_file_path: #absolute path to the folder app/data/R/assessment
 * tau_script_path: #absolute path to the file src/WHAAM/PrivateApplication/Bundle/ChildBehaviorAssessmentBundle/Util/R/tauSystem.R
 
-5. Add the tau_script_path at the beginning of the file src/WHAAM/PrivateApplication/Bundle/ChildBehaviorAssessmentBundle/Util/R/tauSystem.R
+Add the tau_script_path at the beginning of the file src/WHAAM/PrivateApplication/Bundle/ChildBehaviorAssessmentBundle/Util/R/tauSystem.R
+-----------------------------------------------------------------------------------------------------------------------------------------------
 
-6. Create the database and load the fixtures with the following commands from terminal (assuming that you are using a php5.6 binary)
+Create the database and load the fixtures with the following commands from terminal (assuming that you are using a php5.6 binary)
+-----------------------------------------------------------------------------------------------------------------------------------
 
 * php5.6 app/console doctrine:database:create
 * php5.6 app/console doctrine:schema:update --force
@@ -61,7 +66,9 @@ http://localhost/whaam/web/app.php/login
 
 and login with the test user.
 
-7. Web service documentation
+Web service documentation
+-------------------------
+
 The address of the api doc is:
 
 http://localhost/whaam/web/app.php/api/doc/
