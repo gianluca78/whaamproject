@@ -1,0 +1,1440 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>Baseline</source>
+                <target>Linha de base</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>Intervention</source>
+                <target>Intervenção</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>Male</source>
+                <target>Masculino</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>Female</source>
+                <target>Feminino</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>account_activated</source>
+                <target>Bem-vindo à aplicação WHAAM. A sua conta foi activada!</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>add_sibling</source>
+                <target>Adicionar irmãos</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>remove_sibling</source>
+                <target>Remover irmãos</target>
+            </trans-unit>
+            <trans-unit id="8">
+                <source>login</source>
+                <target>Iniciar sessão</target>
+            </trans-unit>
+            <trans-unit id="9">
+                <source>logout</source>
+                <target>Terminar sessão</target>
+            </trans-unit>
+            <trans-unit id="10">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="11">
+                <source>edit_your_role</source>
+                <target>Edite o seu papel</target>
+            </trans-unit>
+            <trans-unit id="12">
+                <source>edit</source>
+                <target>Editar</target>
+            </trans-unit>
+            <trans-unit id="13">
+                <source>delete</source>
+                <target>Eliminar</target>
+            </trans-unit>
+            <trans-unit id="14">
+                <source>view</source>
+                <target>Visualizar</target>
+            </trans-unit>
+            <trans-unit id="15">
+                <source>new</source>
+                <target>Novo</target>
+            </trans-unit>
+            <trans-unit id="16">
+                <source>my_children</source>
+                <target>Criança/Jovem</target>
+            </trans-unit>
+            <trans-unit id="17">
+                <source>case_data</source>
+                <target>Dados do caso</target>
+            </trans-unit>
+            <trans-unit id="18">
+                <source>behaviours</source>
+                <target>Comportamentos</target>
+            </trans-unit>
+            <trans-unit id="19">
+                <source>assessment</source>
+                <target>Avaliação</target>
+            </trans-unit>
+            <trans-unit id="20">
+                <source>invitation</source>
+                <target>Convite</target>
+            </trans-unit>
+            <trans-unit id="21">
+                <source>discipline_referral</source>
+                <target>Procedimento disciplinar</target>
+            </trans-unit>
+            <trans-unit id="23">
+                <source>medication</source>
+                <target>Medicação</target>
+            </trans-unit>
+            <trans-unit id="24">
+                <source>school</source>
+                <target>Escola</target>
+            </trans-unit>
+            <trans-unit id="25">
+                <source>child_network</source>
+                <target>Rede da criança</target>
+            </trans-unit>
+            <trans-unit id="26">
+                <source>assessments</source>
+                <target>Avaliação</target>
+            </trans-unit>
+            <trans-unit id="27">
+                <source>behavior_function</source>
+                <target>Função do comportamento</target>
+            </trans-unit>
+            <trans-unit id="28">
+                <source>list</source>
+                <target>Lista</target>
+            </trans-unit>
+            <trans-unit id="29">
+                <source>discipline_referrals</source>
+                <target>Procedimentos disciplinares</target>
+            </trans-unit>
+            <trans-unit id="30">
+                <source>medications</source>
+                <target>Medicação</target>
+            </trans-unit>
+            <trans-unit id="31">
+                <source>personal_data</source>
+                <target>Dados pessoais</target>
+            </trans-unit>
+            <trans-unit id="32">
+                <source>other_event</source>
+                <target>Outro evento</target>
+            </trans-unit>
+            <trans-unit id="33">
+                <source>diagnoses</source>
+                <target>Diagnóstico</target>
+            </trans-unit>
+            <trans-unit id="34">
+                <source>surname</source>
+                <target>Apelido</target>
+            </trans-unit>
+            <trans-unit id="35">
+                <source>name</source>
+                <target>Nome</target>
+            </trans-unit>
+            <trans-unit id="36">
+                <source>sex</source>
+                <target>Sexo</target>
+            </trans-unit>
+            <trans-unit id="37">
+                <source>nickname</source>
+                <target>Nickname</target>
+            </trans-unit>
+            <trans-unit id="38">
+                <source>sibling</source>
+                <target>[0,1] Irmãos | ]1,Inf] Irmãos</target>
+            </trans-unit>
+            <trans-unit id="39">
+                <source>behavior</source>
+                <target>Comportamento</target>
+            </trans-unit>
+            <trans-unit id="40">
+                <source>description</source>
+                <target>Descrição</target>
+            </trans-unit>
+            <trans-unit id="41">
+                <source>place</source>
+                <target>Local</target>
+            </trans-unit>
+            <trans-unit id="42">
+                <source>setting</source>
+                <target>Contexto</target>
+            </trans-unit>
+            <trans-unit id="43">
+                <source>age_of_onset</source>
+                <target>Idade do início</target>
+            </trans-unit>
+            <trans-unit id="44">
+                <source>subtype</source>
+                <target>Subtipo</target>
+            </trans-unit>
+            <trans-unit id="45">
+                <source>comorbidity</source>
+                <target>Perturbações comórbidas</target>
+            </trans-unit>
+            <trans-unit id="46">
+                <source>medication</source>
+                <target>Medicação</target>
+            </trans-unit>
+            <trans-unit id="47">
+                <source>dosage</source>
+                <target>Dosagem</target>
+            </trans-unit>
+            <trans-unit id="48">
+                <source>date_of_medication</source>
+                <target>Data da medicação</target>
+            </trans-unit>
+            <trans-unit id="49">
+                <source>date_of_event</source>
+                <target>Data do evento</target>
+            </trans-unit>
+            <trans-unit id="50">
+                <source>event_description</source>
+                <target>Descrição do evento</target>
+            </trans-unit>
+            <trans-unit id="51">
+                <source>school_name</source>
+                <target>Nome da escola</target>
+            </trans-unit>
+            <trans-unit id="52">
+                <source>date_of_birth</source>
+                <target>Data de nascimento</target>
+            </trans-unit>
+            <trans-unit id="53">
+                <source>nation</source>
+                <target>Nacionalidade</target>
+            </trans-unit>
+            <trans-unit id="54">
+                <source>email</source>
+                <target>Email</target>
+            </trans-unit>
+            <trans-unit id="55">
+                <source>user</source>
+                <target>Utilizador</target>
+            </trans-unit>
+            <trans-unit id="56">
+                <source>hp_client_age_range</source>
+                <target>Intervalo de idade dos clientes</target>
+            </trans-unit>
+            <trans-unit id="57">
+                <source>hp_specialty</source>
+                <target>Especialidades</target>
+            </trans-unit>
+            <trans-unit id="58">
+                <source>hp_treatment_approach</source>
+                <target>Abordagem de tratamento</target>
+            </trans-unit>
+            <trans-unit id="59">
+                <source>hp_treatment_modalities</source>
+                <target>Modalidades de tratamento</target>
+            </trans-unit>
+            <trans-unit id="60">
+                <source>school_grade</source>
+                <target>Ano de escolaridade</target>
+            </trans-unit>
+            <trans-unit id="61">
+                <source>has_special_need_support</source>
+                <target>Tem apoio do professor de educação especial</target>
+            </trans-unit>
+            <trans-unit id="62">
+                <source>has_iep</source>
+                <target>Tem um Programa Educativo Individual</target>
+            </trans-unit>
+            <trans-unit id="63">
+                <source>date_of_discipline_referral</source>
+                <target>Data do procedimento disciplinar</target>
+            </trans-unit>
+            <trans-unit id="64">
+                <source>user_edit_profile</source>
+                <target>Editar perfil</target>
+            </trans-unit>
+            <trans-unit id="65">
+                <source>motivation</source>
+                <target>Motivação</target>
+            </trans-unit>
+            <trans-unit id="66">
+                <source>year_of_birth</source>
+                <target>Ano de nascimento</target>
+            </trans-unit>
+            <trans-unit id="67">
+                <source>diagnosis_date</source>
+                <target>Data do diagnóstico</target>
+            </trans-unit>
+            <trans-unit id="68">
+                <source>diagnosis</source>
+                <target>Diagnóstico</target>
+            </trans-unit>
+            <trans-unit id="69">
+                <source>secondary_condition</source>
+                <target>A PHDA é secundário a outra condição médica</target>
+            </trans-unit>
+            <trans-unit id="70">
+                <source>defined_by</source>
+                <target>Definido pelo</target>
+            </trans-unit>
+            <trans-unit id="71">
+                <source>target_behaviour</source>
+                <target>Comportamento alvo</target>
+            </trans-unit>
+            <trans-unit id="72">
+                <source>type</source>
+                <target>Tipo</target>
+            </trans-unit>
+            <trans-unit id="73">
+                <source>school_information</source>
+                <target>Informação escolar</target>
+            </trans-unit>
+            <trans-unit id="74">
+                <source>school_year</source>
+                <target>Ano letivo</target>
+            </trans-unit>
+            <trans-unit id="75">
+                <source>network</source>
+                <target>Rede</target>
+            </trans-unit>
+            <trans-unit id="76">
+                <source>personal_information</source>
+                <target>Informação pessoal</target>
+            </trans-unit>
+            <trans-unit id="77">
+                <source>help_not_available</source>
+                <target>Ajuda não disponível</target>
+            </trans-unit>
+            <trans-unit id="78">
+                <source>year_old</source>
+                <target>Idade</target>
+            </trans-unit>
+            <trans-unit id="79">
+                <source>date</source>
+                <target>Data</target>
+            </trans-unit>
+            <trans-unit id="80">
+                <source>discipline_referrals</source>
+                <target>Procedimento disciplinar</target>
+            </trans-unit>
+            <trans-unit id="81">
+                <source>whaam_project</source>
+                <target>Projeto WHAAM</target>
+            </trans-unit>
+            <trans-unit id="82">
+                <source>contact_us</source>
+                <target>Entre em contacto connosco</target>
+            </trans-unit>
+            <trans-unit id="83">
+                <source>privacy_policy</source>
+                <target>Política de privacidade</target>
+            </trans-unit>
+            <trans-unit id="84">
+                <source>created_at</source>
+                <target>Criado em</target>
+            </trans-unit>
+            <trans-unit id="85">
+                <source>username</source>
+                <target>Nome de utilizador</target>
+            </trans-unit>
+            <trans-unit id="86">
+                <source>password_reset</source>
+                <target>A nova palavra-chave foi criada com sucesso e enviada para o seu e-mail. Verifique a sua caixa de correio</target>
+            </trans-unit>
+            <trans-unit id="87">
+                <source>role</source>
+                <target>Papel</target>
+            </trans-unit>
+            <trans-unit id="88">
+                <source>approved_by_parent</source>
+                <target>Aprovado pelos pais</target>
+            </trans-unit>
+            <trans-unit id="89">
+                <source>adhd</source>
+                <target>PHDA</target>
+            </trans-unit>
+            <trans-unit id="90">
+                <source>whaam_application</source>
+                <target>Aplicação WHAAM</target>
+            </trans-unit>
+            <trans-unit id="91">
+                <source>whaam_logo</source>
+                <target>Logotipo  WHAAM</target>
+            </trans-unit>
+            <trans-unit id="92">
+                <source>eu_sentence_first</source>
+                <target>Projecto financiado com o apoio da Comissão Europeia.</target>
+            </trans-unit>
+            <trans-unit id="93">
+                <source>eu_sentence_second</source>
+                <target>A informação contida nesta publicação (comunicação) vincula exclusivamente o autor,
+                    não sendo a Comissão</target>
+            </trans-unit>
+            <trans-unit id="94">
+                <source>eu_sentence_third</source>
+                <target>responsável pela utilização que dela possa ser feita.</target>
+            </trans-unit>
+            <trans-unit id="95">
+                <source>get_help</source>
+                <target>Obter ajuda</target>
+            </trans-unit>
+            <trans-unit id="96">
+                <source>messages</source>
+                <target>Mensagens</target>
+            </trans-unit>
+            <trans-unit id="97">
+                <source>notifications</source>
+                <target>Notificações</target>
+            </trans-unit>
+            <trans-unit id="98">
+                <source>user_profile</source>
+                <target>Perfil do utilizador</target>
+            </trans-unit>
+            <trans-unit id="99">
+                <source>tour_title_welcome</source>
+                <target>Bem-vindo à aplicação WHAAM. A sua conta foi ativada!</target>
+            </trans-unit>
+            <trans-unit id="100">
+                <source>tour_content_welcome</source>
+                <target>A aplicação WHAAM tem como objetivo ajudar a gerir os comportamentos indesejáveis das crianças com PHDA. Clique no botão seguinte para ver as características da aplicação.</target>
+            </trans-unit>
+            <trans-unit id="101">
+                <source>tour_title_toolbar</source>
+                <target>Barra de ferramentas</target>
+            </trans-unit>
+            <trans-unit id="102">
+                <source>tour_content_toolbar_intro</source>
+                <target>A barra de ferramentas permite-lhe executar as seguintes ações:</target>
+            </trans-unit>
+            <trans-unit id="103">
+                <source>tour_content_toolbar_user_profile</source>
+                <target>Aceder ao perfil do utilizador</target>
+            </trans-unit>
+            <trans-unit id="104">
+                <source>tour_content_toolbar_guide</source>
+                <target>mostrar ajuda</target>
+            </trans-unit>
+            <trans-unit id="105">
+                <source>tour_content_toolbar_mail</source>
+                <target>enviar/receber mensagens para/da rede</target>
+            </trans-unit>
+            <trans-unit id="106">
+                <source>tour_content_toolbar_notification</source>
+                <target>ver as notificações sobre as ações realizadas pelos outros utilizadores da rede</target>
+            </trans-unit>
+            <trans-unit id="107">
+                <source>tour_content_toolbar_logout</source>
+                <target>Sair da aplicação</target>
+            </trans-unit>
+            <trans-unit id="108">
+                <source>tour_title_breadcrumbs</source>
+                <target>Breadcrumbs</target>
+            </trans-unit>
+            <trans-unit id="109">
+                <source>tour_content_breadcrumbs</source>
+                <target>Os breadcrumbs ajudam-no a identificar a sua posição dentro da aplicação. Clique em cada um dos elementos para mover-se rapidamente entre as diferentes páginas.</target>
+            </trans-unit>
+            <trans-unit id="110">
+                <source>tour_title_child_button_new</source>
+                <target>Botão adicionar nova criança</target>
+            </trans-unit>
+            <trans-unit id="111">
+                <source>tour_content_child_button_new</source>
+                <target>Clicar aqui para adicionar uma nova criança e começar a tirar proveito da aplicação WHAAM</target>
+            </trans-unit>
+            <trans-unit id="112">
+                <source>tour_title_child_data</source>
+                <target>Informações da criança</target>
+            </trans-unit>
+            <trans-unit id="113">
+                <source>tour_content_child_data</source>
+                <target>Os dados inseridos sobre a criança encontram-se resumidos aqui. Clique no botão ao lado para ver novas ações.</target>
+            </trans-unit>
+            <trans-unit id="114">
+                <source>tour_title_toolbar_child</source>
+                <target>Barra de ferramentas da criança</target>
+            </trans-unit>
+            <trans-unit id="115">
+                <source>tour_content_toolbar_child_intro</source>
+                <target>A barra de ferramentas da criança permite-lhe:</target>
+            </trans-unit>
+            <trans-unit id="116">
+                <source>tour_content_toolbar_child_search</source>
+                <target>Ver as informações da criança</target>
+            </trans-unit>
+            <trans-unit id="117">
+                <source>tour_content_toolbar_child_edit</source>
+                <target>Modificar as informações da criança</target>
+            </trans-unit>
+            <trans-unit id="118">
+                <source>tour_content_toolbar_child_delete</source>
+                <target>Apagar as informações da criança</target>
+            </trans-unit>
+            <trans-unit id="119">
+                <source>tour_content_case_data</source>
+                <target>Clicar aqui para aceder à página onde se encontra a informação pessoal, médica e escolar da criança.</target>
+            </trans-unit>
+            <trans-unit id="120">
+                <source>tour_content_behaviour</source>
+                <target>Clicar aqui para aceder à página onde estão listados os comportamentos indesejáveis da criança.</target>
+            </trans-unit>
+            <trans-unit id="121">
+                <source>tour_content_child_network</source>
+                <target>Clicar aqui para visualizar a lista de pessoas incluídas na rede virtual do WHAAM.</target>
+            </trans-unit>
+            <trans-unit id="122">
+                <source>tour_content_invitation</source>
+                <target>Clicar aqui para convidar novas pessoas a juntarem-se à rede social privada da criança.</target>
+            </trans-unit>
+            <trans-unit id="123">
+                <source>tour_title_behavior_list</source>
+                <target>Lista de comportamentos</target>
+            </trans-unit>
+            <trans-unit id="124">
+                <source>tour_content_behavior_list</source>
+                <target>Esta página irá conter os comportamentos indesejáveis da criança inseridos pelos membros da rede virtual. Clique no botão novo para inserir um novo comportamento!</target>
+            </trans-unit>
+            <trans-unit id="125">
+                <source>tour_content_assessment</source>
+                <target>Clicar aqui para ver a lista das avaliações inseridas para este comportamento. Na aplicação WHAAM uma avaliação consiste no processo de observar um comportamento, identificar a sua função, e planear uma intervenção.</target>
+            </trans-unit>
+            <trans-unit id="126">
+                <source>from</source>
+                <target>De</target>
+            </trans-unit>
+            <trans-unit id="127">
+                <source>to</source>
+                <target>A</target>
+            </trans-unit>
+            <trans-unit id="128">
+                <source>still_in_use</source>
+                <target>Continua a tomar</target>
+            </trans-unit>
+            <trans-unit id="129">
+                <source>minimum_number_of_observations</source>
+                <target>N. mínimo de observações</target>
+            </trans-unit>
+            <trans-unit id="130">
+                <source>observation_length</source>
+                <target>Duração da observação</target>
+            </trans-unit>
+            <trans-unit id="131">
+                <source>minute_abbreviation</source>
+                <target>min</target>
+            </trans-unit>
+            <trans-unit id="132">
+                <source>data_collection</source>
+                <target>Recolha de dados</target>
+            </trans-unit>
+            <trans-unit id="133">
+                <source>observer</source>
+                <target>Observador</target>
+            </trans-unit>
+            <trans-unit id="134">
+                <source>observations</source>
+                <target>Observações</target>
+            </trans-unit>
+            <trans-unit id="135">
+                <source>abcs</source>
+                <target>ABC</target>
+            </trans-unit>
+            <trans-unit id="136">
+                <source>new_baseline</source>
+                <target>Nova linha de base</target>
+            </trans-unit>
+            <trans-unit id="137">
+                <source>new_function</source>
+                <target>Nova função</target>
+            </trans-unit>
+            <trans-unit id="138">
+                <source>new_intervention</source>
+                <target>Nova intervenção</target>
+            </trans-unit>
+            <trans-unit id="139">
+                <source>new_evaluation</source>
+                <target>Nova avaliação</target>
+            </trans-unit>
+            <trans-unit id="140">
+                <source>plan</source>
+                <target>Plano</target>
+            </trans-unit>
+            <trans-unit id="141">
+                <source>chart</source>
+                <target>Gráfico</target>
+            </trans-unit>
+            <trans-unit id="142">
+                <source>in_order_to</source>
+                <target>De modo a </target>
+            </trans-unit>
+            <trans-unit id="143">
+                <source>note</source>
+                <target>Nota</target>
+            </trans-unit>
+            <trans-unit id="144">
+                <source>occurs_when</source>
+                <target>Ocorre quando</target>
+            </trans-unit>
+            <trans-unit id="145">
+                <source>function</source>
+                <target>Função</target>
+            </trans-unit>
+            <trans-unit id="146">
+                <source>strategies</source>
+                <target>Estratégias</target>
+            </trans-unit>
+            <trans-unit id="147">
+                <source>strategies_not_inserted</source>
+                <target>Ainda não foram inseridas estratégias</target>
+            </trans-unit>
+            <trans-unit id="148">
+                <source>evaluation</source>
+                <target>Avaliação</target>
+            </trans-unit>
+            <trans-unit id="149">
+                <source>child</source>
+                <target>Criança</target>
+            </trans-unit>
+            <trans-unit id="150">
+                <source>disable</source>
+                <target>incapacidade</target>
+            </trans-unit>
+            <trans-unit id="151">
+                <source>new_adhd_diagnosis</source>
+                <target>Novo Diagnóstico de PHDA</target>
+            </trans-unit>
+            <trans-unit id="152">
+                <source>edit_adhd_diagnosis</source>
+                <target>Modificar o Diagnóstico de PHDA</target>
+            </trans-unit>
+            <trans-unit id="153">
+                <source>edit_behavior</source>
+                <target>Modificar o Comportamento</target>
+            </trans-unit>
+            <trans-unit id="154">
+                <source>new_behavior</source>
+                <target>Novo Comportamento</target>
+            </trans-unit>
+            <trans-unit id="155">
+                <source>new_discipline_referral</source>
+                <target>Novo Procedimento Disciplinar</target>
+            </trans-unit>
+            <trans-unit id="156">
+                <source>edit_discipline_referral</source>
+                <target>Modificar o Procedimento Disciplinar</target>
+            </trans-unit>
+            <trans-unit id="157">
+                <source>new_other_event</source>
+                <target>Outro Evento</target>
+            </trans-unit>
+            <trans-unit id="158">
+                <source>edit_other_event</source>
+                <target>Modificar Evento</target>
+            </trans-unit>
+            <trans-unit id="159">
+                <source>new_medication</source>
+                <target>Nova Medicação</target>
+            </trans-unit>
+            <trans-unit id="160">
+                <source>edit_medication</source>
+                <target>Modificar Medicação</target>
+            </trans-unit>
+            <trans-unit id="161">
+                <source>new_school_information</source>
+                <target>Nova Informação Escolar</target>
+            </trans-unit>
+            <trans-unit id="162">
+                <source>edit_school_information</source>
+                <target>Modificar Nova Informação Escolar</target>
+            </trans-unit>
+            <trans-unit id="163">
+                <source>new_baseline</source>
+                <target>Nova linha de base</target>
+            </trans-unit>
+            <trans-unit id="164">
+                <source>edit_baseline</source>
+                <target>Modificar Linha de base</target>
+            </trans-unit>
+            <trans-unit id="165">
+                <source>new_function</source>
+                <target>Nova Função</target>
+            </trans-unit>
+            <trans-unit id="166">
+                <source>edit_function</source>
+                <target>Modificar Função</target>
+            </trans-unit>
+            <trans-unit id="167">
+                <source>delete_child_alert</source>
+                <target>A criança e os seus dados serão eliminados do sistema e não poderão ser recuperados. Tem a certeza?</target>
+            </trans-unit>
+            <trans-unit id="168">
+                <source>cancel</source>
+                <target>Cancelar</target>
+            </trans-unit>
+            <trans-unit id="169">
+                <source>delete</source>
+                <target>Eliminar</target>
+            </trans-unit>
+            <trans-unit id="170">
+                <source>delete_behavior_alert</source>
+                <target>O comportamento da criança e os dados das avaliações relacionadas serão eliminados do sistema e não poderão ser recuperados. Tem a certeza?</target>
+            </trans-unit>
+            <trans-unit id="171">
+                <source>add_strategy</source>
+                <target>Adicionar estratégia</target>
+            </trans-unit>
+            <trans-unit id="172">
+                <source>remove_strategy</source>
+                <target>Remover estratégia</target>
+            </trans-unit>
+            <trans-unit id="173">
+                <source>delete_function_alert</source>
+                <target>A função do comportamento e os dados das avaliações relacionadas serão eliminados do sistema e não poderão ser recuperados. Tem a certeza?</target>
+            </trans-unit>
+            <trans-unit id="174">
+                <source>delete_intervention_alert</source>
+                <target>A intervenção e os dados relativos às observações serão eliminados do sistema e não poderão ser recuperados. Tem a certeza?</target>
+            </trans-unit>
+            <trans-unit id="175">
+                <source>delete_baseline_alert</source>
+                <target>A linha de base e fases subsequentes, com os dados que lhes estão associados, serão eliminados do sistema e não poderão ser recuperados. Tem a certeza?</target>
+            </trans-unit>
+            <trans-unit id="176">
+                <source>help_question_what_child_insert</source>
+                <target>Que informação pessoal tenho de introduzir?</target>
+            </trans-unit>
+            <trans-unit id="177">
+                <source>help_answer_what_child_insert</source>
+                <target>A aplicação WHAAM tem como objetivo apoiar intervenções comportamentais em crianças com PHDA, mas presta especial atenção à segurança dos dados. Se a ideia de usar os dados reais da criança não lhe agradar, por favor, não hesite em especificar apenas o nickname, sexo e ano de nascimento. O nome e apelido da criança fazem parte de campos opcionais. Da nossa parte, a segurança dos dados pessoais está garantida através do uso de procedimentos de autenticação de credenciais e da implementação de técnicas de criptografia.</target>
+            </trans-unit>
+            <trans-unit id="178">
+                <source>help_question_who_access_child_info</source>
+                <target>Quem pode aceder às informações pessoais?</target>
+            </trans-unit>
+            <trans-unit id="179">
+                <source>help_answer_who_access_child_info</source>
+                <target>As informações pessoais da criança apenas são partilhadas com as pessoas envolvidas na sua rede social privada. Outras pessoas não podem aceder a informações pessoais.</target>
+            </trans-unit>
+            <trans-unit id="180">
+                <source>password</source>
+                <target>Palavra-chave</target>
+            </trans-unit>
+            <trans-unit id="181">
+                <source>tour_case_data_intro</source>
+                <target>Conforme sugerido pelo nome, esta página recolhe informação importante acerca da criança, organizada em 5 áreas:</target>
+            </trans-unit>
+            <trans-unit id="182">
+                <source>other_events</source>
+                <target>Outros eventos</target>
+            </trans-unit>
+            <trans-unit id="183">
+                <source>tour_case_data_end</source>
+                <target>As áreas estão públicas ou ocultas de acordo com o seu papel. Por exemplo, informações clínicas mais sensíveis apenas podem ser visualizadas pelos profissionais de saúde ou familiares da criança</target>
+            </trans-unit>
+            <trans-unit id="184">
+                <source>tour_title_case_data_summary</source>
+                <target>Resumo das informações sobre o caso</target>
+            </trans-unit>
+            <trans-unit id="185">
+                <source>tour_case_data_summary_end</source>
+                <target>No topo da página, pode encontrar um resumo das informações sobre o caso, incluindo: algumas informações pessoais da criança, o último diagnóstico introduzido, informações escolares, e o número de pessoas envolvidas na rede social privada da criança.</target>
+            </trans-unit>
+            <trans-unit id="186">
+                <source>help_answer_what_diagnosis_data_insert</source>
+                <target>Deve especificar a data em que o diagnóstico foi feito, a data de início dos sintomas e o subtipo de PHDA. Pode referir, opcionalmente, quando a PHDA é uma condição secundária a uma comorbidade principal.</target>
+            </trans-unit>
+            <trans-unit id="187">
+                <source>help_question_what_diagnosis_data_insert</source>
+                <target>Que tipo de dados devo introduzir?</target>
+            </trans-unit>
+            <trans-unit id="188">
+                <source>user_edit_password</source>
+                <target>Modificar palavra-chave</target>
+            </trans-unit>
+            <trans-unit id="189">
+                <source>user_view_profile</source>
+                <target>Ver perfil</target>
+            </trans-unit>
+            <trans-unit id="190">
+                <source>error_404</source>
+                <target>Erro 404</target>
+            </trans-unit>
+            <trans-unit id="191">
+                <source>error_404_description</source>
+                <target>Oops! Parece que o link que clicou está incorreto. O recurso que procura pode ter sido removido, o seu nome pode ter sido alterado, ou pode estar temporariamente indisponível.</target>
+            </trans-unit>
+            <trans-unit id="192">
+                <source>go_to_homepage</source>
+                <target>Ir para homepage</target>
+            </trans-unit>
+            <trans-unit id="193">
+                <source>error_500</source>
+                <target>Erro 500</target>
+            </trans-unit>
+            <trans-unit id="194">
+                <source>error_500_description</source>
+                <target>O servidor encontrou um erro interno. Se o problema persistir, por favor contacte a equipa do WHAAM através do link "contacte-nos".</target>
+            </trans-unit>
+            <trans-unit id="195">
+                <source>help_answer_why_diagnosis_data</source>
+                <target>Monitorizar o diagnóstico é importante pois os sintomas de PHDA podem modificar ao longo do tempo e variar com a idade e estadio de desenvolvimento</target>
+            </trans-unit>
+            <trans-unit id="196">
+                <source>help_question_why_diagnosis_data</source>
+                <target>Porquê inserir informação sobre o diagnóstico?</target>
+            </trans-unit>
+            <trans-unit id="197">
+                <source>help_question_people_access_diagnosis</source>
+                <target>Quem pode aceder à informação sobre o diagnóstico?</target>
+            </trans-unit>
+            <trans-unit id="198">
+                <source>help_answer_people_access_diagnosis</source>
+                <target>A informação sobre o diagnóstico apenas está acessível para os familiares da criança e os profissionais de saúde envolvidos na rede social privada da criança.</target>
+            </trans-unit>
+            <trans-unit id="199">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="200">
+                <source>help_question_how_define_behavior</source>
+                <target>Como definir um comportamento?</target>
+            </trans-unit>
+            <trans-unit id="201">
+                <source>help_answer_how_define_behavior</source>
+                <target>Para descrever um comportamento é necessário fornecer uma definição operacional: objetiva, concisa e completa.</target>
+            </trans-unit>
+            <trans-unit id="202">
+                <source>help_question_how_to_be_objective</source>
+                <target>O que significa uma definição "objetiva" do comportamento?</target>
+            </trans-unit>
+            <trans-unit id="203">
+                <source>help_answer_how_to_be_objective</source>
+                <target>O comportamento deve ser descrito de forma a que não seja necessário "adivinhar" o seu significado. Constituem bons exemplos: "o João olha pela janela", ou "o João bate com a sua mão na cabeça do colega que está ao seu lado", "o João sai do seu lugar durante a aula sem pedir permissão". Constituem maus exemplos: "o João é distraído", "o João é violento", ou "o João deambula pela sala".</target>
+            </trans-unit>
+            <trans-unit id="204">
+                <source>help_question_how_to_be_clear</source>
+                <target>O que significa uma definição "concisa" do comportamento?</target>
+            </trans-unit>
+            <trans-unit id="205">
+                <source>help_answer_how_to_be_clear</source>
+                <target>Use frases curtas para descrever apenas o que observou</target>
+            </trans-unit>
+            <trans-unit id="206">
+                <source>family</source>
+                <target>Família</target>
+            </trans-unit>
+            <trans-unit id="207">
+                <source>professionals</source>
+                <target>Profissionais</target>
+            </trans-unit>
+            <trans-unit id="208">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="209">
+                <source>help_question_what_is_the_place</source>
+                <target>O que significa uma definição "completa" do comportamento?</target>
+            </trans-unit>
+            <trans-unit id="210">
+                <source>help_answer_what_is_the_place</source>
+                <target>Uma definição completa inclui o local e o contexto em que ocorre o comportamento. No campo "Local" deve ser descrito o espaço físico em que o comportamento ocorre. Por exemplo, "sala de aula", "recreio", "cozinha". No campo "Contexto" deve ser especificado o cenário em que o comportamento ocorre. Uma boa descrição do "Contexto" responde à questão: "O que estava a acontecer quando o comportamento foi observado?". Por exemplo, "durante a transição entre as aulas", "durante a manhã, na aula de Matemática".</target>
+            </trans-unit>
+            <trans-unit id="211">
+                <source>help_question_what_is_the_setting</source>
+                <target>Qual o contexto?</target>
+            </trans-unit>
+            <trans-unit id="212">
+                <source>help_answer_what_is_the_setting</source>
+                <target>Uma boa descrição do contexto responde à questão: "Quando devemos prestar atenção se pretendemos ver o comportamento a ocorrer?". As respostas descrevem quando é mais provável que o comportamento ocorra.</target>
+            </trans-unit>
+            <trans-unit id="213">
+                <source>new_assessment</source>
+                <target>Nova avaliação</target>
+            </trans-unit>
+            <trans-unit id="214">
+                <source>phase</source>
+                <target>Fase</target>
+            </trans-unit>
+            <trans-unit id="215">
+                <source>state</source>
+                <target>Estado</target>
+            </trans-unit>
+            <trans-unit id="216">
+                <source>observation_gathered</source>
+                <target>Observações recolhidas</target>
+            </trans-unit>
+            <trans-unit id="217">
+                <source>abc_gathered</source>
+                <target>ABC recolhidos</target>
+            </trans-unit>
+            <trans-unit id="218">
+                <source>start_date</source>
+                <target>Data de início</target>
+            </trans-unit>
+            <trans-unit id="219">
+                <source>end_date</source>
+                <target>Data de término</target>
+            </trans-unit>
+            <trans-unit id="220">
+                <source>baseline_notification</source>
+                <target>Enviar aos membros da rede uma notificação acerca da linha de base</target>
+            </trans-unit>
+            <trans-unit id="221">
+                <source>notification_baseline_alert</source>
+                <target>Se concordar, os membros da rede da criança irão receber uma notificação sobre a linha de base. Não será mais permitido fazer alterações nas definições da linha de base.</target>
+            </trans-unit>
+            <trans-unit id="222">
+                <source>notify</source>
+                <target>Notificar</target>
+            </trans-unit>
+            <trans-unit id="223">
+                <source>function_notification</source>
+                <target>Enviar aos membros da rede uma notificação sobre a função (hipótese da função) do comportamento</target>
+            </trans-unit>
+            <trans-unit id="224">
+                <source>notification_function_alert</source>
+                <target>Se concordar, os membros da rede da criança irão receber uma notificação sobre a função (hipótese da função) do comportamento. Não será mais permitido fazer alterações.</target>
+            </trans-unit>
+            <trans-unit id="225">
+                <source>intervention_notification</source>
+                <target>Enviar aos membros da rede uma notificação sobre a intervenção</target>
+            </trans-unit>
+            <trans-unit id="226">
+                <source>notification_intervention_alert</source>
+                <target>Se concordar, os membros da rede da criança irão receber uma notificação sobre a intervenção. Não será mais permitido fazer alterações na intervenção.</target>
+            </trans-unit>
+            <trans-unit id="227">
+                <source>chosen_placeholder_text_multiple</source>
+                <target>Selecione algumas opções</target>
+            </trans-unit>
+            <trans-unit id="228">
+                <source>chosen_placeholder_text_single</source>
+                <target>Selecione uma opção</target>
+            </trans-unit>
+            <trans-unit id="229">
+                <source>chosen_no_results_text</source>
+                <target>Não existem resultados</target>
+            </trans-unit>
+            <trans-unit id="230">
+                <source>frequency</source>
+                <target>Frequência</target>
+            </trans-unit>
+            <trans-unit id="231">
+                <source>help_question_what_is_an_intervention</source>
+                <target>Definir uma Nova intervenção</target>
+            </trans-unit>
+            <trans-unit id="232">
+                <source>help_answer_question_what_is_an_intervention</source>
+                <target>Para definir uma Nova intervenção, por favor, selecione a data de início e de término; este representa o intervalo de tempo em que as estratégias de intervenção serão aplicadas</target>
+            </trans-unit>
+            <trans-unit id="233">
+                <source>help_question_what_are_intervention_strategies</source>
+                <target>Adicionar ou remover uma estratégia</target>
+            </trans-unit>
+            <trans-unit id="234">
+                <source>help_answer_what_are_intervention_strategies_first</source>
+                <target>As estratégias de intervenção consistem em ações específicas implementadas para reduzir ou eliminar o comportamento. Para adicionar uma estratégia, por favor, clique no link Adicionar estratégia e especifique o Nome, a Descrição e Atribuir a (um ou mais elementos da rede)</target>
+            </trans-unit>
+            <trans-unit id="235">
+                <source>help_answer_what_are_intervention_strategies_for_instance</source>
+                <target>Por exemplo:</target>
+            </trans-unit>
+            <trans-unit id="236">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="237">
+                <source>help_answer_what_are_intervention_token_one</source>
+                <target>- Nome: economia de fichas (token)</target>
+            </trans-unit>
+            <trans-unit id="238">
+                <source>help_answer_what_are_intervention_token_two</source>
+                <target>- Descrição: um token (i.e. uma ficha) consiste num objeto dado à criança cada vez que exibir um comportamento apropriado. Após um número predeterminado de tokens, a criança pode trocá-los por um reforço (i.e. doces, brinquedos, atividades interativas, etc). Um sistema baseado em tokens depende de três elementos básicos: 1) que os objetos sejam pequenos e quantificáveis 2) um reforço para servir de troca pelos objetos 3) um comportamento definido de forma clara.</target>
+            </trans-unit>
+            <trans-unit id="239">
+                <source>help_answer_what_are_intervention_token_three</source>
+                <target>- Atribuir a: selecione um ou mais elementos da rede que irão aplicar a estratégia</target>
+            </trans-unit>
+            <trans-unit id="240">
+                <source>edit_intervention</source>
+                <target>Modificar a Intervenção</target>
+            </trans-unit>
+            <trans-unit id="241">
+                <source>help_question_why_medication_data</source>
+                <target>Para quê introduzir dados sobre a medicação?</target>
+            </trans-unit>
+            <trans-unit id="242">
+                <source>help_answer_why_medication_data</source>
+                <target>A medicação pode ter um papel importante na vida da criança com PHDA. Ter conhecimento sobre a medicação e a sua dosagem é crucial para o profissional de saúde compreender melhor o seu efeito nos sintomas e nos comportamentos da criança.</target>
+            </trans-unit>
+            <trans-unit id="243">
+                <source>help_question_who_access_data</source>
+                <target>Quem terá acesso às informações sobre a medicação?</target>
+            </trans-unit>
+            <trans-unit id="244">
+                <source>help_answer_who_access_data</source>
+                <target>As informações sobre a medicação apenas serão acessíveis pelos familiares da criança e pelos profissionais de saúde envolvidos na rede da criança.</target>
+            </trans-unit>
+            <trans-unit id="245">
+                <source>help_question_what_useful_for</source>
+                <target>Qual a utilidade destas informações?</target>
+            </trans-unit>
+            <trans-unit id="246">
+                <source>help_answer_what_referrals</source>
+                <target>As crianças com PHDA apresentam muitas vezes dificuldade em respeitar as regras nos vários contextos de vida. Para efeitos de intervenção, é útil obter informações sobre a sua capacidade de autorregulação e as possíveis consequências relacionadas com o comportamento disfuncional. Utilize o campo "Local" para especificar o contexto onde o procedimento será implementado (ex. em cada, na escola, durante uma festa, etc.).</target>
+            </trans-unit>
+            <trans-unit id="247">
+                <source>help_question_who_access_referrals</source>
+                <target>Quem terá acesso às informações sobre os procedimentos disciplinares?</target>
+            </trans-unit>
+            <trans-unit id="248">
+                <source>help_answer_who_access_info</source>
+                <target>Todas as pessoas envolvidas na rede da criança.</target>
+            </trans-unit>
+            <trans-unit id="249">
+                <source>help_answer_school_info</source>
+                <target>Estes dados fornecem informações úteis sobre a situação escolar da criança</target>
+            </trans-unit>
+            <trans-unit id="250">
+                <source>help_question_who_access_school_info</source>
+                <target>Quem terá acesso à informação escolar?</target>
+            </trans-unit>
+            <trans-unit id="251">
+                <source>help_question_what_are_other_event</source>
+                <target>Para quê introduzir Outros eventos?</target>
+            </trans-unit>
+            <trans-unit id="252">
+                <source>help_answer_what_are_other_event</source>
+                <target>Durante a vida podem surgir novos eventos stressantes aumentando o risco de sintomas associados a outras perturbações psiquiátricas. Controlar estes eventos é importante para compreender a sua influência no comportamento da criança. Por favor, selecione a data em que ocorreu o Novo evento e descreva-o de forma clara.</target>
+            </trans-unit>
+            <trans-unit id="253">
+                <source>help_answer_who_access_events</source>
+                <target>Quem terá acesso a esta informação?</target>
+            </trans-unit>
+            <trans-unit id="254">
+                <source>message</source>
+                <target>Mensagem</target>
+            </trans-unit>
+            <trans-unit id="255">
+                <source>delete_all</source>
+                <target>Eliminar todas</target>
+            </trans-unit>
+            <trans-unit id="256">
+                <source>mark_all</source>
+                <target>Marcar todas como lidas</target>
+            </trans-unit>
+            <trans-unit id="257">
+                <source>mark_as_read</source>
+                <target>Marcar como lida</target>
+            </trans-unit>
+            <trans-unit id="258">
+                <source>help_question_what_invitation_means</source>
+                <target>O que significa convidar?</target>
+            </trans-unit>
+            <trans-unit id="259">
+                <source>help_answer_what_invitation_means</source>
+                <target>Tal como nas redes sociais como o Facebook, Google+ ou Linkedin, pode criar uma rede social privada composta por pessoas importantes para a criança com PHDA. Para convidar uma pessoa para a rede deve colocar o seu e-mail no formulário de convite.</target>
+            </trans-unit>
+            <trans-unit id="260">
+                <source>help_question_what_people_can_do</source>
+                <target>O que podem fazer as outras pessoas da rede?</target>
+            </trans-unit>
+            <trans-unit id="261">
+                <source>help_answer_what_people_can_do</source>
+                <target>As outras pessoas da rede podem partilhar conhecimento e informações relevantes sobre os comportamentos da criança, de modo a cooperativamente promoverem o bem-estar da criança.</target>
+            </trans-unit>
+            <trans-unit id="262">
+                <source>help_no_abuses</source>
+                <target>Violações</target>
+            </trans-unit>
+            <trans-unit id="263">
+                <source>help_no_abuses_info</source>
+                <target>Para qualquer problema, contacte abuses@whaam.pa.itd.cnr.it</target>
+            </trans-unit>
+            <trans-unit id="264">
+                <source>help_question_what_is_a_baseline</source>
+                <target>O que é a linha de base?</target>
+            </trans-unit>
+            <trans-unit id="265">
+                <source>help_answer_what_is_a_baseline</source>
+                <target>A linha de base corresponde ao nível atual do comportamento, avaliado antes da intervenção. Na aplicação WHAAM, as pessoas envolvidas na rede da social privada da criança estão autorizadas a recolher dados sobre o comportamento durante o período de linha de base. Selecione um observador, especifique o número mínimo de observações e a duração (em minutos) de cada observação. Lembre-se que para ter acesso à área de avaliação de uma intervenção, o sistema solicitará no mínimo 4 sessões de observação.</target>
+            </trans-unit>
+            <trans-unit id="266">
+                <source>help_question_referral_description</source>
+                <target>Descrição do procedimento</target>
+            </trans-unit>
+            <trans-unit id="267">
+                <source>help_answer_referral_description</source>
+                <target>Por favor, preencha este campo com a descrição do procedimento disciplinar selecionado. Por exemplo, se selecionou a opção "Time-out", especifique a razão deste procedimento, por quem foi proposto e em que circunstâncias é utilizado. Faça o mesmo, caso a sua opção seja "Outro", indicando também o nome do procedimento.</target>
+            </trans-unit>
+            <trans-unit id="268">
+                <source>help_question_what_data_useful_for</source>
+                <target>Para que servem os dados recolhidos na linha de base?</target>
+            </trans-unit>
+            <trans-unit id="269">
+                <source>help_answer_what_data_useful_for</source>
+                <target>Os dados sobre a linha de base são usados para formular hipóteses acerca da função do comportamento e para planear uma intervenção.</target>
+            </trans-unit>
+            <trans-unit id="270">
+                <source>help_question_why_observation_type</source>
+                <target>O que significa o tipo de observação?</target>
+            </trans-unit>
+            <trans-unit id="271">
+                <source>help_answer_why_observation_type</source>
+                <target>Os dados recolhidos através da observação sistemática são processados de forma diferente de acordo com a opção: frequência ou duração. Para a opção frequência, os dados serão processados contando o número de vezes que o comportamento ocorre. Para a opção duração, os dados serão processados contando a percentagem de tempo em que o comportamento ocorre durante o período observado.</target>
+            </trans-unit>
+            <trans-unit id="272">
+                <source>help_question_how_data_are_collected</source>
+                <target>Como é feita a recolha de dados?</target>
+            </trans-unit>
+            <trans-unit id="273">
+                <source>help_answer_how_data_are_collected</source>
+                <target>Os dados são recolhidos usando a aplicação móvel WHAAM diretamente no seu telemóvel ou tablet.</target>
+            </trans-unit>
+            <trans-unit id="274">
+                <source>help_question_edit_user</source>
+                <target>Modificar o utilizador</target>
+            </trans-unit>
+            <trans-unit id="275">
+                <source>help_answer_edit_user</source>
+                <target>Seção Modificar o utilizador permite-lhe atualizar a informação do perfil do utilizador.</target>
+            </trans-unit>
+            <trans-unit id="276">
+                <source>help_question_edit_password</source>
+                <target>Modificar a palavra-chave</target>
+            </trans-unit>
+            <trans-unit id="277">
+                <source>help_answer_edit_password</source>
+                <target>É necessário inserir a palavra-chave anterior para definir a nova palavra-chave</target>
+            </trans-unit>
+            <trans-unit id="278">
+                <source>help_question_how_identify_behaviour_function</source>
+                <target>O que é a função do comportamento?</target>
+            </trans-unit>
+            <trans-unit id="279">
+                <source>help_answer_how_identify_behaviour_function</source>
+                <target>A função do comportamento representa o "porquê" do comportamento ocorrer. Deve preencher o campo "Quando" para descrever os eventos sociais, afetivos, cognitivos e/ou ambientais relacionados com a ocorrência do comportamento.</target>
+            </trans-unit>
+            <trans-unit id="280">
+                <source>help_question_what_possible_behaviour_function</source>
+                <target>Como identificar a função do comportamento?</target>
+            </trans-unit>
+            <trans-unit id="281">
+                <source>help_answer_what_possible_behaviour_function</source>
+                <target>Quando tem de identificar a função de um comportamento, a questão-chave é "Qual o propósito que este comportamento está a servir para a criança?". O propósito do comportamento pode ser identificado com uma das seguintes quatro funções:</target>
+            </trans-unit>
+            <trans-unit id="282">
+                <source>help_answer_function_escape</source>
+                <target>Fuga/evitamento</target>
+            </trans-unit>
+            <trans-unit id="283">
+                <source>help_answer_function_escape_description</source>
+                <target>Fuga/evitamento de atenção: a criança manifesta o comportamento para evitar estímulos aversivos gerados por outra pessoa.</target>
+            </trans-unit>
+            <trans-unit id="284">
+                <source>help_answer_function_tangible_item</source>
+                <target>Obter um item/objeto tangível ou aceder a uma atividade desejada.</target>
+            </trans-unit>
+            <trans-unit id="285">
+                <source>help_answer_function_tangible_item_description</source>
+                <target>O propósito do comportamento é obter um item específico ou receber o consenso de outra pessoa para participar numa atividade específica. Por exemplo, a criança bate na mãe porque quer o objeto que a mãe está a segurar. (Se a mãe responder a este comportamento, dando o objeto à criança, a probabilidade de esta repetir o mesmo comportamento no futuro para obter a atenção da mãe será maior.) Os objetos tangíveis mais comuns incluem, entre outros, alimentos, brinquedos, filmes, videojogos, etc.</target>
+            </trans-unit>
+            <trans-unit id="286">
+                <source>help_answer_function_sensory_item</source>
+                <target>Estimulação sensorial</target>
+            </trans-unit>
+            <trans-unit id="287">
+                <source>help_answer_function_sensory_item_description</source>
+                <target>A criança manifesta o comportamento porque a estimulação que recebe em função do seu comportamento possui características de reforço. Por exemplo, a criança gira uma tijela em cima da mesa para produzir um estímulo auditivo específico, único deste objeto.</target>
+            </trans-unit>
+            <trans-unit id="288">
+                <source>help_answer_function_social_attention_item</source>
+                <target>Atenção social</target>
+            </trans-unit>
+            <trans-unit id="289">
+                <source>help_answer_function_social_attention_item_description</source>
+                <target>A criança manifesta o comportamento para obter a atenção de outra pessoa. Por exemplo, a criança atira o objeto para obter a atenção da mãe.</target>
+            </trans-unit>
+            <trans-unit id="290">
+                <source>help_question_function_note</source>
+                <target>Qual o objetivo do campo Nota?</target>
+            </trans-unit>
+            <trans-unit id="291">
+                <source>help_answer_function_note</source>
+                <target>Pode usar o campo Nota para adicionar informações adicionais interessantes.</target>
+            </trans-unit>
+            <trans-unit id="292">
+                <source>help_answer_function_escape_task_description</source>
+                <target>Fuga/evitamento de tarefas ou atividades: a criança apresenta comportamentos de fuga das tarefas ou atividades difíceis.</target>
+            </trans-unit>
+            <trans-unit id="293">
+                <source>parental_consent</source>
+                <target>Declaro ter consentimento dos pais ou uma autorização equivalente para aceder aos dados e convidar novas pessoas a aderir à rede social da criança</target>
+            </trans-unit>
+            <trans-unit id="294">
+                <source>help_question_why_specify_role</source>
+                <target>Porque é que tenho de especificar o meu papel?</target>
+            </trans-unit>
+            <trans-unit id="295">
+                <source>help_answer_why_specify_role</source>
+                <target>O papel na rede da criança é crucial para atribuir os privilégios adequados ao utilizador. Em particular, os pais da criança e os profissionais de saúde têm mais privilégios do que os outros utilizadores. Os profissionais de saúde podem desenvolver planos de intervenção comportamental com base nos dados recolhidos pela rede da criança. Os pais podem gerir a participação dos utilizadores na rede, convidando pessoas com quem gostariam de partilhar as informações pessoais da criança</target>
+            </trans-unit>
+            <trans-unit id="296">
+                <source>help_question_is_global_role</source>
+                <target>O papel aqui definido é geral para toda a aplicação?</target>
+            </trans-unit>
+            <trans-unit id="297">
+                <source>help_answer_is_global_role</source>
+                <target>Não. O papel é específico para a criança com quem está a trabalhar. Por exemplo, para uma determinada criança pode ser o profissional de saúde e para outra o avô.</target>
+            </trans-unit>
+            <trans-unit id="298">
+                <source>help_question_invite_someone_else</source>
+                <target>Posso convidar uma pessoa, sem o consentimento dos pais ou algo equivalente?</target>
+            </trans-unit>
+            <trans-unit id="299">
+                <source>help_answer_invite_someone_else</source>
+                <target>Sim, pode convidar novas pessoas a aderir à rede da criança. Se é a pessoa que inseriu o perfil da criança, então é o responsável por partilhar os dados da criança com novas pessoas. Caso contrário, o convite será gerido pela pessoa que inseriu a criança pela primeira vez no sistema.</target>
+            </trans-unit>
+            <trans-unit id="300">
+                <source>remove_from_network</source>
+                <target>Está a remover uma pessoa da rede da criança.</target>
+            </trans-unit>
+            <trans-unit id="301">
+                <source>be_careful</source>
+                <target>Atenção</target>
+            </trans-unit>
+            <trans-unit id="302">
+                <source>careful_msg</source>
+                <target>Esta função apenas deve ser usada em caso de abuso ou se alguém da rede envolver uma pessoa com quem não quer partilhar as informações.</target>
+            </trans-unit>
+            <trans-unit id="303">
+                <source>careful_email_contact</source>
+                <target>Para qualquer problema, contacte abuses@whaam.pa.itd.cnr.it</target>
+            </trans-unit>
+            <trans-unit id="304">
+                <source>sent_msg</source>
+                <target>Mensagens enviadas</target>
+            </trans-unit>
+            <trans-unit id="305">
+                <source>new_msg</source>
+                <target>Nova mensagem</target>
+            </trans-unit>
+            <trans-unit id="306">
+                <source>sender</source>
+                <target>Remetente</target>
+            </trans-unit>
+            <trans-unit id="307">
+                <source>subject</source>
+                <target>Assunto</target>
+            </trans-unit>
+            <trans-unit id="308">
+                <source>inbox</source>
+                <target>Caixa de entrada</target>
+            </trans-unit>
+            <trans-unit id="309">
+                <source>recipients</source>
+                <target>Destinatário</target>
+            </trans-unit>
+            <trans-unit id="310">
+                <source>delete_record</source>
+                <target>O seguinte item será excluído permanentemente e não poderá ser recuperado. Tem a certeza que deseja continuar?</target>
+            </trans-unit>
+            <trans-unit id="311">
+                <source>warning_message_tau_u_analysis</source>
+                <target>Atenção: o intervalo entre as sessões deve ser o mais regular possível.</target>
+            </trans-unit>
+            <trans-unit id="312">
+                <source>data_not_available</source>
+                <target>Informação não disponível</target>
+            </trans-unit>
+            <trans-unit id="313">
+                <source>warning_message_assessment_minimum_observations</source>
+                <target>Tem de registar pelo menos 4 observações para cada uma das fases de linha de base e de intervenção para poder aceder à avaliação da eficácia (da intervenção).</target>
+            </trans-unit>
+            <trans-unit id="314">
+                <source>define_behavior</source>
+                <target>Não consegue encontrar o comportamento na lista?</target>
+            </trans-unit>
+            <trans-unit id="315">
+                <source>define_behavior_check</source>
+                <target>Selecione a caixa e escreva!</target>
+            </trans-unit>
+            <trans-unit id="316">
+                <source>cancel_and_go_back</source>
+                <target>Cancelar e voltar à lista dos comportamentos</target>
+            </trans-unit>
+            <trans-unit id="317">
+                <source>assigned_to</source>
+                <target>Atribuído a</target>
+            </trans-unit>
+            <trans-unit id="318">
+                <source>tour_title_plan</source>
+                <target>Plano de avaliação</target>
+            </trans-unit>
+            <trans-unit id="319">
+                <source>tour_plan_description</source>
+                <target>Esta página destina-se ao desenvolvimento da intervenção comportamental e à avaliação dos dados recolhidos pela rede da criança.</target>
+            </trans-unit>
+            <trans-unit id="320">
+                <source>tour_title_ab_design</source>
+                <target>Desenho AB</target>
+            </trans-unit>
+            <trans-unit id="321">
+                <source>tour_plan_description_intro</source>
+                <target>A aplicação WHAAM apoia</target>
+            </trans-unit>
+            <trans-unit id="322">
+                <source>tour_plan_description_about</source>
+                <target>Isto significa que o primeiro passo consiste em recolher informação sobre a linha de base do comportamento, para que depois o profissional de saúde possa desenvolver uma hipótese sobre a sua função</target>
+            </trans-unit>
+            <trans-unit id="323">
+                <source>tour_plan_description_behavior</source>
+                <target>e planear uma intervenção comportamental para reduzir ou eliminar o comportamento alvo.</target>
+            </trans-unit>
+            <trans-unit id="324">
+                <source>tour_plan_description_finally</source>
+                <target>No final, os dados recolhidos serão avaliados de modo a verificar se a intervenção teve o efeito esperado no comportamento.</target>
+            </trans-unit>
+            <trans-unit id="325">
+                <source>tour_plan_title_assessment_toolbar</source>
+                <target>Barra de ferramentas da Avaliação</target>
+            </trans-unit>
+            <trans-unit id="326">
+                <source>tour_plan_assessment_toolbar_buttons</source>
+                <target>Estes botões serão exibidos a verde se puder adicionar a fase específica ou a cinzento se não puder.</target>
+            </trans-unit>
+            <trans-unit id="327">
+                <source>tour_plan_assessment_toolbar_instruction</source>
+                <target>Por favor, lembre-se que as fases da avaliação devem ser inseridas na seguinte ordem: linha de base, função, intervenção.</target>
+            </trans-unit>
+            <trans-unit id="328">
+                <source>tour_plan_assessment_toolbar_evaluation</source>
+                <target>A avaliação será calculada automaticamente quando tiver recolhido pelos menos 4 sessões de observação, tanto para a linha de base como para a intervenção.</target>
+            </trans-unit>
+            <trans-unit id="329">
+                <source>tour_phase_toolbar_tittle</source>
+                <target>Barra de ferramentas</target>
+            </trans-unit>
+            <trans-unit id="330">
+                <source>tour_phase_toolbar_description</source>
+                <target>A barra de ferramentas da fase permite-lhe</target>
+            </trans-unit>
+            <trans-unit id="331">
+                <source>tour_phase_toolbar_notification</source>
+                <target>Enviar notificações a outros membros da rede sobre a fase que definiu. Assim que as notificações são enviadas,</target>
+            </trans-unit>
+            <trans-unit id="332">
+                <source>tour_phase_toolbar_restricted</source>
+                <target>as modificações das configurações da fase serão restringidas.</target>
+            </trans-unit>
+            <trans-unit id="333">
+                <source>tour_phase_toolbar_view</source>
+                <target>Visualizar os dados da fase</target>
+            </trans-unit>
+            <trans-unit id="334">
+                <source>tour_phase_toolbar_edit</source>
+                <target>Modificar dados da fase</target>
+            </trans-unit>
+            <trans-unit id="335">
+                <source>tour_phase_toolbar_delete</source>
+                <target>Eliminar a fase</target>
+            </trans-unit>
+            <trans-unit id="336">
+                <source>tour_phase_extra_title</source>
+                <target>Mais informações</target>
+            </trans-unit>
+            <trans-unit id="337">
+                <source>tour_phase_extra_description</source>
+                <target>Outras informações sobre a fase da avaliação estão acessíveis se clicar no ícone correspondente. A fase Linha de base permite aceder aos dados do ABC e visualizar os gráficos de observação.</target>
+            </trans-unit>
+            <trans-unit id="338">
+                <source>planning</source>
+                <target>A planear</target>
+            </trans-unit>
+            <trans-unit id="339">
+                <source>completed</source>
+                <target>Concluído</target>
+            </trans-unit>
+            <trans-unit id="349">
+                <source>shared</source>
+                <target>Partilhado</target>
+            </trans-unit>
+            <trans-unit id="350">
+                <source>NA</source>
+                <target>ND</target>
+            </trans-unit>
+            <trans-unit id="351">
+                <source>remove_assessment</source>
+                <target>A avaliação do comportamento da criança e as sessões de observação relacionadas serão eliminadas permanentemente e não poderão ser recuperadas. Tem a certeza que deseja continuar?</target>
+            </trans-unit>
+            <trans-unit id="352">
+                <source>effect_size</source>
+                <target>O tamanho do efeito é:</target>
+            </trans-unit>
+            <trans-unit id="353">
+                <source>where_was</source>
+                <target>Onde é que ele/ela estava?</target>
+            </trans-unit>
+            <trans-unit id="354">
+                <source>what_was_doing</source>
+                <target>O que é que ele/ela estava a fazer?</target>
+            </trans-unit>
+            <trans-unit id="355">
+                <source>who_was_there</source>
+                <target>Quem estava presente?</target>
+            </trans-unit>
+            <trans-unit id="356">
+                <source>what_happens</source>
+                <target>O que aconteceu imediatamente antes de ocorrer o comportamento?</target>
+            </trans-unit>
+            <trans-unit id="357">
+                <source>what_child_reaction</source>
+                <target>O que aconteceu imediatamente depois ou como resultado do comportamento da criança?</target>
+            </trans-unit>
+            <trans-unit id="358">
+                <source>what_others_reaction</source>
+                <target>Qual o comportamento da criança face as consequências descritas?</target>
+            </trans-unit>
+            <trans-unit id="359">
+                <source>where</source>
+                <target>Onde</target>
+            </trans-unit>
+            <trans-unit id="360">
+                <source>new_answer</source>
+                <target>Nova resposta</target>
+            </trans-unit>
+            <trans-unit id="361">
+                <source>new_reply</source>
+                <target>Nova resposta</target>
+            </trans-unit>
+            <trans-unit id="362">
+                <source>sent_by</source>
+                <target>enviado por</target>
+            </trans-unit>
+            <trans-unit id="363">
+                <source>observation_type</source>
+                <target>Tipo de Observação</target>
+            </trans-unit>
+            <trans-unit id="364">
+                <source>duration</source>
+                <target>Duração</target>
+            </trans-unit>
+            <trans-unit id="365">
+                <source>analysis_details</source>
+                <target>Detalhes da análise</target>
+            </trans-unit>
+            <trans-unit id="366">
+                <source>specify_role</source>
+                <target>Especificar o seu papel</target>
+            </trans-unit>
+            <trans-unit id="367">
+                <source>edit_profile</source>
+                <target>Editar perfil</target>
+            </trans-unit>
+            <trans-unit id="368">
+                <source>abc_users</source>
+                <target>Pessoas autorizadas a assumir o ABC</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

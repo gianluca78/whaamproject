@@ -1,0 +1,24 @@
+services:
+    whaam_notification.util.notification_manager:
+        class: WHAAM\PrivateApplication\Bundle\NotificationBundle\Util\NotificationManager
+        arguments: [@doctrine.orm.entity_manager]
+
+    whaam_notification.form.type.answer:
+        class: WHAAM\PrivateApplication\Bundle\NotificationBundle\Form\Type\AnswerType
+        tags:
+            - { name: form.type, alias: answer }
+        arguments: [@doctrine.orm.entity_manager, @security.context]
+
+    whaam_notification.form.type.message:
+        class: WHAAM\PrivateApplication\Bundle\NotificationBundle\Form\Type\MessageType
+        tags:
+            - { name: form.type, alias: message }
+        arguments: [@doctrine.orm.entity_manager, @security.context]
+
+    whaam_notification.form.handler.answer_form_handler:
+        class: WHAAM\PrivateApplication\Bundle\NotificationBundle\Form\Handler\AnswerFormHandler
+        arguments: [@doctrine.orm.entity_manager, @session, @translator.default]
+
+    whaam_notification.form.handler.message_form_handler:
+        class: WHAAM\PrivateApplication\Bundle\NotificationBundle\Form\Handler\MessageFormHandler
+        arguments: [@doctrine.orm.entity_manager, @session, @translator.default]

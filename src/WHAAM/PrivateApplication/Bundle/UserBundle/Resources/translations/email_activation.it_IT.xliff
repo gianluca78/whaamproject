@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>subject</source>
+                <target>Attivazione account</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>dear</source>
+                <target>Caro</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>thank_you_sentence</source>
+                <target>Grazie per esserti registrato all'applicazione WHAAM.</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>last_step_sentence</source>
+                <target>Prima di attivare il tuo account ti chiediamo di completare la tua registrazione.</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>complete_registration_sentence</source>
+                <target>Per diventare un utente registrato clicca sull'URL seguente o incollalo nella barra degli indirizzi del tuo browser:</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>url_sentence</source>
+                <target>Per completare la tua registrazione, per favore  clicca il seguente link:</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>signature_sentence</source>
+                <target>Lo staff del progetto WHAAM</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

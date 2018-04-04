@@ -1,0 +1,5 @@
+childBehaviorAssessments:
+    type: rest
+    prefix: api
+    resource: @WHAAMWebServiceChildBehaviorAssessmentBundle/Controller/ChildBehaviorAssessmentController.php
+    schemes:  [http, https]

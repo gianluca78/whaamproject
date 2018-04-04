@@ -1,0 +1,39 @@
+{% extends '::base_form_page.html.twig' %}
+
+{% block javascripts %}
+    <script src="{{ asset('bundles/whaamprivateapplicationchild/js/child-behavior.js') }}"></script>
+{% endblock %}
+
+{% block breadcrumbs %}
+    {{ render_breadcrumbs() }}
+{% endblock %}
+
+{% block body %}
+    {% for flashMessage in app.session.flashbag.get('warning-' ~ child.slug) %}
+        <div class="Message Warning">{{ flashMessage|raw }}</div>
+    {% endfor %}
+
+    {{ parent() }}
+{% endblock %}
+
+{% block formTitle %}{{ formTitle }}{% endblock %}
+
+{% block formFields %}
+<form action="{{ form.vars.action }}" method="post" novalidate="true" {{ form_enctype(form) }}>
+    {{ form_row(form.behaviorCategory) }}
+    {{ form_row(form.behavior) }}
+    <div>{% trans from "interface" %}define_behavior{% endtrans %} <br/>{% trans from "interface" %}define_behavior_check{% endtrans %} {{ form_widget(form.hasOtherBehavior) }}</div>
+    {{ form_row(form.otherBehavior) }}
+    <div id="remove-other-behavior"><a href="#">{% trans from "interface" %}cancel_and_go_back{% endtrans %}</a></div>
+    {{ form_row(form.description) }}
+    {{ form_row(form.place) }}
+    {{ form_row(form.setting) }}
+    {{ form_row(form.submit) }}
+    {{ form_rest(form) }}
+</form>
+
+{% endblock %}
+
+{% block helpContent %}
+    {{ include('WHAAMPrivateApplicationChildBundle:ChildBehavior:formHelp.html.twig') }}
+{% endblock %}

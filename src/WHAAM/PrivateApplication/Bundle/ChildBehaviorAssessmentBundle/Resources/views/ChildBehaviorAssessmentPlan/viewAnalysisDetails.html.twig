@@ -1,0 +1,159 @@
+{% extends '::base_private.html.twig' %}
+
+{% block title %}
+{% endblock %}
+
+{% block navigation %}
+
+{% endblock %}
+
+{% block breadcrumbs %}
+    {{ render_breadcrumbs() }}
+{% endblock %}
+
+{% block body %}
+    {% set rowLabels = ["n pairs", "n pos", "n neg", "S", "Tau", "SDs", "VARs", "Z", "p (Z based)", "p exact", "r effect size"] %}
+
+    <div style="width:100%; clear:both; margin-top:25px;">
+        {{ include('WHAAMPrivateApplicationChildBehaviorAssessmentBundle:ChildBehaviorAssessmentPlan:spinner.html.twig',
+        {'spinnerWidth' : 60, 'tauUAnalysisValue': data.TAU_U_Analysis[10].AvsBTrendBTrendA }) }}
+
+        <input id="a-vs-b-sentence" type="hidden" value="{{ aVsBTauSentenceMessage }}">
+        <input id="a-vs-b-plus-trend-b-sentence" type="hidden" value="{{ aVsBPlusTrendBTauSentence }}">
+        <input id="a-vs-b-plus-trend-b-minus-trend-a-sentence" type="hidden"
+               value="{{ aVsBPlusTrendBMinusTrendATauMessage }}">
+
+        <div style="width:40%; float:left; text-align:left;">
+            <div style="width:100%; clear:both; margin:15px 0 15px 25px;">
+                <form>
+                    <label for="tau-types">
+                        <a href="http://www.sciencedirect.com/science/article/pii/S0005789411000153"
+                           target="_blank">TAU-U:</a>
+                    </label>
+                    <select id="tau-types">
+                        <option value="1" selected="selected">A vs B + trend B - trend A</option>
+                        <option value="2">A vs B + trend B</option>
+                        <option value="3">A vs B</option>
+                    </select>
+                </form>
+            </div>
+            <div id="message" style="padding-left:25px;">
+                <div><strong>{% trans from "interface" %}effect_size{% endtrans %} <span
+                                id="effect-size">{{ data.TAU_U_Analysis[10].AvsBTrendBTrendA }}</span></strong>.
+                </div>
+                <div id="effect-sentence">{{ aVsBPlusTrendBMinusTrendATauMessage }}</div>
+            </div>
+            <div style="width:100%; clear:both; margin:15px 0 0 25px;">
+                <div class="Message Warning">
+                    {% trans from "interface" %}warning_message_tau_u_analysis{% endtrans %}
+                </div>
+            </div>
+
+            <ul class="list-style-none">
+                <li><span class="azure">&nbsp;&nbsp;</span> {% trans from "r_analysis" %}null{% endtrans %}</li>
+                <li><span class="blue">&nbsp;&nbsp;</span> {% trans from "r_analysis" %}small{% endtrans %}</li>
+                <li><span class="yellow">&nbsp;&nbsp;</span> {% trans from "r_analysis" %}medium{% endtrans %}</li>
+                <li><span class="rose">&nbsp;&nbsp;</span> {% trans from "r_analysis" %}large{% endtrans %}</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="clear"></div>
+
+
+    <div class="DetailsTableContainer">
+        <div>
+            <h2>Partitions and full matrices</h2>
+
+            <table>
+                <tbody>
+                <tr>
+                    <th></th>
+                    <th>TREND A</th>
+                    <th>TREND B</th>
+                    <th>Full matrix</th>
+                </tr>
+                {% for rowCells in data.PartitionsOfMatrix %}
+                    {% if loop.index0 != 9 %}
+                        <tr>
+                            <th>{{ cycle(rowLabels, loop.index0) }}</th>
+                            <td>{{ rowCells.TrendA | round(3) }}</td>
+                            <td>{{ rowCells.TrendB | round(3) }}</td>
+                            <td>{{ data.FullMatrix[loop.index0][0] | round(3) }}</td>
+                        </tr>
+                    {% endif %}
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        <div style="width:50%; float:left;">
+            <h2>TAU U Analysis</h2>
+            <table>
+                <tbody>
+                <tr>
+                    <th></th>
+                    <th>A vs B</th>
+                    <th>A vs B + <br>Trend B</th>
+                    <th>A vs B + <br>Trend B - <br>TrendA</th>
+                </tr>
+                {% for rowCells in data.TAU_U_Analysis %}
+                    {% if loop.index0 != 9 %}
+                        <tr>
+                            <th>{{ cycle(rowLabels, loop.index0) }}</th>
+
+                            <td>{{ data.PartitionsOfMatrix[loop.index0].AvsB | round(3) }}</td>
+                            <td>{{ rowCells.AvsBTrendB | round(3) }}</td>
+                            <td>{{ rowCells.AvsBTrendBTrendA | round(3) }}</td>
+                        </tr>
+                    {% endif %}
+                {% endfor %}
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+    <div class="clear"></div>
+{% endblock %}
+
+{% block javascripts %}
+    <script>
+        $('#tau-types').change(function () {
+            switch ($('#tau-types').val()) {
+                case "1":
+                    $('#effect-sentence').text($('#a-vs-b-plus-trend-b-minus-trend-a-sentence').val());
+                    $('#tau-u-analysis').val({{ data.TAU_U_Analysis[10].AvsBTrendBTrendA }});
+                    $('#effect-size').text($('#tau-u-analysis').val());
+                    rotate();
+                    break;
+                case "2":
+                    $('#effect-sentence').text($('#a-vs-b-plus-trend-b-sentence').val());
+                    $('#tau-u-analysis').val({{ data.TAU_U_Analysis[10].AvsBTrendB }});
+                    $('#effect-size').text($('#tau-u-analysis').val());
+                    rotate();
+                    break;
+                case "3":
+                    $('#effect-sentence').text($('#a-vs-b-sentence').val());
+                    $('#tau-u-analysis').val({{ data.PartitionsOfMatrix[10].AvsB }});
+                    $('#effect-size').text($('#tau-u-analysis').val());
+                    rotate();
+                    break;
+            }
+        });
+
+        $(function () {
+            rotate();
+        });
+
+        function rotate() {
+            rotateArrow(parseFloat($("#tau-u-analysis").val()));
+        }
+
+
+        function rotateArrow(val) {
+            var newAngle = (val * 90) + (270);
+            $("#SvgArrow").attr("transform", "rotate(" + newAngle + ")");
+        }
+    </script>
+{% endblock %}

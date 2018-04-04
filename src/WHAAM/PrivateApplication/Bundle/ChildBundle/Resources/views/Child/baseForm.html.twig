@@ -1,0 +1,25 @@
+{{ form_row(form.base_child.surname) }}
+{{ form_row(form.base_child.name) }}
+{{ form_row(form.base_child.sex) }}
+{{ form_row(form.base_child.yearOfBirth) }}
+
+<a id="add-sibling" href="#" data-prototype="{{ form_widget(form.base_child.siblings.vars.prototype)|e }}">
+    {% trans from "interface" %}add_sibling{% endtrans %}
+</a>
+
+{% for childSibling in form.base_child.siblings %}
+    {{ form_row(childSibling.nickname) }}
+    {{ form_row(childSibling.name) }}
+    {{ form_row(childSibling.sex) }}
+    {{ form_row(childSibling.yearOfBirth) }}
+
+    <a id="remove-sibling-{{ loop.index }}" href="#">
+        {{ removeSiblingTranslation }}
+    </a>
+
+{% endfor %}
+
+{{ form_row(form.submit) }}
+{{ form_row(form.base_child.countChildSiblings) }}
+{{ form_row(form.base_child.removeTranslation, {'value': removeSiblingTranslation }) }}
+{{ form_widget(form._token) }}

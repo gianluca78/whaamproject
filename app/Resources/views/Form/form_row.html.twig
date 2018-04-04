@@ -1,0 +1,21 @@
+{% block form_row -%}
+    <div>
+        <div class="form-table">
+            <div class="form-table-row">
+                <div class="MessageRequired">
+                    {{- form_errors(form) -}}
+                </div>
+            </div>
+        </div>
+        <div class="form-table">
+            <div class="form-table-row">
+                <div class="label">
+                    {{- form_label(form) -}}
+                </div>
+                <div class="input">
+                    {{- form_widget(form) -}}
+                </div>
+            </div>
+        </div>
+    </div>
+{%- endblock form_row %}

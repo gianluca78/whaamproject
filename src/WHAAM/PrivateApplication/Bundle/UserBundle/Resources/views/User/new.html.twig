@@ -1,0 +1,48 @@
+{% extends '::base_public.html.twig' %}
+
+{% form_theme form with[':Form:form_table_layout.html.twig', ':Form:checkbox_widget.html.twig', ':Form:form_table_row.html.twig'] %}
+
+{% block javascripts %}
+    <script src="{{ asset('bundles/whaamprivateapplicationuser/js/user.js') }}" type="text/javascript"></script>
+{% endblock %}
+
+{% block flags %}
+    {{ include('WHAAMPrivateApplicationUserBundle:User:new_flags.html.twig', { 'locale': app.request.locale }) }}
+{% endblock %}
+
+{% block body %}
+<div class="Main">
+    <div class="page-container-center">
+        <div class="page-center">
+            <div class="signup-page">
+                <div class="page-title-container">
+                    <div class="page-title">
+                        <h1>{% trans from "public_interface" %}sign_up{% endtrans %}</h1>
+                    </div>
+                </div>
+
+                {% for flashMessage in app.session.flashbag.get('error') %}
+                    <div class="Message Error">{{ flashMessage }}</div>
+                {% endfor %}
+
+                {% for flashMessage in app.session.flashbag.get('success') %}
+                    <div class="Message Information">{{ flashMessage }}</div>
+                {% endfor %}
+
+                <div class="signup-line-toleft"></div>
+
+                <div class="BoxContainer yellow">
+                    <div class="Text">
+                        <table class="SignUpTable">
+                            {{ include('WHAAMPrivateApplicationUserBundle:User:form.html.twig') }}
+                        </table>
+                    </div>
+                </div>
+
+                <div style="height:50px;"></div>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

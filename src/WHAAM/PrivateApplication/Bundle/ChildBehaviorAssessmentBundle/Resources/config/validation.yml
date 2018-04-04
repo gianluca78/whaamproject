@@ -1,0 +1,159 @@
+WHAAM\PrivateApplication\Bundle\ChildBehaviorAssessmentBundle\Entity\ChildBehaviorAssessmentABC:
+    properties:
+        ABCDate:
+            - NotBlank: ~
+            - DateTime: ~
+        antecedentWhere:
+            - NotBlank: ~
+        antecedentWhat:
+            - NotBlank: ~
+        antecedentWho:
+            - NotBlank: ~
+        antecedentTrigger:
+            - NotBlank: ~
+        consequenceChildReaction:
+            - NotBlank: ~
+        # to be removed?
+        #consequenceOthersReaction:
+        #    - NotBlank: ~
+        childBehaviorAssessmentBaseline:
+            - NotBlank: ~
+        user:
+            - NotBlank: ~
+
+WHAAM\PrivateApplication\Bundle\ChildBehaviorAssessmentBundle\Entity\ChildBehaviorAssessmentObservationData:
+    properties:
+        observationTimestamp:
+            - NotBlank: ~
+            - DateTime: ~
+
+WHAAM\PrivateApplication\Bundle\ChildBehaviorAssessmentBundle\Entity\ChildBehaviorAssessmentObservationSession:
+    constraints:
+        - Callback:
+            methods: [isPhaseValid]
+    properties:
+        sessionStartTimestamp:
+            - NotBlank: ~
+            - DateTime: ~
+        note:
+            - Type:
+                type: string
+
+WHAAM\PrivateApplication\Bundle\ChildBehaviorAssessmentBundle\Entity\ChildBehaviorAssessmentBaseline:
+    constraints:
+        - Callback:
+            callback: [WHAAM\PrivateApplication\Bundle\ChildBehaviorAssessmentBundle\Form\Validator\AssessmentDatesValidator, validate]
+        - WHAAM\PrivateApplication\Bundle\ChildBehaviorAssessmentBundle\Form\Validator\AssessmentOverlap:
+            groups: [other-baseline]
+    properties:
+        startDate:
+            - NotBlank:
+                message: "not_blank"
+                groups: [other-baseline]
+            - DateTime:
+                message: "date.invalid"
+                groups: [other-baseline]
+        endDate:
+            - NotBlank:
+                message: "not_blank"
+                groups: [other-baseline]
+            - DateTime:
+                message: "date.invalid"
+                groups: [other-baseline]
+        minimumNumberOfObservations:
+            - NotBlank:
+                message: "not_blank"
+            - GreaterThan:
+                value: 0
+                message: "greater_than.invalid"
+            - Type:
+                type: integer
+                message: "type.invalid"
+        observationLength:
+            - NotBlank:
+                message: "not_blank"
+            - GreaterThan:
+                value: 0
+                message: "greater_than.invalid"
+            - Type:
+                type: integer
+                message: "type.invalid"
+        observationType:
+            - NotBlank:
+                message: "not_blank"
+            - Choice:
+                choices: [duration, frequency]
+                message: "data.invalid"
+        ABCUsers:
+            - Count:
+                min: 1
+                minMessage: count_min.invalid
+        observer:
+            - NotBlank:
+                message: "not_blank"
+
+WHAAM\PrivateApplication\Bundle\ChildBehaviorAssessmentBundle\Entity\ChildBehaviorFunction:
+    properties:
+        behaviorWhen:
+            - Type:
+                type: string
+                message: "type.invalid"
+            - Length:
+                max: 255
+                maxMessage: "length.max"
+            - NotBlank:
+                message: "not_blank"
+        behaviorFunction:
+            - NotBlank:
+                message: "not_blank"
+        note:
+            - Type:
+                type: string
+                message: "type.invalid"
+            - Length:
+                max: 255
+                maxMessage: "length.max"
+
+WHAAM\PrivateApplication\Bundle\ChildBehaviorAssessmentBundle\Entity\ChildBehaviorAssessmentIntervention:
+    constraints:
+        - Callback: [WHAAM\PrivateApplication\Bundle\ChildBehaviorAssessmentBundle\Form\Validator\AssessmentDatesValidator, validate]
+        - WHAAM\PrivateApplication\Bundle\ChildBehaviorAssessmentBundle\Form\Validator\AssessmentOverlap: ~
+    properties:
+        startDate:
+            - NotBlank:
+                message: "not_blank"
+            - DateTime:
+                message: "date.invalid"
+        endDate:
+            - NotBlank:
+                message: "not_blank"
+            - DateTime:
+                message: "date.invalid"
+
+WHAAM\PrivateApplication\Bundle\ChildBehaviorAssessmentBundle\Entity\ChildBehaviorAssessmentInterventionStrategy:
+    properties:
+        assignedUsers:
+            - Count:
+                min: 1
+                minMessage: count_min.invalid
+        name:
+            - NotBlank:
+                message: "not_blank"
+            - Type:
+                type: string
+                message: "type.invalid"
+            - Length:
+                min: 2
+                max: 255
+                minMessage: "length.min"
+                maxMessage: "length.max"
+        description:
+            - NotBlank:
+                message: "not_blank"
+            - Type:
+                type: string
+                message: "type.invalid"
+            - Length:
+                min: 2
+                minMessage: "length.min"
+                maxMessage: "length.max"

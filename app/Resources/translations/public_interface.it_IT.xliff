@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>home</source>
+                <target>Home</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>tour</source>
+                <target>Tour</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>adhd</source>
+                <target>ADHD</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>about_us</source>
+                <target>Chi siamo</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>contact_us</source>
+                <target>Contattaci</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>sign_up_title</source>
+                <target>Iscriviti</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>sign_up</source>
+                <target>Iscriviti</target>
+            </trans-unit>
+            <trans-unit id="8">
+                <source>sign_in</source>
+                <target>Entra</target>
+            </trans-unit>
+            <trans-unit id="9">
+                <source>remember_me</source>
+                <target>Ricordami</target>
+            </trans-unit>
+            <trans-unit id="10">
+                <source>forgot_password</source>
+                <target>Ho dimenticato la password Aiutami!</target>
+            </trans-unit>
+            <trans-unit id="11">
+                <source>forgot_password_message</source>
+                <target>Inserisci il tuo indirizzo di posta elettronica. Riceverai un messaggio contenente il link per cambiare la password</target>
+            </trans-unit>
+            <trans-unit id="12">
+                <source>pwd_recovery</source>
+                <target>Password dimenticata</target>
+            </trans-unit>
+            <trans-unit id="13">
+                <source>send_pwd</source>
+                <target>Invia</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

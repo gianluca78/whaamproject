@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>type.invalid</source>
+                <target>O valor {{ value }} não é válido {{ type }}</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>length.min</source>
+                <target>O campo deve conter no mínimo {{ limit }} caracteres</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>length.max</source>
+                <target>O campo não pode conter mais do que  {{ limit }} caracteres</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>not_blank</source>
+                <target>Campo obrigatório</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>date.invalid</source>
+                <target>A data não é válida</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>user.unique</source>
+                <target>Já existe um utilizador com este nome</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>email.invalid</source>
+                <target>O email "{{ value }}" não é válido</target>
+            </trans-unit>
+            <trans-unit id="8">
+                <source>password_repeat.invalid</source>
+                <target>As palavras-chave não são idênticas</target>
+            </trans-unit>
+            <trans-unit id="9">
+                <source>mime_type.invalid</source>
+                <target>O tipo mime do ficheiro é inválido ({{ type }}). Os tipos mime autorizados são {{ types }}</target>
+            </trans-unit>
+            <trans-unit id="10">
+                <source>max_size.invalid</source>
+                <target>O arquivo é muito grande ({{ size }} {{ suffix }}). O tamanho máximo permitido é  {{ limit }} {{ suffix }}</target>
+            </trans-unit>
+            <trans-unit id="11">
+                <source>upload_ini_size.invalid</source>
+                <target>O arquivo é muito grande. O tamanho máximo permitido é {{ limit }} {{ suffix }}.</target>
+            </trans-unit>
+            <trans-unit id="12">
+                <source>file_not_found.invalid</source>
+                <target>O arquivo não foi encontrado</target>
+            </trans-unit>
+            <trans-unit id="13">
+                <source>file_not_readable.invalid</source>
+                <target>O arquivo não pode ser lido</target>
+            </trans-unit>
+            <trans-unit id="14">
+                <source>upload_form_size.invalid</source>
+                <target>TO arquivo é muito grande</target>
+            </trans-unit>
+            <trans-unit id="15">
+                <source>upload.invalid</source>
+                <target>O arquivo não pode ser enviado</target>
+            </trans-unit>
+            <trans-unit id="16">
+                <source>email.unique</source>
+                <target>O email não existe ou é inválido</target>
+            </trans-unit>
+            <trans-unit id="17">
+                <source>child.unique</source>
+                <target>Já existe um utilizador com este nickname</target>
+            </trans-unit>
+            <trans-unit id="18">
+                <source>count_min.invalid</source>
+                <target>Escolha pelo menos uma opção</target>
+            </trans-unit>
+            <trans-unit id="19">
+                <source>data.invalid</source>
+                <target>Valor inválido</target>
+            </trans-unit>
+            <trans-unit id="20">
+                <source>terms_acceptance.invalid</source>
+                <target>Deverá aceitar os termos e condições do WHAAM para registar uma nova conta</target>
+            </trans-unit>
+            <trans-unit id="21">
+                <source>year.invalid</source>
+                <target>O ano inserido não é válido</target>
+            </trans-unit>
+            <trans-unit id="22">
+                <source>invitation.unique</source>
+                <target>O utilizador já foi convidado a aderir a esta rede</target>
+            </trans-unit>
+            <trans-unit id="23">
+                <source>self_invitation.error</source>
+                <target>Não pode convidar-se a si próprio</target>
+            </trans-unit>
+            <trans-unit id="24">
+                <source>baseline_dates.error</source>
+                <target>A data de término deve ser posterior à data de início</target>
+            </trans-unit>
+            <trans-unit id="25">
+                <source>assessment_dates_overlap.error</source>
+                <target>Uma fase de avaliação coincide com as datas do intervalo inserido</target>
+            </trans-unit>
+            <trans-unit id="26">
+                <source>greater_than.invalid</source>
+                <target>Este valor deve ser superior a {{ compared_value }}</target>
+            </trans-unit>
+            <trans-unit id="27">
+                <source>password_current.invalid</source>
+                <target>Este valor deve ser a palavra-chave do utilizador</target>
+            </trans-unit>
+            <trans-unit id="28">
+                <source>is_not_email_in_the_database.invalid</source>
+                <target>O e-mail inserido não é válido</target>
+            </trans-unit>
+            <trans-unit id="29">
+                <source>age.min</source>
+                <target>A idade mínima é 0 </target>
+            </trans-unit>
+            <trans-unit id="30">
+                <source>age.max</source>
+                <target>A idade máxima é 30 anos</target>
+            </trans-unit>
+            <trans-unit id="31">
+                <source>no_role_invitation.error</source>
+                <target>Não pode convidar novas pessoas porque não especificou o seu papel na rede da criança.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

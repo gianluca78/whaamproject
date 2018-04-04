@@ -1,0 +1,263 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>child_new</source>
+                <target>Il bambino "%s" è stato aggiunto da %s</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>child_edit</source>
+                <target>I dati di "%s" sono stati aggiornati da %s</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>child_delete</source>
+                <target>Il bambino "%s" è stato cancellato da %s</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>child_new_title</source>
+                <target>nuovo bambino</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>child_edit_title</source>
+                <target>bambino modificato</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>child_delete_title</source>
+                <target>bambino cancellato</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>diagnosis_new</source>
+                <target>Una diagnosi per %s è stata inserita da %s</target>
+            </trans-unit>
+            <trans-unit id="8">
+                <source>diagnosis_edit</source>
+                <target>Una diagnosi per %s è stata modificata da %s</target>
+            </trans-unit>
+            <trans-unit id="9">
+                <source>diagnosis_delete</source>
+                <target>Una diagnosi di %s è stata cancellata da %s</target>
+            </trans-unit>
+            <trans-unit id="10">
+                <source>diagnosis_new_title</source>
+                <target>nuova diagnosi</target>
+            </trans-unit>
+            <trans-unit id="11">
+                <source>diagnosis_edit_title</source>
+                <target>diagnosi modificata</target>
+            </trans-unit>
+            <trans-unit id="12">
+                <source>diagnosis_delete_title</source>
+                <target>diagnosi cancellata</target>
+            </trans-unit>
+            <trans-unit id="13">
+                <source>medication_new</source>
+                <target>Una prescrizione per %s è stata inserita da %s</target>
+            </trans-unit>
+            <trans-unit id="14">
+                <source>medication_edit</source>
+                <target>Una prescrizione per %s è stata modificata da %s</target>
+            </trans-unit>
+            <trans-unit id="15">
+                <source>medication_delete</source>
+                <target>Una prescrizione per %s è stata cancellata da %s</target>
+            </trans-unit>
+            <trans-unit id="16">
+                <source>medication_new_title</source>
+                <target>nuova prescrizione</target>
+            </trans-unit>
+            <trans-unit id="17">
+                <source>medication_edit_title</source>
+                <target>prescrizione modificata</target>
+            </trans-unit>
+            <trans-unit id="18">
+                <source>medication_delete_title</source>
+                <target>prescrizione cancellata</target>
+            </trans-unit>
+            <trans-unit id="19">
+                <source>event_new</source>
+                <target>Un evento per %s è stato inserito da %s</target>
+            </trans-unit>
+            <trans-unit id="20">
+                <source>event_edit</source>
+                <target>Un evento per %s è stato modificato da %s</target>
+            </trans-unit>
+            <trans-unit id="21">
+                <source>event_delete</source>
+                <target>Un evento per %s è stato cancellato da %s</target>
+            </trans-unit>
+            <trans-unit id="22">
+                <source>event_new_title</source>
+                <target>nuovo evento</target>
+            </trans-unit>
+            <trans-unit id="23">
+                <source>event_edit_title</source>
+                <target>evento modificato</target>
+            </trans-unit>
+            <trans-unit id="24">
+                <source>event_delete_title</source>
+                <target>evento cancellato</target>
+            </trans-unit>
+            <trans-unit id="25">
+                <source>discipline_referral_new</source>
+                <target>Un provvedimento disciplinare per %s è stato inserito da %s</target>
+            </trans-unit>
+            <trans-unit id="26">
+                <source>discipline_referral_edit</source>
+                <target>Un provvedimento disciplinare per %s è stato modificato da %s</target>
+            </trans-unit>
+            <trans-unit id="27">
+                <source>discipline_referral_delete</source>
+                <target>Un provvedimento disciplinare per %s è stato cancellato da %s</target>
+            </trans-unit>
+            <trans-unit id="28">
+                <source>discipline_referral_new_title</source>
+                <target>nuovo provvedimento disciplinare</target>
+            </trans-unit>
+            <trans-unit id="29">
+                <source>discipline_referral_edit_title</source>
+                <target>provvedimento disciplinare modificato</target>
+            </trans-unit>
+            <trans-unit id="30">
+                <source>discipline_referral_delete_title</source>
+                <target>provvedimento disciplinare cancellato</target>
+            </trans-unit>
+            <trans-unit id="31">
+                <source>behavior_new</source>
+                <target>Un comportamento per %s è stato inserito da %s</target>
+            </trans-unit>
+            <trans-unit id="32">
+                <source>behavior_edit</source>
+                <target>Un comportamento per %s è stato modificato da %s</target>
+            </trans-unit>
+            <trans-unit id="33">
+                <source>behavior_delete</source>
+                <target>Un comportamento per %s è stato cancellato da %s</target>
+            </trans-unit>
+            <trans-unit id="34">
+                <source>behavior_new_title</source>
+                <target>nuovo comportamento</target>
+            </trans-unit>
+            <trans-unit id="35">
+                <source>behavior_edit_title</source>
+                <target>comportamento modificato</target>
+            </trans-unit>
+            <trans-unit id="36">
+                <source>behavior_delete_title</source>
+                <target>comportamento cancellato</target>
+            </trans-unit>
+            <trans-unit id="37">
+                <source>invitation_new</source>
+                <target>%s è stato invitato a partecipare alla rete di %s </target>
+            </trans-unit>
+            <trans-unit id="38">
+                <source>invitation_new_title</source>
+                <target>nuovo invito</target>
+            </trans-unit>
+            <trans-unit id="39">
+                <source>assessment_new</source>
+                <target>E' stata creata una valutazione sul comportamento %s di %s</target>
+            </trans-unit>
+            <trans-unit id="40">
+                <source>assessment_delete</source>
+                <target>Una valutazione per il comportamento %s di %s è stata cancellata</target>
+            </trans-unit>
+            <trans-unit id="41">
+                <source>assessment_new_title</source>
+                <target>nuova valutazione</target>
+            </trans-unit>
+            <trans-unit id="42">
+                <source>assessment_delete_title</source>
+                <target>valutazione cancellata</target>
+            </trans-unit>
+            <trans-unit id="43">
+                <source>baseline_new</source>
+                <target>E' stata pianificata una nuova baseline per il comportamento %s da %s a %s</target>
+            </trans-unit>
+            <trans-unit id="44">
+                <source>baseline_new_title</source>
+                <target>nuova baseline</target>
+            </trans-unit>
+            <trans-unit id="45">
+                <source>abc_enabled</source>
+                <target>%s è stato abilitato a prendere gli ABC durante la %s baseline</target>
+            </trans-unit>
+            <trans-unit id="46">
+                <source>abc_enabled_title</source>
+                <target>nuovo osservatore ABC</target>
+            </trans-unit>
+            <trans-unit id="47">
+                <source>baseline_observer</source>
+                <target>%s è stato scelto come osservatore per la %s baseline</target>
+            </trans-unit>
+            <trans-unit id="48">
+                <source>baseline_observer_title</source>
+                <target>nuovo osservatore baseline</target>
+            </trans-unit>
+            <trans-unit id="49">
+                <source>behavior_function_new</source>
+                <target>La funzione del comportamento %s è stata ipotizzata</target>
+            </trans-unit>
+            <trans-unit id="50">
+                <source>behavior_function_title</source>
+                <target>nuova funzione del comportamento</target>
+            </trans-unit>
+            <trans-unit id="51">
+                <source>intervention_new</source>
+                <target>E' stato pianificato un nuovo intervento per il comportamento %s da %s a %s</target>
+            </trans-unit>
+            <trans-unit id="52">
+                <source>intervention_new_title</source>
+                <target>nuovo intervento</target>
+            </trans-unit>
+            <trans-unit id="53">
+                <source>intervention_strategy_assignment</source>
+                <target>La strategia di intervento %s è stata assegnata a %s</target>
+            </trans-unit>
+            <trans-unit id="54">
+                <source>intervention_strategy_assignment_title</source>
+                <target>nuova strategia di intervento</target>
+            </trans-unit>
+            <trans-unit id="55">
+                <source>observation_new</source>
+                <target>E' stato raccolto un nuovo insieme di osservazioni per il comportamento %s</target>
+            </trans-unit>
+            <trans-unit id="56">
+                <source>observation_new_title</source>
+                <target>nuova osservazione</target>
+            </trans-unit>
+            <trans-unit id="57">
+                <source>abc_new</source>
+                <target>E' stato raccolto un nuovo insieme di ABC per il comportamento %s</target>
+            </trans-unit>
+            <trans-unit id="58">
+                <source>abc_new_title</source>
+                <target>nuovo ABC</target>
+            </trans-unit>
+            <trans-unit id="59">
+                <source>school_information_new</source>
+                <target>E' stata inserita una nuova informazione scolastica per %s da %s</target>
+            </trans-unit>
+            <trans-unit id="60">
+                <source>school_information_edit</source>
+                <target>E' stata modificata un'informazione scolastica per %s da %s</target>
+            </trans-unit>
+            <trans-unit id="61">
+                <source>school_information_delete</source>
+                <target>E' stata cancellata un'informazione scolastica per %s da %s</target>
+            </trans-unit>
+            <trans-unit id="62">
+                <source>school_information_new_title</source>
+                <target>nuova informazione scolastica</target>
+            </trans-unit>
+            <trans-unit id="63">
+                <source>school_information_edit_title</source>
+                <target>informazione scolastica modificata</target>
+            </trans-unit>
+            <trans-unit id="64">
+                <source>school_information_delete_title</source>
+                <target>informazione scolastica cancellata</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>subject</source>
+                <target>Ενεργοποίηση λογαριασμού</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>dear</source>
+                <target>Αγαπητέ/ή</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>thank_you_sentence</source>
+                <target>Ευχαριστούμε που εγγραφήκατε στην εφαρμογή WHAAM.</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>last_step_sentence</source>
+                <target>Πριν ενεργοποιήσουμε τον λογαριασμό σας υπάρχει μια τελευταία ενέργεια που πρέπει να κάνετε.</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>complete_registration_sentence</source>
+                <target>Για να γίνετε εγγεγραμμένο μέλος παρακαλώ πατήστε πάνω στον ακόλουθο σύνδεσμο ή επικολλήστε τον στο φυλλομετρητή σας:</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>url_sentence</source>
+                <target>Για να ολοκληρώσετε την εγγραφή σας, επισκεφθείτε αυτόν τον σύνδεσμο:</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>signature_sentence</source>
+                <target>Το προσωπικό του WHAAM</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

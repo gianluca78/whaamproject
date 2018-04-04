@@ -1,0 +1,64 @@
+{% extends '::base_public.html.twig' %}
+
+{% block flags %}
+    {{ include('WHAAMPrivateApplicationSecurityBundle:Security:login_flags.html.twig', { 'locale': app.request.locale }) }}
+{% endblock %}
+
+{% block body %}
+    <div class="Main">
+        <div class="page-container-center">
+            <div class="page-center">
+                <div class="signup-page">
+                    <div class="page-title-container">
+                        <div class="page-title">
+                            <h1>{% trans from "public_interface" %}sign_in{% endtrans %}</h1>
+                        </div>
+                    </div>
+
+                    {% for flashMessage in app.session.flashbag.get('success') %}
+                        <div class="Message Information">{{ flashMessage }}</div>
+                    {% endfor %}
+
+                    <div class="signup-line-toleft"></div>
+
+                    <form action="{{ path('_security_check') }}" class="login-form" method="post">
+                        <div class="BoxContainer yellow">
+                            <div class="Text">
+                                <div class="Sign">
+                                    {% if error %}
+                                    <div class="MessageRequired">
+                                        <ul>
+                                            <li>{{ error.message|trans({}, 'messages') }}</li>
+                                        </ul>
+                                    </div>
+                                    {% endif %}
+
+                                    <label for="_username" class="username"></label>
+                                    <input type="text" id="_username" name="_username" autocomplete="off" value="{{ last_username }}"/>
+                                </div>
+
+                                <div class="Sign">
+                                    <label for="_password" class="password"></label>
+                                    <input type="password" id="_password" name="_password" autocomplete="off"/>
+                                </div>
+
+                                <div style="width:224px; float:left;">
+                                    <input type="checkbox" id="remember_me" name="_remember_me" checked/>
+                                    <label for="remember_me">{% trans from "public_interface" %}remember_me{% endtrans %}</label><br />
+                                    <a href="{{ path('user_forgot_password') }}" style="color:#50ACDF;">{% trans from "public_interface" %}forgot_password{% endtrans %}</a>
+                                </div>
+
+                                <div style="width:194px; float:left; text-align:right; padding:0 15px;">
+                                    <button type="submit" class="Button">{% trans from "public_interface" %}sign_in{% endtrans %}</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div style="height:50px;"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

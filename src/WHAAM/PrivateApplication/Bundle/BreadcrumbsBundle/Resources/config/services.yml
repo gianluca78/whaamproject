@@ -1,0 +1,22 @@
+parameters:
+    whaam_breadcrumbs.class: WHAAM\PrivateApplication\Bundle\BreadcrumbsBundle\Model\Breadcrumbs
+    whaam_breadcrumbs.extension.class: WHAAM\PrivateApplication\Bundle\BreadcrumbsBundle\Twig\BreadcrumbsExtension
+    whaam_breadcrumbs.helper.class: WHAAM\PrivateApplication\Bundle\BreadcrumbsBundle\Template\BreadcrumbsHelper
+
+services:
+    whaam_breadcrumbs:
+        class: %whaam_breadcrumbs.class%
+        arguments: ["@whaam_breadcrumbs.util.yaml_loader", "@router", "@common_util.locale_validator", "@translator.default"]
+    whaam_breadcrumbs.extension:
+        class: %whaam_breadcrumbs.extension.class%
+        arguments: ["@service_container"]
+        tags:
+            - { name: twig.extension }
+    whaam_breadcrumbs.helper:
+        class: %whaam_breadcrumbs.helper.class%
+        arguments: ["@templating", "@whaam_breadcrumbs"]
+        tags:
+            - { name: templating.helper, alias: breadcrumbs }
+    whaam_breadcrumbs.util.yaml_loader:
+        class: WHAAM\PrivateApplication\Bundle\BreadcrumbsBundle\Util\YamlLoader
+        arguments: ["%kernel.root_dir%/../src/WHAAM/PrivateApplication/Bundle/BreadcrumbsBundle/Resources/config/breadcrumbs.yml"]

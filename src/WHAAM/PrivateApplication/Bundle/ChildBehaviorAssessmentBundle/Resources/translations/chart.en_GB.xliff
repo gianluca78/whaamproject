@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>day</source>
+                <target>Day</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>print_chart</source>
+                <target>Print chart</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>download_png_image</source>
+                <target>Download PNG image</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>download_jpeg_image</source>
+                <target>Download JPEG image</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>download_pdf_document</source>
+                <target>Download PDF document</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>download_svg_vector_image</source>
+                <target>Download SVG vector image</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>baseline</source>
+                <target>Baseline</target>
+            </trans-unit>
+            <trans-unit id="8">
+                <source>intervention</source>
+                <target>Intervention</target>
+            </trans-unit>
+            <trans-unit id="9">
+                <source>number_of_frequencies</source>
+                <target>Frequency</target>
+            </trans-unit>
+            <trans-unit id="10">
+                <source>number_of_intervals</source>
+                <target>Duration (seconds)</target>
+            </trans-unit>
+            <trans-unit id="11">
+                <source>note</source>
+                <target>Note</target>
+            </trans-unit>
+            <trans-unit id="12">
+                <source>session</source>
+                <target>Session</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

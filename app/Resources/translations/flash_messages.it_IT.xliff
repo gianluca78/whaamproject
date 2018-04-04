@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>success</source>
+                <target>Successo!</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>user.new.success</source>
+                <target>L'utente è stato creato con successo. Al fine di attivare il tuo account è stata inviata un' e-mail alla casella di posta elettronica indicata durante la registrazione. Il messaggio contiene un link che dovrai cliccare al fine di verificare il tuo indirizzo email e attivare il tuo account</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>child.new.success</source>
+                <target>Il caso è stato creato con successo</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>child.edit.success</source>
+                <target>Il caso è stato modificato con successo</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>child.delete.success</source>
+                <target>Il caso è stato cancellato con successo</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>behavior.new.success</source>
+                <target>Il comportamento è stato creato con successo</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>behavior.edit.success</source>
+                <target>Il comportamento è stato modificato con successo</target>
+            </trans-unit>
+            <trans-unit id="8">
+                <source>behavior.delete.success</source>
+                <target>Il comportamento è stato cancellato con successo</target>
+            </trans-unit>
+            <trans-unit id="9">
+                <source>child_user.edit.success</source>
+                <target>Il ruolo è stato aggiornato con successo</target>
+            </trans-unit>
+            <trans-unit id="10">
+                <source>child.delete.error</source>
+                <target>Non è stato possibile cancellare il caso</target>
+            </trans-unit>
+            <trans-unit id="11">
+                <source>behavior.delete.error</source>
+                <target>Non è stato possibile cancellare il comportamento</target>
+            </trans-unit>
+            <trans-unit id="12">
+                <source>warning</source>
+                <target>Attenzione!</target>
+            </trans-unit>
+            <trans-unit id="13">
+                <source>child_network_role_missing.warning</source>
+                <target>Il tuo ruolo nella rete del bambino non è stato definito.
+                    Per favore, clicca sul link seguente per specificarlo:
+                </target>
+            </trans-unit>
+            <trans-unit id="14">
+                <source>diagnosis.new.success</source>
+                <target>La diagnosi è stata creata con successo</target>
+            </trans-unit>
+            <trans-unit id="15">
+                <source>medication.new.success</source>
+                <target>La terapia medica è stata inserita con successo</target>
+            </trans-unit>
+            <trans-unit id="16">
+                <source>event.new.success</source>
+                <target>L'evento è stato creato con successo</target>
+            </trans-unit>
+            <trans-unit id="17">
+                <source>school_information.new.success</source>
+                <target>L'informazione scolastica è stata inserita con successo</target>
+            </trans-unit>
+            <trans-unit id="18">
+                <source>discipline_referral.new.success</source>
+                <target>Il provvedimento disciplinare è stato inserito con successo</target>
+            </trans-unit>
+            <trans-unit id="19">
+                <source>diagnosis.edit.success</source>
+                <target>La diagnosi è stata aggiornata con successo</target>
+            </trans-unit>
+            <trans-unit id="20">
+                <source>diagnosis.delete.success</source>
+                <target>La diagnosi è stata cancellata con successo</target>
+            </trans-unit>
+            <trans-unit id="21">
+                <source>medication.edit.success</source>
+                <target>La terapia medica è stata modificata con successo</target>
+            </trans-unit>
+            <trans-unit id="22">
+                <source>medication.delete.success</source>
+                <target>La terapia medica è stata cancellata con successo</target>
+            </trans-unit>
+            <trans-unit id="23">
+                <source>general_event.edit.success</source>
+                <target>L'evento è stato modificato con successo</target>
+            </trans-unit>
+            <trans-unit id="24">
+                <source>general_event.delete.success</source>
+                <target>L'evento è stato cancellato con successo</target>
+            </trans-unit>
+            <trans-unit id="25">
+                <source>school_information.edit.success</source>
+                <target>L'informazione scolastica è stata aggiornata con successo</target>
+            </trans-unit>
+            <trans-unit id="26">
+                <source>school_information.delete.success</source>
+                <target>L'informazione scolastica è stata cancellata con successo</target>
+            </trans-unit>
+            <trans-unit id="27">
+                <source>discipline_referral.edit.success</source>
+                <target>Il provvedimento disciplinare è stato aggiornato con successo</target>
+            </trans-unit>
+            <trans-unit id="28">
+                <source>discipline_referral.delete.success</source>
+                <target>Il provvedimento disciplinare è stato cancellato con successo</target>
+            </trans-unit>
+            <trans-unit id="29">
+                <source>baseline.new.success</source>
+                <target>La baseline è stata creata con successo</target>
+            </trans-unit>
+            <trans-unit id="30">
+                <source>function.new.success</source>
+                <target>La funzione è stata creata con successo</target>
+            </trans-unit>
+            <trans-unit id="31">
+                <source>function.edit.success</source>
+                <target>La funzione è stata modificata con successo</target>
+            </trans-unit>
+            <trans-unit id="32">
+                <source>baseline.delete.success</source>
+                <target>La baseline è stata cancellata con successo</target>
+            </trans-unit>
+            <trans-unit id="33">
+                <source>baseline.delete.error</source>
+                <target>Non è stato possibile cancellare la baseline</target>
+            </trans-unit>
+            <trans-unit id="34">
+                <source>intervention.edit.success</source>
+                <target>L'intervento è stato modificato con successo</target>
+            </trans-unit>
+            <trans-unit id="35">
+                <source>intervention.delete.success</source>
+                <target>L'intervento è stato cancellato con successo</target>
+            </trans-unit>
+            <trans-unit id="36">
+                <source>intervention.new.success</source>
+                <target>L'intervento è stato creato con successo</target>
+            </trans-unit>
+            <trans-unit id="37">
+                <source>user.edit.success</source>
+                <target>L'utente è stato modificato con successo</target>
+            </trans-unit>
+            <trans-unit id="38">
+                <source>user.edit_password.success</source>
+                <target>La password dell'utente è stata modificata con successo</target>
+            </trans-unit>
+            <trans-unit id="39">
+                <source>user.forgot_password.success</source>
+                <target>Le istruzioni per ripristinare la tua password sono state inviate al tuo indirizzo di email</target>
+            </trans-unit>
+            <trans-unit id="40">
+                <source>baseline.edit.success</source>
+                <target>La baseline è stata modificata con successo</target>
+            </trans-unit>
+            <trans-unit id="41">
+                <source>function.delete.success</source>
+                <target>La funzione è stata cancellata con successo</target>
+            </trans-unit>
+            <trans-unit id="42">
+                <source>function.delete.error</source>
+                <target>Non è stato possibile cancellare la funzione</target>
+            </trans-unit>
+            <trans-unit id="43">
+                <source>assessment.delete.error</source>
+                <target>Non è possibile cancellare l\'assessmet</target>
+            </trans-unit>
+            <trans-unit id="44">
+                <source>assessment.delete.success</source>
+                <target>L'assessment è stato cancellato con successo</target>
+            </trans-unit>
+            <trans-unit id="45">
+                <source>notification.delete.success</source>
+                <target>La notifica è stata cancellata con successo</target>
+            </trans-unit>
+            <trans-unit id="46">
+                <source>notification.delete.all.success</source>
+                <target>Tutte le notifiche sono state cancellate con successo</target>
+            </trans-unit>
+            <trans-unit id="47">
+                <source>moderation.authorization.error</source>
+                <target>Tu non sei autorizzato a moderare questa richiesta</target>
+            </trans-unit>
+            <trans-unit id="48">
+                <source>moderation.authorization.success</source>
+                <target>Processo di moderazione completato con successo: tu hai approvato la richiesta.</target>
+            </trans-unit>
+            <trans-unit id="49">
+                <source>message.new.success</source>
+                <target>Il messaggio è stato inviato con successo</target>
+            </trans-unit>
+            <trans-unit id="50">
+                <source>message.reply.success</source>
+                <target>La risposta è stata inviata con successo</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

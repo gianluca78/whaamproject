@@ -1,0 +1,53 @@
+{% extends '::base_private.html.twig' %}
+
+{% block breadcrumbs %}
+    {{ render_breadcrumbs() }}
+{% endblock %}
+
+{% block body %}
+
+    {% for flashMessage in app.session.flashbag.get('success') %}
+        <div class="Message Information">{{ flashMessage }}</div>
+    {% endfor %}
+
+    <div class="view-message-page">
+
+        <h2>{% trans from "interface" %}subject{% endtrans %}: {{ message.subject }}</h2>
+
+        <div class="wrapper">
+            <div class="sender-message">
+                <h3>{% trans from "interface" %}from{% endtrans %}: {{ message.sender }}</h3>
+                <h4>{{ message.createdAt | localizeddate('medium', 'short', null) }}</h4>
+                <p>{{ message.content }}</p>
+            </div>
+
+            {% for answer in message.answers %}
+            <div class="responder-message">
+                <h3>{% trans from "interface" %}from{% endtrans %}: {{ answer.sender }}</h3>
+                <h4>{{ answer.createdAt | localizeddate('medium', 'short', null) }}</h4>
+                <p>{{ answer.content }}</p>
+            </div>
+            {% endfor %}
+
+            <div class="clear"></div>
+
+            <div class="new-message">
+                <h2>{% trans from "interface" %}new_answer{% endtrans %}</h2>
+                <div>
+                    <form action="{{ form.vars.action }}" method="post" novalidate="true" {{ form_enctype(form) }}>
+                        {{ form_label(form.base_message.content) }}
+                        {{ form_errors(form.base_message.content) }}
+                        {{ form_widget(form.base_message.content) }}
+
+                        {{ form_row(form.submit) }}
+                        {{ form_widget(form._token) }}
+                    </form>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <div class="clear"></div>
+
+        </div>
+    </div>
+{% endblock %}

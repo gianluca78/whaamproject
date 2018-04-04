@@ -1,0 +1,369 @@
+ChildBehaviorAssessment:
+    ChildBehaviorAssessmentBaseline:
+        edit:
+            my_children: children_list
+            %child_name%: child_view
+            behaviours: behaviors_list
+            %behaviour_name%: behavior_view
+            assessments: child_behavior_assessments_list
+            #assessment summary?
+            Baseline:
+            #baseline period?
+            edit:
+        new:
+            my_children: children_list
+            %child_name%: child_view
+            behaviours: behaviors_list
+            %behaviour_name%: behavior_view
+            assessments: child_behavior_assessments_list
+            #assessment summary?
+            Baseline:
+            #baseline period?
+            new:
+        view:
+            my_children: children_list
+            %child_name%: child_view
+            behaviours: behaviors_list
+            %behaviour_name%: behavior_view
+            assessments: child_behavior_assessments_list
+            #assessment summary?
+            Baseline:
+            #baseline period?
+            view:
+
+    ChildBehaviorAssessment:
+        index:
+            my_children: children_list
+            %child_name%: child_view
+            behaviours: behaviors_list
+            %behaviour_name%: behavior_view
+            assessments: child_behavior_assessments_list
+            #assessment summary?
+            list:
+        new:
+            my_children: children_list
+            %child_name%: child_view
+            behaviours: behaviors_list
+            %behaviour_name%: behavior_view
+            assessments: child_behavior_assessments_list
+            #assessment summary?
+            new:
+        viewAssessmentPlan:
+            my_children: children_list
+            %child_name%: child_view
+            behaviours: behaviors_list
+            %behaviour_name%: behavior_view
+            assessments: child_behavior_assessments_list
+            #assessment summary?
+            plan:
+    ChildBehaviorAssessmentPlan:
+        index:
+            my_children: children_list
+            %child_name%: child_view
+            behaviours: behaviors_list
+            %behaviour_name%: behavior_view
+            assessments: child_behavior_assessments_list
+            #assessment summary?
+            plan:
+        viewAbc:
+            my_children: children_list
+            %child_name%: child_view
+            behaviours: behaviors_list
+            %behaviour_name%: behavior_view
+            assessments: child_behavior_assessments_list
+            %phase_name%: child_behavior_assessment_baseline_view
+            #assessment summary?
+            abcs:
+            list:
+        viewAnalysisDetails:
+            my_children: children_list
+            %child_name%: child_view
+            behaviours: behaviors_list
+            %behaviour_name%: behavior_view
+            assessments: child_behavior_assessments_list
+            evaluation:
+            analysis_details:
+        viewChart:
+            my_children: children_list
+            %child_name%: child_view
+            behaviours: behaviors_list
+            %behaviour_name%: behavior_view
+            assessments: child_behavior_assessments_list
+            %phase_name%: child_behavior_assessment_baseline_view
+            #assessment summary?
+            chart:
+        viewInterventionChart:
+             my_children: children_list
+             %child_name%: child_view
+             behaviours: behaviors_list
+             %behaviour_name%: behavior_view
+             assessments: child_behavior_assessments_list
+             %phase_name%: child_behavior_assessment_intervention_view
+             #assessment summary?
+             chart:
+        viewEvaluationChart:
+            my_children: children_list
+            %child_name%: child_view
+            behaviours: behaviors_list
+            %behaviour_name%: behavior_view
+            assessments: child_behavior_assessments_list
+            #assessment summary?
+            evaluation:
+            chart:
+    ChildBehaviorAssessmentIntervention:
+        edit:
+            my_children: children_list
+            %child_name%: child_view
+            behaviours: behaviors_list
+            %behaviour_name%: behavior_view
+            assessments: child_behavior_assessments_list
+            #assessment summary?
+            Intervention:
+            #intervention period?
+            edit:
+        new:
+            my_children: children_list
+            %child_name%: child_view
+            behaviours: behaviors_list
+            %behaviour_name%: behavior_view
+            assessments: child_behavior_assessments_list
+            #assessment summary?
+            Intervention:
+            new:
+        view:
+            my_children: children_list
+            %child_name%: child_view
+            behaviours: behaviors_list
+            %behaviour_name%: behavior_view
+            assessments: child_behavior_assessments_list
+            #assessment summary?
+            Intervention:
+            #intervention period?
+            view:
+    ChildBehaviorFunction:
+        edit:
+            my_children: children_list
+            %child_name%: child_view
+            behaviours: behaviors_list
+            %behaviour_name%: behavior_view
+            assessments: child_behavior_assessments_list
+            #assessment summary?
+            behavior_function:
+            #%function_category%:
+            edit:
+        new:
+            my_children: children_list
+            %child_name%: child_view
+            behaviours: behaviors_list
+            %behaviour_name%: behavior_view
+            assessments: child_behavior_assessments_list
+            behavior_function:
+            new:
+Child:
+    ChildADHDDiagnosis:
+        edit:
+            my_children: children_list
+            %child_name%: child_view
+            case_data: case_data_list
+            diagnoses:
+            %diagnosis_name%: child_diagnosis_view
+            edit:
+        new:
+            my_children: children_list
+            %child_name%: child_view
+            case_data: case_data_list
+            diagnoses:
+            new:
+        view:
+            my_children: children_list
+            %child_name%: child_view
+            case_data: case_data_list
+            diagnoses:
+            %diagnosis_name%:
+            view:
+    ChildBehavior:
+        edit:
+            my_children: children_list
+            %child_name%: child_view
+            behaviours: behaviors_list
+            %behaviour_name%: behavior_view
+            edit:
+        index:
+            my_children: children_list
+            %child_name%: child_view
+            behaviours: behaviors_list
+            list:
+        new:
+            my_children: children_list
+            %child_name%: child_view
+            behaviours: behaviors_list
+            new:
+        view:
+            my_children: children_list
+            %child_name%: child_view
+            behaviours: behaviors_list
+            %behaviour_name%: behavior_view
+            view:
+    ChildCaseData:
+        index:
+            my_children: children_list
+            %child_name%: child_view
+            case_data:
+    Child:
+        edit:
+            my_children: children_list
+            %child_name%: child_view
+            edit:
+        index:
+            my_children: children_list
+            list:
+        invitation:
+            my_children: children_list
+            %child_name%: child_view
+            invitation:
+        new:
+            my_children: children_list
+            new:
+        view:
+            my_children: children_list
+            %child_name%: child_view
+            view:
+    ChildDisciplineReferral:
+        edit:
+            my_children: children_list
+            %child_name%: child_view
+            case_data: case_data_list
+            discipline_referrals:
+            %discipline_referral_type%: child_discipline_referral_view
+            edit:
+        new:
+            my_children: children_list
+            %child_name%: child_view
+            case_data: case_data_list
+            discipline_referrals:
+            new:
+        view:
+            my_children: children_list
+            %child_name%: child_view
+            case_data: case_data_list
+            discipline_referrals:
+            %discipline_referral_type%:
+            view:
+    ChildGeneralEvent:
+        edit:
+            my_children: children_list
+            %child_name%: child_view
+            case_data: case_data_list
+            other_events:
+            %other_event_description%: child_general_event_view
+            edit:
+        new:
+            my_children: children_list
+            %child_name%: child_view
+            case_data: case_data_list
+            other_events:
+            new:
+        view:
+            my_children: children_list
+            %child_name%: child_view
+            case_data: case_data_list
+            other_events:
+            %other_event_description%:
+            view:
+    ChildMedication:
+        edit:
+            my_children: children_list
+            %child_name%: child_view
+            case_data: case_data_list
+            medications:
+            %medication_name%: child_medication_view
+            edit:
+        new:
+            my_children: children_list
+            %child_name%: child_view
+            case_data: case_data_list
+            medications:
+            new:
+        view:
+            my_children: children_list
+            %child_name%: child_view
+            case_data: case_data_list
+            medications:
+            %medication_name%:
+            view:
+    ChildSchoolInformation:
+        edit:
+            my_children: children_list
+            %child_name%: child_view
+            case_data: case_data_list
+            school:
+            %school_name%: child_school_information_view
+            edit:
+        new:
+            my_children: children_list
+            %child_name%: child_view
+            case_data: case_data_list
+            school:
+            new:
+        view:
+            my_children: children_list
+            %child_name%: child_view
+            case_data: case_data_list
+            school:
+            %school_name%:
+            view:
+    ChildUser:
+        edit:
+            my_children: children_list
+            %child_name%: child_view
+            child_network:
+            edit:
+        index:
+            my_children: children_list
+            %child_name%: child_view
+            child_network:
+            list:
+Notification:
+    Message:
+        answer:
+            messages: message_inbox
+            %message_subject%:
+            answer:
+        inbox:
+            messages: message_inbox
+            inbox:
+        new:
+            messages: message_inbox
+            new:
+        sent:
+            messages: message_inbox
+            sent:
+        view:
+            messages: message_inbox
+            view:
+    Notification:
+        index:
+            notifications: notification_list
+            list:
+Security:
+    Security:
+        login:
+User:
+    User:
+        index:
+            user: user_index
+            %user_name%: user_view
+            list:
+        edit:
+            user: user_index
+            %user_name%: user_view
+            edit:
+        editPassword:
+            user: user_index
+            %user_name%: user_view
+            password:
+            edit:
+        view:
+            user: user_index
+            %user_name%: user_view
+            view:

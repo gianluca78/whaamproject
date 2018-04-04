@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>{% trans from "public_interface" %}sign_up_title{% endtrans %}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="{{ asset('public/css/public_style.css') }}" rel="stylesheet" type="text/css"/>
+    <link rel="shortcut icon" type="image/png" href="{{ asset('public/image/favicon.png') }}"/>
+
+    <body>
+        <div class="Main">
+            <div class="MainContainer">
+                <div id="Header">
+                    <div class="Logo">
+                        <img src="{{ asset('public/image/whaam-logo-135x75.png') }}"
+                             alt="{% trans from "public_interface" %}whaam_logo{% endtrans %}"/>
+                    </div>
+
+                    <div class="Menu">
+                        <ul>
+                            <li>
+                                <a href="https://app.whaamproject.eu/en/index.php">
+                                    {% trans from "public_interface" %}home{% endtrans %}
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://app.whaamproject.eu/en/tour.php">
+                                    {% trans from "public_interface" %}tour{% endtrans %}
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://app.whaamproject.eu/en/adhd_1.php">
+                                    {% trans from "public_interface" %}adhd{% endtrans %}
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://app.whaamproject.eu/en/about-us.php">
+                                    {% trans from "public_interface" %}about_us{% endtrans %}
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://app.whaamproject.eu/en/contact.php">
+                                    {% trans from "public_interface" %}contact_us{% endtrans %}
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="Tool">
+                        <div class="User">
+                            <a href="{{ path('user_new') }}" class="icon-bar icon-bar-sign-up">
+                                {% trans from "public_interface" %}sign_up{% endtrans %}
+                            </a>
+                            <a href="{{ path('_login') }}" class="icon-bar icon-bar-sign-in">
+                                {% trans from "public_interface" %}sign_in{% endtrans %}
+                            </a>
+                        </div>
+                        <div class="Flag">
+                            {% block flags %}{% endblock %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% block body %}{% endblock %}
+
+        <div class="Main">
+            <div class="MainContainer">
+                {{ include('::base_footer.html.twig') }}
+            </div>
+        </div>
+
+        <script src="{{ asset('public/js/vendor/jquery/jquery-1.11.1.min.js') }}" type="text/javascript"></script>
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

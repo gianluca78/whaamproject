@@ -1,0 +1,24 @@
+<form action="{{ form.vars.action }}" method="post" novalidate="true" {{ form_enctype(form) }}>
+    {{ form_row(form.base_phase.startDate) }}
+    {{ form_row(form.base_phase.endDate) }}
+
+    <a id="add-strategy" href="#" data-prototype="{{ form_widget(form.strategies.vars.prototype)|e }}">
+        {% trans from "interface" %}add_strategy{% endtrans %}
+    </a>
+
+    {% for strategy in form.strategies %}
+        {{ form_row(strategy.name) }}
+        {{ form_row(strategy.description) }}
+        {{ form_row(strategy.assignedUsers) }}
+
+        <a id="remove-strategy-{{ loop.index }}" href="#">
+            {{ removeStrategyTranslation }}
+        </a>
+
+    {% endfor %}
+
+    {{ form_row(form.submit) }}
+    {{ form_row(form.countInterventionStrategies) }}
+    {{ form_row(form.removeTranslation, {'value': removeStrategyTranslation }) }}
+    {{ form_widget(form._token) }}
+</form>

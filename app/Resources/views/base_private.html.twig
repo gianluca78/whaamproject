@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{% block title %}{% trans from "interface" %}whaam_application{% endtrans %}{% endblock %}</title>
+    <link href="{{ asset('public/css/private_style.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('public/css/vendor/jquery-growl/jquery.growl.css') }}" rel="stylesheet" type="text/css"/>
+    <link rel="shortcut icon" type="image/png" href="{{ asset('public/image/favicon.png') }}"/>
+    {% block stylesheets %}{% endblock %}
+</head>
+
+<body>
+    <div id="Main">
+        <div id="MainContainer">
+            <div id="Header">
+                <div class="Logo">
+                    <a href="{{ path('children_list') }}"><img src="{{ asset('public/image/whaam-logo-108x60.png') }}" alt="{% trans from "interface" %}whaam_logo{% endtrans %}"
+                        title="{% trans from "interface" %}whaam_logo{% endtrans %}"
+                    /></a>
+                </div>
+                <div class="Tool">
+                    <a href="{{ path('user_index') }}">{{ app.user.username }}</a>
+
+                    <a href="{{ path('user_index') }}" class="icon-bar icon-bar-user" title="{% trans from "interface" %}user_profile{% endtrans %}"></a>
+
+                    {% block icon_help %}
+                    <a href="#" class="icon-bar icon-bar-guide icon-disabled" title="{% trans from "interface" %}help_not_available{% endtrans %}"></a>
+                    {% endblock %}
+
+                    <a href="{{ path('message_inbox') }}" class="icon-bar icon-bar-mail" data-count="0"
+                       title="{% trans from "interface" %}messages{% endtrans %}">
+                    </a>
+
+                    <a href="{{ path('notification_list') }}" class="icon-bar icon-bar-notification" data-count="0"
+                       title="{% trans from "interface" %}notifications{% endtrans %}">
+                    </a>
+
+                    <a href="{{ path('_logout') }}" class="icon-bar icon-bar-logout"
+                       title="{% trans from "interface" %}logout{% endtrans %}">
+                    </a>
+                </div>
+            </div>
+
+            <div id="MenuBar">
+                {% block breadcrumbs %}{% endblock %}
+            </div>
+
+            <div id="MainBody">
+                {% block body %}{% endblock %}
+            </div>
+
+            <div id="translation-new-message" class="not-displayed">{% trans from "interface" %}new_msg{% endtrans %}</div>
+            <div id="translation-new-reply" class="not-displayed">{% trans from "interface" %}new_reply{% endtrans %}</div>
+            <div id="translation-sent-by" class="not-displayed">{% trans from "interface" %}sent_by{% endtrans %}</div>
+
+            {{ include('::base_footer.html.twig') }}
+
+        </div>
+    </div>
+
+    <script src="{{ asset('public/js/vendor/jquery/jquery-1.11.1.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('public/js/vendor/jquery-growl/jquery.growl.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('bundles/whaamprivateapplicationnotification/js/notification.js') }}"></script>
+    <script language="javascript" type="text/javascript">
+        //breadcrumbs
+        $(function(){
+            var w = 20;
+            $(".breadcrumbs div").each(
+                    function()
+                    {
+                        var bcolor = rgbToHex($(this).css("backgroundColor"));
+
+                        var left = $(this).position().left + $(this).outerWidth(true) -1 ;
+                        w+= $(this).outerWidth(true);
+
+                        $(this).parent().append("<div style='position:absolute;width: 0;height: 0;border-style: solid;border-width:16px 0 16px 16px;border-color: transparent transparent transparent "+
+                        bcolor+"; left:"+left+"px;'></div>");
+                    }
+            )
+            $(".breadcrumbs").css("width", w+'px');
+
+
+            function rgbToHex(rgb)
+            {
+                var rgbvals = /rgb\((.+),(.+),(.+)\)/i.exec(rgb);
+                var rval = parseInt(rgbvals[1]);
+                var gval = parseInt(rgbvals[2]);
+                var bval = parseInt(rgbvals[3]);
+                return '#' + (rval.toString(16) +gval.toString(16) +bval.toString(16)).toUpperCase();
+            }
+        });
+
+    </script>
+    {% block javascripts %}{% endblock %}
+</body>
+</html>

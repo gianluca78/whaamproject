@@ -1,0 +1,24 @@
+parameters:
+#    whaam_web_service_child_behavior_assessment.example.class: WHAAM\WebService\Bundle\ChildBehaviorAssessmentBundle\Example
+
+services:
+    whaam_web_service_child_behavior_assessment.util.abc_dto:
+        class: WHAAM\WebService\Bundle\ChildBehaviorAssessmentBundle\Util\ChildBehaviorAssessmentABCDTO
+
+    whaam_web_service_child_behavior_assessment.util.abc_creator:
+        class: WHAAM\WebService\Bundle\ChildBehaviorAssessmentBundle\Util\ChildBehaviorAssessmentABCCreator
+        arguments: [@whaam_web_service_child_behavior_assessment.util.abc_dto, @doctrine.orm.entity_manager, @whaam_web_service_child_behavior_assessment.util.abc_parameters_validator, @common_util.user_data_composer, @common_util.web_service_entity_validator]
+
+    whaam_web_service_child_behavior_assessment.util.abc_parameters_validator:
+        class: WHAAM\WebService\Bundle\ChildBehaviorAssessmentBundle\Util\ABCParametersValidator
+
+    whaam_web_service_child_behavior_assessment.util.observation_session_dto:
+        class: WHAAM\WebService\Bundle\ChildBehaviorAssessmentBundle\Util\ChildBehaviorAssessmentObservationSessionDTO
+
+    whaam_web_service_child_behavior_assessment.util.observation_session_creator:
+        class: WHAAM\WebService\Bundle\ChildBehaviorAssessmentBundle\Util\ChildBehaviorAssessmentObservationSessionCreator
+        arguments: [@whaam_web_service_child_behavior_assessment.util.observation_session_dto, @doctrine.orm.entity_manager, @whaam_web_service_child_behavior_assessment.util.observation_session_parameters_validator, @security.context,  @common_util.user_data_composer, @common_util.web_service_entity_validator]
+
+    whaam_web_service_child_behavior_assessment.util.observation_session_parameters_validator:
+        class: WHAAM\WebService\Bundle\ChildBehaviorAssessmentBundle\Util\ObservationSessionParametersValidator
+

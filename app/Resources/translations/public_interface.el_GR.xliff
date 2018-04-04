@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>home</source>
+                <target>Αρχική</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>tour</source>
+                <target>Περιήγηση</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>adhd</source>
+                <target>ΔΕΠΥ</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>about_us</source>
+                <target>Σχετικά με εμάς</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>contact_us</source>
+                <target>Επικοινωνήστε μαζί μας</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>sign_up_title</source>
+                <target>Εγγραφείτε στην εφαρμογή WHAAM</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>sign_up</source>
+                <target>Εγγραφή</target>
+            </trans-unit>
+            <trans-unit id="8">
+                <source>sign_in</source>
+                <target>Σύνδεση</target>
+            </trans-unit>
+            <trans-unit id="9">
+                <source>remember_me</source>
+                <target>Να με θυμάσαι</target>
+            </trans-unit>
+            <trans-unit id="10">
+                <source>forgot_password</source>
+                <target>Ξέχασα το συνθηματικό μου. Βοήθησέ με!</target>
+            </trans-unit>
+            <trans-unit id="11">
+                <source>forgot_password_message</source>
+                <target>Εισάγετε τη διεύθυνση ηλεκτρονικής αλληλογραφίας. Θα σας αποστείλλουμε ένα σύνδεσμο να επαναορίσετε το συνθηματικό σας</target>
+            </trans-unit>
+            <trans-unit id="12">
+                <source>pwd_recovery</source>
+                <target>Ξέχασα το συνθηματικό</target>
+            </trans-unit>
+            <trans-unit id="13">
+                <source>send_pwd</source>
+                <target>Στείλτε μου ένα σύνδεσμο να επαναορίσω το συνθηματικό μου</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

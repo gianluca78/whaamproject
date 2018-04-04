@@ -1,0 +1,11 @@
+{% set locale_en_class = (locale == 'en_GB') ? 'selected' : null %}
+{% set locale_it_class = (locale == 'it_IT') ? 'selected' : null %}
+{% set locale_gr_class = (locale == 'el_GR') ? 'selected' : null %}
+{% set locale_pt_class = (locale == 'pt_PT') ? 'selected' : null %}
+
+<ul>
+    <li><a class = "{{ locale_en_class }}" href="{{ path('user_new', {'_locale': 'en_GB'}) }}">EN</a></li>
+    <li><a class = "{{ locale_it_class }}" href="{{ path('user_new', {'_locale': 'it_IT'}) }}">IT</a></li>
+    <li><a class = "{{ locale_gr_class }}" href="{{ path('user_new', {'_locale': 'el_GR'}) }}">GR</a></li>
+    <li><a class = "{{ locale_pt_class }}" href="{{ path('user_new', {'_locale': 'pt_PT'}) }}">PT</a></li>
+</ul>

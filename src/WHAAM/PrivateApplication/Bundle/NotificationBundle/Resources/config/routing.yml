@@ -1,0 +1,7 @@
+WhaamPrivateApplicationNotificationBundle_MessageController:
+    resource: "@WHAAMPrivateApplicationNotificationBundle/Controller/MessageController.php"
+    type: annotation
+
+WhaamPrivateApplicationNotificationBundle_NotificationController:
+    resource: "@WHAAMPrivateApplicationNotificationBundle/Controller/NotificationController.php"
+    type: annotation

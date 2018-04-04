@@ -1,0 +1,17 @@
+<html>
+<head></head>
+<body>
+    <p>{% trans from "email_invitation" %}dear_user{% endtrans %},</p>
+    <p>{{ childUserInvitation.senderUser.surnameNameOrUsername }} {% trans from "email_invitation" %}invitation_sentence{% endtrans %}
+        {{ childUserInvitation.child.getSurnameNameOrNickname }} {% trans from "email_invitation" %}within_WHAAM_sentence{% endtrans %}
+    </p>
+    <p>{% trans from "email_invitation" %}whaam_description_sentence{% endtrans %}</p>
+
+    <p>{% trans from "email_invitation" %}register_sentence{% endtrans %}</p>
+
+    <p><a href="{{ url('user_new', {'_locale' : locale } ) }}">{{ url('user_new', {'_locale' : locale } ) }}</a></p>
+
+    <p>{% trans from "email_invitation" %}best_regards{% endtrans %}</p>
+    <p>{% trans from "email_invitation" %}signature_sentence{% endtrans %}</p>
+</body>
+</html>

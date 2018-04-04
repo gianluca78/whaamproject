@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>invalid_salt</source>
+                <target>It is not possible to activate the account, the activation link is incorrect</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>invalid_password_reset</source>
+                <target>It is not possible to reset the password, the reset link is incorrect</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

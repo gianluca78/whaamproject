@@ -1,0 +1,19 @@
+{% extends '::base_form_page.html.twig' %}
+
+{% block javascripts %}
+    <script src="{{ asset('bundles/whaamprivateapplicationchild/js/child-sibling.js') }}"></script>
+{% endblock %}
+
+{% block breadcrumbs %}
+    {{ render_breadcrumbs() }}
+{% endblock %}
+
+{% block formTitle %}{% trans from "interface" %}new{% endtrans %} {% trans from "interface" %}child{% endtrans %}{% endblock %}
+
+{% block formFields %}
+    {{ include('WHAAMPrivateApplicationChildBundle:Child:form.html.twig', {'form' : form}) }}
+{% endblock %}
+
+{% block helpContent %}
+    {{ include('WHAAMPrivateApplicationChildBundle:Child:formHelp.html.twig') }}
+{% endblock %}

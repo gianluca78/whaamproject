@@ -1,0 +1,22 @@
+{% extends '::base_global_errors.html.twig' %}
+
+{% block body %}
+    <div class="Main">
+        <div class="BoxContainer yellow">
+            <div class="Text">
+                <div class="ErrorIcon Icon500">&nbsp;</div>
+                <div class="ErrorTxt">
+                    <h2>{% trans from "interface" %}error_500{% endtrans %}</h2>
+                    <p>{% trans from "interface" %}error_500_description{% endtrans %}</p>
+                    <div style="text-align:right;">
+                        <a class="Button" href="https://app.whaamproject.eu/app/children">
+                            {% trans from "interface" %}go_to_homepage{% endtrans %}
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="height:50px;"></div>
+    </div>
+{% endblock %}

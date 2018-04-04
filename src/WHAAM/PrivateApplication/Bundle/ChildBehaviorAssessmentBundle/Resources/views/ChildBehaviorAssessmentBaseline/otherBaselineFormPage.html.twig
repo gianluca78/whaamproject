@@ -1,0 +1,23 @@
+{% extends '::base_form_page.html.twig' %}
+
+{% block breadcrumbs %}
+    {{ render_breadcrumbs() }}
+{% endblock %}
+
+{% block body %}
+    {% for flashMessage in app.session.flashbag.get('warning-' ~ child.slug) %}
+        <div class="Message Warning">{{ flashMessage|raw }}</div>
+    {% endfor %}
+
+    {{ parent() }}
+{% endblock %}
+
+{% block formTitle %}{{ formTitle }}{% endblock %}
+
+{% block formFields %}
+    {{ include('WHAAMPrivateApplicationChildBehaviorAssessmentBundle:ChildBehaviorAssessmentBaseline:otherBaselineForm.html.twig', {'form' : form}) }}
+{% endblock %}
+
+{% block helpContent %}
+    {{ include('WHAAMPrivateApplicationChildBehaviorAssessmentBundle:ChildBehaviorAssessmentBaseline:otherBaselineFormHelp.html.twig') }}
+{% endblock %}

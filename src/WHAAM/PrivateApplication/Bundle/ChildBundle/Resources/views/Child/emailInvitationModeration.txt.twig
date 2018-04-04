@@ -1,0 +1,18 @@
+{% set first %}{% trans from "email_invitation" %}email_invitation_moderation_first_paragraph{% endtrans %}{% endset %}
+{% set second %}{% trans from "email_invitation" %}email_invitation_moderation_second_paragraph{% endtrans %}{% endset %}
+{% set third %}{% trans from "email_invitation" %}email_invitation_moderation_third_paragraph{% endtrans %}{% endset %}
+{% trans from "email_invitation" %}dear_user{% endtrans %},
+{{ first | format(childUserInvitation.child.getSurnameNameOrNickname,
+childUserInvitation.senderUser.surnameNameOrUsername,
+childUserInvitation.email) }}
+
+{{ second | format(childUserInvitation.email, childUserInvitation.child.getSurnameNameOrNickname) }}
+
+{{ url('moderation_approval', { 'id': childUserInvitationModeration.id }) }}
+
+{{ third | format(childUserInvitation.email) }}
+
+{{ url('moderation_refusal', { 'id': childUserInvitationModeration.id }) }}
+
+{% trans from "email_invitation" %}best_regards{% endtrans %}
+{% trans from "email_invitation" %}signature_sentence{% endtrans %}

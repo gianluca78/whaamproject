@@ -1,0 +1,8 @@
+<form action="{{ form.vars.action }}" method="post" novalidate="true" {{ form_enctype(form) }}>
+    {{ form_row(form.base_phase.startDate) }}
+    {{ form_row(form.base_phase.endDate) }}
+
+    {{ form_row(form.submit) }}
+
+    {{ form_rest(form) }}
+</form>

@@ -1,0 +1,27 @@
+{% extends '::base_form_page.html.twig' %}
+
+{% block breadcrumbs %}
+    {{ render_breadcrumbs() }}
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('bundles/whaamprivateapplicationchildbehaviorassessment/js/child-behavior-assessment-intervention.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+    {% for flashMessage in app.session.flashbag.get('warning-' ~ child.slug) %}
+        <div class="Message Warning">{{ flashMessage|raw }}</div>
+    {% endfor %}
+
+    {{ parent() }}
+{% endblock %}
+
+{% block formTitle %}{{ formTitle }}{% endblock %}
+
+{% block formFields %}
+    {{ include('WHAAMPrivateApplicationChildBehaviorAssessmentBundle:ChildBehaviorAssessmentIntervention:firstInterventionForm.html.twig', {'form' : form}) }}
+{% endblock %}
+
+{% block helpContent %}
+    {{ include('WHAAMPrivateApplicationChildBehaviorAssessmentBundle:ChildBehaviorAssessmentIntervention:firstInterventionFormHelp.html.twig') }}
+{% endblock %}

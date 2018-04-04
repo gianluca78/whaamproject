@@ -1,0 +1,52 @@
+{% extends '::base_private.html.twig' %}
+
+{% block navigation %}
+    {{ include('WHAAMPrivateApplicationChildBundle:Child:menuAllEnabled.html.twig', {'child' : childBehavior.child }) }}
+{% endblock %}
+
+{% block breadcrumbs %}
+    {{ render_breadcrumbs() }}
+{% endblock %}
+
+{% block body %}
+    {% for flashMessage in app.session.flashbag.get('warning-' ~ child.slug) %}
+        <div class="Message Warning">{{ flashMessage|raw }}</div>
+    {% endfor %}
+
+    <div class="view-page">
+        <div class="main-container">
+            <div class="Box">
+                <div class="Box-title"><h1>{% trans from "interface" %}target_behaviour{% endtrans %}</h1></div>
+
+                <div class="Box-table">
+
+                    <div class="Box-table-row">
+                        <div class="CellName"><strong>{% trans from "interface" %}behavior{% endtrans %}:</strong></div>
+                        <div class="CellValue">{{ childBehavior }}</div>
+                    </div>
+
+                    <div class="Box-table-row">
+                        <div class="CellName"><strong>{% trans from "interface" %}description{% endtrans %}:</strong></div>
+                        <div class="CellValue">{{ childBehavior.description }}</div>
+                    </div>
+
+                    <div class="Box-table-row">
+                        <div class="CellName"><strong>{% trans from "interface" %}place{% endtrans %}:</strong></div>
+                        <div class="CellValue">{{ childBehavior.place }}</div>
+                    </div>
+
+                    <div class="Box-table-row">
+                        <div class="CellName"><strong>{% trans from "interface" %}setting{% endtrans %}:</strong></div>
+                        <div class="CellValue">{{ childBehavior.setting }}</div>
+                    </div>
+
+                    <div class="Box-table-row">
+                        <div class="CellName"><strong>{% trans from "interface" %}defined_by{% endtrans %}:</strong></div>
+                        <div class="CellValue">{{ childBehavior.childBehaviorCreatorUser.getSurnameNameOrUsername }} ({{ childBehavior.getRoleChildBehaviorCreatorUser }})</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

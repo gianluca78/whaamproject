@@ -1,0 +1,139 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,600,700);
+
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Raleway', sans-serif;
+    font-size:14px;
+    background-color:#FFF;
+}
+
+.clear{font-size:0px; clear:both; width:100%;}
+
+a img{ border:none; }
+
+.Main{width:100%;clear:both;text-align:center;}
+.MainContainer{width:980px;margin:auto ;  position:relative;	}
+
+#Header{ width:100%; height:75px; padding:15px 0px 35px 0px; display:table; }
+#Header .Logo{ width:150px; height:100%; display:table-cell;  text-align:left;  vertical-align:bottom; }
+#Header .Menu{ width:560px; height:100%; display:table-cell; text-align:left;  vertical-align:bottom;  }
+#Header .Menu ul { list-style:none; margin:auto; padding:0px; }
+#Header .Menu ul  li { float:left; margin:0 25px; }
+#Header .Menu ul  li a { color:#000; font-size:14px; font-weight:600; text-decoration:none; }
+
+#Header .Tool{ width:270px; height:100%; display:table-cell; text-align:right;  vertical-align:bottom; }
+#Header .Tool .User{ width:100%; height:auto; margin: 0;  }
+
+#Header .Tool .Flag{ width:100%; height:auto; margin:10px 0;  text-align:right; position:absolute; top:0px; right:0px;}
+#Header .Tool .Flag ul { list-style:none; margin:auto; padding:0px; float:right; }
+#Header .Tool .Flag ul li { float:left; margin:0 2px; }
+#Header .Tool .Flag ul li a { display:inline-block; color:#FFF; background-color:#000; font-size:11px; font-weight:500; text-decoration:none; padding:2px ; width:15px; text-align:center; }
+#Header .Tool .Flag ul li a:hover { background-color:#1b75bb; }
+#Header .Tool .Flag ul li a.selected{ background-color:#1b75bb; }
+
+#Header .Tool #FlagHide{ display:none; background:#1b75bb; width:66px; padding:5px ;  position:absolute; top:45px; right:0px;-webkit-border-bottom-right-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -moz-border-radius-bottomright: 8px;
+    -moz-border-radius-bottomleft: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px; }
+#Header .Tool  #FlagHide ul { list-style:none; margin:auto; padding:0px; }
+#Header .Tool  #FlagHide ul  li { text-align:left; margin:5px 0px; }
+#Header .Tool #FlagHide ul  li a { color:#FFF; font-size:14px; font-weight:bold; text-decoration:none; }
+#Header .Tool #FlagHide ul  li a img { padding-right:7px; }
+
+/************************************** Tool Icon **************************/
+.icon-bar { display:inline-block; height:23px; padding:5px 5px 5px 33px; background-position:5px center; background-repeat:no-repeat; vertical-align:middle; line-height:27px; text-decoration:none; color:#1b75bb;}
+.icon-bar-sign-up { background-image:url(../image/sign-up.png); }
+.icon-bar-sign-in { background-image:url(../image/sign-in.png); }
+
+
+
+#Footer{ width:980px; height:auto; padding:15px 0px; border:#1b75bb solid 1px; border-left:none; border-right:none; }
+#Footer .Text{ width: 760px; float:left;  padding-right:20px; text-align:right; font-size:12px; color:#034ea1; line-height:18px; }
+#Footer .Logo{ width: 178px; float:left;  border-left:#1b75bb solid 1px; padding-left:20px  }
+#FooterCopy{ color:#606060; padding:10px 0px; }
+#FooterCopy a { color:#606060; text-decoration:none; }
+#FooterCopy img { vertical-align:middle; }
+
+
+
+
+
+
+.page-container-center{ width:100%; clear:both; text-align:center; }
+.page-center { width:978px; margin:auto; }
+
+
+
+.page-title-container { width:100%; }
+.page-title-container .page-title { width:100%; clear:both; background-color:#1b75bb; }
+.page-title-container .page-title h1 { color:#FFF; padding-top:10px;}
+.page-title-container .page-title-menu{ width:100%;  display:table; }
+
+
+a.last-button  { display:inline-block; text-align:center; padding: 10px 20px; margin:0 25px; color:#1b75bb; text-decoration:none; font-size:22px; font-weight:bold;  background:url(../image/button_background.jpg) repeat-x; -webkit-border-radius:20px;-moz-border-radius:20px;border-radius:20px; }
+
+/*********** Contact Page *********************/
+.signup-page { width:100%; text-align:center;}
+.signup-page .signup-line-toleft{ width:100%; height:82px; background:url(../image/line-yellow.png) center center no-repeat;  position:relative;  }
+.signup-page .signup-line-toright{ width:100%; height:82px; background:url(../image/adhd/intervention/line-toright.png) center center no-repeat;  position:relative;  }
+
+.signup-page .page-title-container .page-title { height:50px;}
+.signup-page .page-title-container .page-title  h1 { margin:10px 0 0 0; }
+
+
+.signup-page .SignUpTable{ width:100%; border:none; margin:0px 0px 10px 0px; border-spacing:0px 10px; }
+.signup-page .SignUpTable tr td input[type='text'],.signup-page .SignUpTable tr td input[type='password']
+{ width:96%; border:none; border-bottom:#1B75BB dotted 2px; background-color:transparent; height:25px; font-family:'Raleway', sans-serif; font-size:14px; padding:0 5px; }
+
+.signup-page .SignUpTable tr td select { padding:0 7px; height:25px; }
+.signup-page .SignUpTable tr td.condition { font-weight:normal !important; text-align:center; padding:15px 0; }
+.signup-page .SignUpTable tr td:nth-child(odd) { font-weight:bold; width:30%; }
+.signup-page .SignUpTable tr td:nth-child(even) { width:70%; }
+.SignUpTable ul { padding: 0; }
+.SignUpTable ul li { list-style-type: none; }
+
+.BoxContainer{ width:478px; margin:auto; display:table; overflow:hidden; }
+.BoxContainer > div{ display:table-cell; vertical-align:middle; }
+.BoxContainer > div.Text {  width:458px; padding:15px; text-align:left; }
+.BoxContainer > div.Text h2 { color:#1b75bb; padding:0px; margin:0px 0px 10px 0px; font-size:28px; }
+.BoxContainer > div.Text p { margin:10px 0px; text-align:left; color:#000; }
+.BoxContainer > div.Text a.Button, a.ButtonTeam, button.Button { display:inline-block; padding:10px 25px 10px 10px; margin:7px 7px 7px 0; color:#FFF; font-size:14px; font-weight:600; cursor:pointer; background:url(../image/button-arrow.png) right center #50acdf no-repeat; text-decoration:none; }
+button.Button {border: none; float: right;}
+
+
+.yellow { background-color:#ffdb94; z-index:40; }
+.yellow > div.Icon > div { border-color:#ffdb94; color:#ffdb94; }
+.yellow > div.Triangle  {border-color:transparent transparent transparent #ffdb94 !important; }
+.yellow-border{ border:#ffdb94 solid 5px; }
+
+
+/************************************** Message **************************/
+.MessageRequired ul { min-height: 20px; list-style:none; margin:auto; padding:0px; text-align:center; }
+.MessageRequired ul  li { background-color: #b22b2b; color:white; }
+
+.Message{ width:auto; border:dashed 2px; color:#000; font-size:14px; margin:10px 0px 0px 0px; padding:15px 10px 15px 50px; background-position:10px center; background-repeat:no-repeat; text-align:left; }
+.Message.Error { background-color:#ffd2d2; border-color:#c12727; background-image:url(../icon/message-error.png);  }
+.Message.Warning { background-color:#fcf9e8; border-color:#ffda00; background-image:url(../icon/message-warning.png);  }
+.Message.Information { background-color:#cfeeff; border-color:#1b75bb; background-image:url(../icon/message-information.png); }
+
+/************************************** Error pages *************************/
+div.ErrorIcon { background-color:transparent; background-position:center;  background-repeat:no-repeat; width:166px; height:166px; padding:10px; float:left;}
+div.ErrorTxt { width:262px; float:left;}
+div.ErrorTxt h2{ font-size:32px; color:#1B75BB; padding:0; margin:0; text-align:center; }
+div.ErrorTxt p{ font-size:14px !important; color:#1B75BB !important; text-align:center !important;  }
+div.Icon404{ background-image:url(../image/404.png); }
+div.Icon500{ background-image:url(../image/500.png); }
+
+/************************************** Sign in *****************************/
+.Sign{ clear:both; margin:10px auto; }
+.Sign input[type='text'], .Sign input[type='password'], .Sign input[type='email']{
+    width:350px; border:none; border-bottom:#1B75BB dotted 2px; background-color:transparent; height:25px; font-family:'Raleway', sans-serif; font-size:14px; margin:0 15px;  padding:0 5px;
+}
+.Sign label { display:inline-block; background-color:transparent; background-position:center;  background-repeat:no-repeat;  width:42px; height:36px; padding:0 5px;   }
+
+label.username{  background-image:url(../image/sign-username.png); vertical-align:middle; }
+label.password{  background-image:url(../image/sign-password.png); vertical-align:middle; }
+label.mail{  background-image:url(../image/sign-mail.png); vertical-align:middle; }

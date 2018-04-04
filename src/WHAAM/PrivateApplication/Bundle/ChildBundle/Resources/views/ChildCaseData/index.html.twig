@@ -1,0 +1,314 @@
+{% extends '::base_private.html.twig' %}
+
+{% block stylesheets %}
+    <link href="{{ asset('public/css/vendor/jquery-ui/jquery-ui.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('public/css/vendor/hopscotch/hopscotch.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('public/css/vendor/hopscotch/custom.css') }}" rel="stylesheet" type="text/css"/>
+{% endblock %}
+
+{% block icon_help %}
+    <a href="#" class="icon-bar icon-bar-guide" title="{% trans from "interface" %}get_help{% endtrans %}"></a>
+{% endblock %}
+
+{% block breadcrumbs %}
+    {{ render_breadcrumbs() }}
+{% endblock %}
+
+{% block body %}
+    {% for flashMessage in app.session.flashbag.get('error') %}
+        <div class="Message Error">{{ flashMessage }}</div>
+    {% endfor %}
+
+    {% for flashMessage in app.session.flashbag.get('success') %}
+        <div class="Message Information">{{ flashMessage }}</div>
+    {% endfor %}
+
+    {% for flashMessage in app.session.flashbag.get('warning-' ~ childSlug) %}
+        <div class="Message Warning">{{ flashMessage|raw }}</div>
+    {% endfor %}
+
+    {% set siblingLabel %}{% trans from "interface" %} sibling {% endtrans %}{% endset %}
+    {% set yearOld %}{% trans from "interface" %} year_old {% endtrans %}{% endset %}
+
+    <div class="case-data-page">
+        <div class="BoxContainer">
+            <div class="Box">
+                <div class="boxicon icon-personal">&nbsp;</div>
+                <div class="BoxInner">
+                    <div class="box-title">{% trans from "interface" %}personal_information{% endtrans %}</div>
+                    <div class="box-content">{{ child.getSurnameNameOrNickname }}<br />
+                        {{ "now" | date('Y') - child.yearOfBirth }} {{ yearOld | lower }}<br />
+                        {{ child.siblings | length  }} {{ siblingLabel |transchoice(child.siblings | length) |lower }}
+                    </div>
+                </div>
+            </div>
+
+            <div class="Box">
+                <div class="boxicon icon-adhd">&nbsp;</div>
+                <div class="BoxInner">
+                    <div class="box-title">{% trans from "interface" %}adhd{% endtrans %}</div>
+                    {% if  not child.getLastDiagnosis %}
+                        <div class="box-content">
+                            {% trans from "interface" %}data_not_available{% endtrans %}
+                        </div>
+                    {% endif %}
+                    {% if child.getLastDiagnosis %}
+                        <div class="box-content">{{ child.getLastDiagnosis.getOnsetAge  }} ({% trans from "interface" %}age_of_onset{% endtrans %})
+                            <br />
+                            {{ child.getLastDiagnosis.subtype }} ({% trans from "interface" %}type{% endtrans %})
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="Box">
+                <div class="boxicon icon-school">&nbsp;</div>
+                <div class="BoxInner">
+                    <div class="box-title">{% trans from "interface" %}school{% endtrans %}</div>
+                    {% if  not child.getLastSchoolInformation %}
+                        <div class="box-content">
+                            {% trans from "interface" %}data_not_available{% endtrans %}
+                        </div>
+                    {% endif %}
+                    {% if child.getLastSchoolInformation %}
+                        <div class="box-content">{{ child.getLastSchoolInformation.schoolName  }}<br />
+                            {% trans from "interface" %}school_grade{% endtrans %}: {{ child.getLastSchoolInformation.grade  }}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="Box">
+                <div class="boxicon icon-network">&nbsp;</div>
+                <div class="BoxInner">
+                    <div class="box-title">{% trans from "interface" %}network{% endtrans %}</div>
+                    <div class="box-content">
+                        <a href="{{ path('child_network_list', { 'childSlug': child.slug }) }}" class="case-data-network">{{ childUsers | length }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-main-container">
+
+            <div class="table-container">
+                <div class="table-title"><div class="title">{% trans from "interface" %}diagnoses{% endtrans %}</div>
+                    <div class="button">
+                        <a href="{{ path('child_diagnosis_new', {'childSlug': childSlug }) }}">{% trans from "interface" %}new{% endtrans %}</a>
+                    </div>
+                </div>
+                <div class="table-content">
+                    <table class="tcontent">
+                        <tr>
+                            <th>{% trans from "interface" %}diagnosis_date{% endtrans %}</th>
+                            <th>{% trans from "interface" %}subtype{% endtrans %}</th>
+                            <th>{% trans from "interface" %}age_of_onset{% endtrans %}</th>
+                            <th>{% trans from "interface" %}comorbidity{% endtrans %}</th>
+                            <th></th>
+                        </tr>
+
+                        {% for diagnosis in diagnoses %}
+                            <tr>
+                                <td>{{ diagnosis.diagnosisDate | localizeddate('medium', 'none', null) }}</td>
+                                <td>{{ diagnosis.subtype }}</td>
+                                <td>{{ diagnosis.onsetAge }}</td>
+                                <td>
+                                    <ul class="list-style-none">
+                                        {% for comorbidity in diagnosis.comorbidities %}
+                                            <li>{{ comorbidity }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                </td>
+                                <td class="border-none">
+                                    <a href="{{ path('child_diagnosis_view', { 'id': diagnosis.id }) }}" class="icon-tool icon-tool-search" ></a>
+                                    <a href="{{ path('child_diagnosis_edit', { 'id': diagnosis.id }) }}" class="icon-tool icon-tool-edit" ></a>
+                                    <a href="{{ path('child_diagnosis_delete', { 'id': diagnosis.id }) }}" class="icon-tool icon-tool-delete" ></a>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+            </div>
+
+            <div class="table-container">
+                <div class="table-title"><div class="title">{% trans from "interface" %}medications{% endtrans %}</div>
+                    <div class="button">
+                        <a href="{{ path('child_medication_new', {'childSlug': childSlug }) }}">{% trans from "interface" %}new{% endtrans %}</a>
+                    </div>
+                </div>
+                <div class="table-content">
+                    <table class="tcontent">
+                        <tr>
+                            <th>{% trans from "interface" %}start_date{% endtrans %}</th>
+                            <th>{% trans from "interface" %}end_date{% endtrans %}</th>
+                            <th>{% trans from "interface" %}medication{% endtrans %}</th>
+                            <th>{% trans from "interface" %}dosage{% endtrans %}</th>
+                            <th>{% trans from "interface" %}frequency{% endtrans %}</th>
+                            <th></th>
+                        </tr>
+
+                        {% for medication in medications %}
+                            {% set stillInUseLabel %}{% trans from "interface" %}still_in_use{% endtrans %}{% endset %}
+                            {% set endDateLabel = (medication.endDate) ? medication.endDate | localizeddate('medium', 'none', null) : stillInUseLabel %}
+                            <tr>
+                                <td>{{ medication.startDate | localizeddate('medium', 'none', null) }}</td>
+                                <td>{{ endDateLabel }}</td>
+                                <td>{{ medication.name }}</td>
+                                <td>{{ medication.dosage }}</td>
+                                <td>{{ medication.frequency }}</td>
+                                <td class="border-none">
+                                    <a href="{{ path('child_medication_view', { 'id': medication.id }) }}" class="icon-tool icon-tool-search" ></a>
+                                    <a href="{{ path('child_medication_edit', { 'id': medication.id }) }}" class="icon-tool icon-tool-edit" ></a>
+                                    <a href="{{ path('child_medication_delete', { 'id': medication.id }) }}" class="icon-tool icon-tool-delete" ></a>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+            </div>
+
+            <div class="table-container">
+                <div class="table-title"><div class="title">{% trans from "interface" %}school_information{% endtrans %}</div>
+                    <div class="button"><a href="{{ path('child_school_information_new', {'childSlug': childSlug }) }}">{% trans from "interface" %}new{% endtrans %}</a></div>
+                </div>
+                <div class="table-content">
+                    <table class="tcontent">
+                        <tr>
+                            <th>{% trans from "interface" %}school_year{% endtrans %}</th>
+                            <th>{% trans from "interface" %}school_name{% endtrans %}</th>
+                            <th>{% trans from "interface" %}school_grade{% endtrans %}</th>
+                            <th></th>
+                        </tr>
+
+                        {% for schoolInformation in schoolsInformation %}
+                            <tr>
+                                <td>{{ schoolInformation.year }}</td>
+                                <td>{{ schoolInformation.schoolName }}</td>
+                                <td>{{ schoolInformation.grade }}</td>
+                                <td class="border-none">
+                                    <a href="{{ path('child_school_information_view', { 'id': schoolInformation.id }) }}" class="icon-tool icon-tool-search" ></a>
+                                    <a href="{{ path('child_school_information_edit', { 'id': schoolInformation.id }) }}" class="icon-tool icon-tool-edit" ></a>
+                                    <a href="{{ path('child_school_information_delete', { 'id': schoolInformation.id }) }}" class="icon-tool icon-tool-delete" ></a>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+            </div>
+
+            <div class="table-container">
+                <div class="table-title"><div class="title">{% trans from "interface" %}discipline_referrals{% endtrans %}</div>
+                    <div class="button"><a href="{{ path('child_discipline_referral_new', {'childSlug': childSlug }) }}">{% trans from "interface" %}new{% endtrans %}</a></div>
+                </div>
+                <div class="table-content">
+                    <table class="tcontent">
+                        <tr>
+                            <th>{% trans from "interface" %}date{% endtrans %}</th>
+                            <th>{% trans from "interface" %}discipline_referral{% endtrans %}</th>
+                            <th>{% trans from "interface" %}motivation{% endtrans %}</th>
+                            <th></th>
+                        </tr>
+
+                        {% for disciplineReferral in disciplineReferrals %}
+                            <tr>
+                                <td>{{ disciplineReferral.date | localizeddate('medium', 'none', null) }}</td>
+                                <td>{{ disciplineReferral.disciplineReferralType }}</td>
+                                <td>{{ disciplineReferral.motivation }}</td>
+                                <td class="border-none">
+                                    <a href="{{ path('child_discipline_referral_view', { 'id': disciplineReferral.id }) }}" class="icon-tool icon-tool-search" ></a>
+                                    <a href="{{ path('child_discipline_referral_edit', { 'id': disciplineReferral.id }) }}" class="icon-tool icon-tool-edit" ></a>
+                                    <a href="{{ path('child_discipline_referral_delete', { 'id': disciplineReferral.id }) }}" class="icon-tool icon-tool-delete" ></a>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+            </div>
+
+            <div class="table-container">
+                <div class="table-title"><div class="title">{% trans from "interface" %}other_events{% endtrans %}</div>
+                    <div class="button"><a href="{{ path('child_general_event_new', {'childSlug': childSlug }) }}">{% trans from "interface" %}new{% endtrans %}</a></div>
+                </div>
+                <div class="table-content">
+                    <table class="tcontent">
+                        <tr>
+                            <th>{% trans from "interface" %}date{% endtrans %}</th>
+                            <th>{% trans from "interface" %}description{% endtrans %}</th>
+                            <th></th>
+                        </tr>
+
+                        {% for generalEvent in generalEvents %}
+                            <tr>
+                                <td>{{ generalEvent.date | localizeddate('medium', 'none', null) }}</td>
+                                <td>{{ generalEvent.description }}</td>
+                                <td class="border-none">
+                                    <a href="{{ path('child_general_event_view', { 'id': generalEvent.id }) }}" class="icon-tool icon-tool-search" ></a>
+                                    <a href="{{ path('child_general_event_edit', { 'id': generalEvent.id }) }}" class="icon-tool icon-tool-edit" ></a>
+                                    <a href="{{ path('child_general_event_delete', { 'id': generalEvent.id }) }}" class="icon-tool icon-tool-delete" ></a>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="dialog-confirm" class="not-displayed" title="{% trans from "interface" %}delete{% endtrans %} record">
+        <p>{% trans from "interface" %}delete_record{% endtrans %}</p>
+    </div>
+
+{% endblock %}
+
+{% block javascripts %}
+
+    <script>
+        username = '{{ app.user.username }}';
+        tourContents = [
+            ['{% trans from "interface" %}case_data{% endtrans %}', '{% trans from "interface" %}tour_case_data_intro{% endtrans %}' +
+            '<ol>' +
+            '<li>{% trans from "interface" %}diagnoses{% endtrans %}</li>' +
+            '<li>{% trans from "interface" %}medications{% endtrans %}</li>' +
+            '<li>{% trans from "interface" %}school_information{% endtrans %}</li>' +
+            '<li>{% trans from "interface" %}discipline_referrals{% endtrans %}</li>' +
+            '<li>{% trans from "interface" %}other_events{% endtrans %}</li>' +
+            '</ol>' +
+            '{% trans from "interface" %}tour_case_data_end{% endtrans %}'
+            ],
+            ['{% trans from "interface" %}tour_title_case_data_summary{% endtrans %}', '{% trans from "interface" %}tour_case_data_summary_end{% endtrans %}']
+        ];
+
+        //activate the tour on menu icon click
+        $( ".icon-bar-guide" ).click(function(e) {
+            e.preventDefault();
+            hopscotch.startTour(tour);
+        });
+
+        $(".icon-tool-delete").click(function(e) {
+            e.preventDefault();
+
+            redirectUrl = $(this).attr('href');
+
+            $("#dialog-confirm").dialog({
+                resizable: false,
+                height:220,
+                modal: true,
+                buttons: {
+                    "{% trans from "interface" %}delete{% endtrans %}": function() {
+                        $(this).dialog("close");
+                        window.location.href = redirectUrl;
+
+                    },
+                    "{% trans from "interface" %}cancel{% endtrans %}": function() {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+        });
+    </script>
+
+    <script src="{{ asset('public/js/vendor/jquery-ui/jquery-ui.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('bundles/whaamprivateapplicationchild/js/child-case-data-tour.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('public/js/vendor/hopscotch/hopscotch.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('public/js/vendor/hopscotch/translation-' ~ app.request.locale ~  '.js') }}" type="text/javascript"></script>
+{% endblock %}

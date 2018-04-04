@@ -1,0 +1,4 @@
+Administrator|διαχειριστής|Amministratore|Administrador|ROLE_ADMIN
+Moderator|μεσολαβητής|Moderatore|Mediador|ROLE_MODERATOR
+User|Χρήστης|Utente|Usuário|ROLE_USER
+Super Admin|Σούπερ Διαχειριστής|Super Amministratore|Super Administrador|ROLE_SUPER_ADMIN

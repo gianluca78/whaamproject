@@ -1,0 +1,21 @@
+{% set backgroundColors = ['#a0e2f9', '#c7d7ff', '#ffd96e'] %}
+
+{% for label, url in breadcrumbs %}
+    {% if loop.first %}
+    <div class="breadcrumbs">
+    {% endif %}
+
+    {% if loop.index <= (loop.length - 1) %}
+    <div style="background-color:{{ cycle(backgroundColors, loop.index) }};"><a href="{{ url }}">{{ label }}</a></div>
+    {% endif %}
+
+    {% if loop.index0 == (loop.length - 1) %}
+    </div>
+    {% endif %}
+
+    {% if loop.last %}
+        <div class="title">
+            <h1>{{ label }}</h1>
+        </div>
+    {% endif %}
+{% endfor %}

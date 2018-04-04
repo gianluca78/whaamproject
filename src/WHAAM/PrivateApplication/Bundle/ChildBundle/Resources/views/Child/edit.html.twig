@@ -1,0 +1,27 @@
+{% extends '::base_form_page.html.twig' %}
+
+{% block javascripts %}
+    <script src="{{ asset('bundles/whaamprivateapplicationchild/js/child-sibling.js') }}"></script>
+{% endblock %}
+
+{% block breadcrumbs %}
+    {{ render_breadcrumbs() }}
+{% endblock %}
+
+{% block body %}
+    {% for flashMessage in app.session.flashbag.get('warning-' ~ child.slug) %}
+        <div class="Message Warning">{{ flashMessage|raw }}</div>
+    {% endfor %}
+
+    {{ parent() }}
+{% endblock %}
+
+{% block formTitle %}{% trans from "interface" %}edit{% endtrans %} {% trans from "interface" %}child{% endtrans %}{% endblock %}
+
+{% block formFields %}
+    {{ include('WHAAMPrivateApplicationChildBundle:Child:formEdit.html.twig', {'form' : form}) }}
+{% endblock %}
+
+{% block helpContent %}
+    {{ include('WHAAMPrivateApplicationChildBundle:Child:formHelp.html.twig') }}
+{% endblock %}

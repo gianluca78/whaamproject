@@ -1,0 +1,18 @@
+{% extends '::base_private.html.twig' %}
+
+{% block breadcrumbs %}
+    {{ render_breadcrumbs() }}
+{% endblock %}
+
+{% block body %}
+    {% for flashMessage in app.session.flashbag.get('success') %}
+        <div class="Message Information">{{ flashMessage }}</div>
+    {% endfor %}
+
+    <div class="account-page">
+        <a href="{{ path('user_edit') }}" class="account-icon edit-profile">{% trans from "interface" %}user_edit_profile{% endtrans %}</a>
+        <a href="{{ path('user_edit_password') }}" class="account-icon edit-password">{% trans from "interface" %}user_edit_password{% endtrans %}</a>
+        <a href="{{ path('user_view') }}" class="account-icon view-profile">{% trans from "interface" %}user_view_profile{% endtrans %}</a>
+    </div>
+
+{% endblock %}

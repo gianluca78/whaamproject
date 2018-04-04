@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>success</source>
+                <target>Ολοκλήρωση!</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>user.new.success</source>
+                <target>Ολοκληρώθηκε η δημιουργία χρήστη</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>child.new.success</source>
+                <target>Ολοκληρώθηκε η δημιουργία παιδιο</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>child.edit.success</source>
+                <target>Ολοκληρώθηκε η μετατροπή παιδιού</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>child.delete.success</source>
+                <target>Ολοκληρώθηκε η διαγραφή παιδιού</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>behavior.new.success</source>
+                <target>Ολοκληρώθηκε η δημιουργία συμπεριφοράς</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>behavior.edit.success</source>
+                <target>Ολοκληρώθηκε η μετατροπή συμπεριφοράς</target>
+            </trans-unit>
+            <trans-unit id="8">
+                <source>behavior.delete.success</source>
+                <target>Ολοκληρώθηκε η διαγραφή συμπεριφοράς</target>
+            </trans-unit>
+            <trans-unit id="9">
+                <source>child_user.edit.success</source>
+                <target>Ολοκληρώθηκε η ανανέωση του ρόλου</target>
+            </trans-unit>
+            <trans-unit id="10">
+                <source>child.delete.error</source>
+                <target>Η διαγραφή του αρχείου του παιδιού δεν είναι εφικτή</target>
+            </trans-unit>
+            <trans-unit id="11">
+                <source>behavior.delete.error</source>
+                <target>Η διαγραφή της συμπεριφοράς δεν είναι εφικτή</target>
+            </trans-unit>
+            <trans-unit id="12">
+                <source>warning</source>
+                <target>Προειδοποίηση!</target>
+            </trans-unit>
+            <trans-unit id="13">
+                <source>child_network_role_missing.warning</source>
+                <target>Ο ρόλος σας στο δίκτυο του παιδιού δεν εχει καθοριστεί. Πατήστε παρακάτω για να τον ορίσετε:</target>
+            </trans-unit>
+            <trans-unit id="14">
+                <source>diagnosis.new.success</source>
+                <target>Ολοκληρώθηκε η δημιουργία της διάγνωσης</target>
+            </trans-unit>
+            <trans-unit id="15">
+                <source>medication.new.success</source>
+                <target>Ολοκληρώθηκε η δημιουργία της φαρμακευτικής αγωγής</target>
+            </trans-unit>
+            <trans-unit id="16">
+                <source>event.new.success</source>
+                <target>Ολοκληρώθηκε η δημιουργία συμβάντος</target>
+            </trans-unit>
+            <trans-unit id="17">
+                <source>school_information.new.success</source>
+                <target>Ολοκληρώθηκε η δημιουργία σχολικής πληροφορίας</target>
+            </trans-unit>
+            <trans-unit id="18">
+                <source>discipline_referral.new.success</source>
+                <target>Ολοκληρώθηκε η δημιουργία πειθαρχικής παραπομπής</target>
+            </trans-unit>
+            <trans-unit id="19">
+                <source>diagnosis.edit.success</source>
+                <target>Επιτυχής ενημέρωση της διάγνωσης</target>
+            </trans-unit>
+            <trans-unit id="20">
+                <source>diagnosis.delete.success</source>
+                <target>Επιτυχής διαγραφή της διάγνωσης</target>
+            </trans-unit>
+            <trans-unit id="21">
+                <source>medication.edit.success</source>
+                <target>Επιτυχής ενημέρωση της φαρμακευτικής αγωγής</target>
+            </trans-unit>
+            <trans-unit id="22">
+                <source>medication.delete.success</source>
+                <target>Επιτυχής διαγραφή της φαρμακευτικής αγωγής</target>
+            </trans-unit>
+            <trans-unit id="23">
+                <source>general_event.edit.success</source>
+                <target>Επιτυχής ενημέρωση συμβάντος</target>
+            </trans-unit>
+            <trans-unit id="24">
+                <source>general_event.delete.success</source>
+                <target>Επιτυχής διαγραφή συμβάντος</target>
+            </trans-unit>
+            <trans-unit id="25">
+                <source>school_information.edit.success</source>
+                <target>Επιτυχής ενημέρωση σχολικής πληροφορίας</target>
+            </trans-unit>
+            <trans-unit id="26">
+                <source>school_information.delete.success</source>
+                <target>Επιτυχής διαγραφή σχολικής πληροφορίας</target>
+            </trans-unit>
+            <trans-unit id="27">
+                <source>discipline_referral.edit.success</source>
+                <target>Επιτυχής ενημέρωση πειθαρχικής παραπομπής</target>
+            </trans-unit>
+            <trans-unit id="28">
+                <source>discipline_referral.delete.success</source>
+                <target>Επιτυχής διαγραφή πειθαρχικής παραπομπής</target>
+            </trans-unit>
+            <trans-unit id="29">
+                <source>baseline.new.success</source>
+                <target>Επιτυχής δημιουργία έναρξης</target>
+            </trans-unit>
+            <trans-unit id="30">
+                <source>function.new.success</source>
+                <target>Επιτυχής δημιουργία λειτουργίας</target>
+            </trans-unit>
+            <trans-unit id="31">
+                <source>function.edit.success</source>
+                <target>Επιτυχής μετατροπή λειτουργίας</target>
+            </trans-unit>
+            <trans-unit id="32">
+                <source>baseline.delete.success</source>
+                <target>Επιτυχής διαγραφή αρχικής κατάσταση</target>
+            </trans-unit>
+            <trans-unit id="33">
+                <source>baseline.delete.error</source>
+                <target>Δεν είναι δυνατή η διαγραφή της αρχικής κατάστασης</target>
+            </trans-unit>
+            <trans-unit id="34">
+                <source>intervention.edit.success</source>
+                <target>Επιτυχής μετατροπή παρέμβασης</target>
+            </trans-unit>
+            <trans-unit id="35">
+                <source>intervention.delete.success</source>
+                <target>Επιτυχής διαγραφή παρέμβασης</target>
+            </trans-unit>
+            <trans-unit id="36">
+                <source>intervention.new.success</source>
+                <target>Επιτυχής δημιουργία παρέμβασης</target>
+            </trans-unit>
+            <trans-unit id="37">
+                <source>user.edit.success</source>
+                <target>Επιτυχής μετατροπή χρήστη</target>
+            </trans-unit>
+            <trans-unit id="38">
+                <source>user.edit_password.success</source>
+                <target>Επιτυχής μετατροπή συνθηματικού (password) χρήστη</target>
+            </trans-unit>
+            <trans-unit id="39">
+                <source>user.forgot_password.success</source>
+                <target>Οι οδηγίες για την επαναφορά του συνθηματικού (password) έχει σταλεί στην ηλεκτρονική σας διεύθυνση</target>
+            </trans-unit>
+            <trans-unit id="40">
+                <source>baseline.edit.success</source>
+                <target>Επιτυχής τροποποίηση της αρχικής κατάστασης</target>
+            </trans-unit>
+            <trans-unit id="41">
+                <source>function.delete.success</source>
+                <target>Επιτυχής διαγραφή λειτουργίας</target>
+            </trans-unit>
+            <trans-unit id="42">
+                <source>function.delete.error</source>
+                <target>Η διαγραφή της λειτουργίας δεν είναι εφικτή</target>
+            </trans-unit>
+            <trans-unit id="43">
+                <source>assessment.delete.error</source>
+                <target>Δεν είναι δυνατή η διαγραφή της εκτίμηση</target>
+            </trans-unit>
+            <trans-unit id="44">
+                <source>assessment.delete.success</source>
+                <target>Επιτυχής διαγραφή της εκτίμησης</target>
+            </trans-unit>
+            <trans-unit id="45">
+                <source>notification.delete.success</source>
+                <target>Επιτυχής διαγραφή της ειδοποίηση</target>
+            </trans-unit>
+            <trans-unit id="46">
+                <source>notification.delete.all.success</source>
+                <target>Επιτυχής διαγραφή όλων των ειδοποιήσεων</target>
+            </trans-unit>
+            <trans-unit id="47">
+                <source>moderation.authorization.error</source>
+                <target>Έλλειψη αδειοδότησης για τη διαμεσολάβηση του αιτήματος</target>
+            </trans-unit>
+            <trans-unit id="48">
+                <source>moderation.authorization.success</source>
+                <target>Επιτυχής ολοκλήρωσης της διαδικασίας διαμεσολάβησης: το αίτημα έχει εγκριθεί</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,335 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>surname.label</source>
+                <target>Surname</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>name.label</source>
+                <target>Name</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>date_of_birth.label</source>
+                <target>Date of birth</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>username.label</source>
+                <target>Username</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>password.label</source>
+                <target>Password</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>password_repeat.label</source>
+                <target>Repeat password</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>email.label</source>
+                <target>Email</target>
+            </trans-unit>
+            <trans-unit id="8">
+                <source>sex.label</source>
+                <target>Sex</target>
+            </trans-unit>
+            <trans-unit id="9">
+                <source>sex_empty_value.label</source>
+                <target>-- Sex --</target>
+            </trans-unit>
+            <trans-unit id="10">
+                <source>year_empty_value.label</source>
+                <target>-- Year --</target>
+            </trans-unit>
+            <trans-unit id="11">
+                <source>month_empty_value.label</source>
+                <target>-- Month --</target>
+            </trans-unit>
+            <trans-unit id="12">
+                <source>day_empty_value.label</source>
+                <target>-- Day --</target>
+            </trans-unit>
+            <trans-unit id="13">
+                <source>nation.label</source>
+                <target>Nation</target>
+            </trans-unit>
+            <trans-unit id="14">
+                <source>nation_empty_value.label</source>
+                <target>-- Nation --</target>
+            </trans-unit>
+            <trans-unit id="15">
+                <source>role.label</source>
+                <target>Role</target>
+            </trans-unit>
+            <trans-unit id="16">
+                <source>role_empty_value.label</source>
+                <target>-- Role --</target>
+            </trans-unit>
+            <trans-unit id="17">
+                <source>hp_clients_age_range.label</source>
+                <target>Clients age range</target>
+            </trans-unit>
+            <trans-unit id="18">
+                <source>hp_specialties.label</source>
+                <target>Specialties</target>
+            </trans-unit>
+            <trans-unit id="19">
+                <source>hp_treatment_approaches.label</source>
+                <target>Treatment approach</target>
+            </trans-unit>
+            <trans-unit id="20">
+                <source>hp_treatment_modalities.label</source>
+                <target>Treatment modalities</target>
+            </trans-unit>
+            <trans-unit id="21">
+                <source>terms_acceptance.label</source>
+                <target>I have read and understood the WHAAM application terms and conditions</target>
+            </trans-unit>
+            <trans-unit id="22">
+                <source>nickname.label</source>
+                <target>Nickname</target>
+            </trans-unit>
+            <trans-unit id="23">
+                <source>behavior.label</source>
+                <target>Behaviour</target>
+            </trans-unit>
+            <trans-unit id="24">
+                <source>description.label</source>
+                <target>Description</target>
+            </trans-unit>
+            <trans-unit id="25">
+                <source>place.label</source>
+                <target>Place</target>
+            </trans-unit>
+            <trans-unit id="26">
+                <source>setting.label</source>
+                <target>Setting</target>
+            </trans-unit>
+            <trans-unit id="27">
+                <source>save.label</source>
+                <target>Save</target>
+            </trans-unit>
+            <trans-unit id="28">
+                <source>register.label</source>
+                <target>Register</target>
+            </trans-unit>
+            <trans-unit id="29">
+                <source>is_health_professional.label</source>
+                <target>Health Professional</target>
+            </trans-unit>
+            <trans-unit id="30">
+                <source>date_of_diagnosis.label</source>
+                <target>Diagnosis date</target>
+            </trans-unit>
+            <trans-unit id="31">
+                <source>age_of_onset.label</source>
+                <target>Age of onset</target>
+            </trans-unit>
+            <trans-unit id="32">
+                <source>subtype.label</source>
+                <target>Subtype</target>
+            </trans-unit>
+            <trans-unit id="33">
+                <source>subtype_empty_value.label</source>
+                <target>-- Subtype --</target>
+            </trans-unit>
+            <trans-unit id="34">
+                <source>is_adhd_secondary.label</source>
+                <target>ADHD is secondary to another medical condition</target>
+            </trans-unit>
+            <trans-unit id="35">
+                <source>comorbidity.label</source>
+                <target>Comorbid disorders</target>
+            </trans-unit>
+            <trans-unit id="36">
+                <source>comorbidity_empty_value.label</source>
+                <target>-- Comorbid disorders --</target>
+            </trans-unit>
+            <trans-unit id="37">
+                <source>medication.label</source>
+                <target>Medication</target>
+            </trans-unit>
+            <trans-unit id="38">
+                <source>dosage.label</source>
+                <target>Dosage</target>
+            </trans-unit>
+            <trans-unit id="39">
+                <source>date_of_medication.label</source>
+                <target>Date of medication</target>
+            </trans-unit>
+            <trans-unit id="40">
+                <source>date_of_event.label</source>
+                <target>Date of event</target>
+            </trans-unit>
+            <trans-unit id="41">
+                <source>event_description.label</source>
+                <target>Description of event</target>
+            </trans-unit>
+            <trans-unit id="42">
+                <source>school_date.label</source>
+                <target>School year</target>
+            </trans-unit>
+            <trans-unit id="43">
+                <source>school_name.label</source>
+                <target>School name</target>
+            </trans-unit>
+            <trans-unit id="44">
+                <source>school_grade.label</source>
+                <target>Grade</target>
+            </trans-unit>
+            <trans-unit id="45">
+                <source>has_special_need_support.label</source>
+                <target>Has a special need support teacher</target>
+            </trans-unit>
+            <trans-unit id="46">
+                <source>has_iep.label</source>
+                <target>Has an Individual Education Plan</target>
+            </trans-unit>
+            <trans-unit id="47">
+                <source>date_of_discipline_referral.label</source>
+                <target>Date of discipline referral</target>
+            </trans-unit>
+            <trans-unit id="48">
+                <source>discipline_referral.label</source>
+                <target>Typology of discipline referral</target>
+            </trans-unit>
+            <trans-unit id="49">
+                <source>discipline_referral_value.label</source>
+                <target>-- Discipline referral type --</target>
+            </trans-unit>
+            <trans-unit id="50">
+                <source>motivation.label</source>
+                <target>Referral description</target>
+            </trans-unit>
+            <trans-unit id="51">
+                <source>year_of_birth.label</source>
+                <target>Year of birth</target>
+            </trans-unit>
+            <trans-unit id="52">
+                <source>send.label</source>
+                <target>Send</target>
+            </trans-unit>
+            <trans-unit id="53">
+                <source>diagnosis.label</source>
+                <target>Diagnosis</target>
+            </trans-unit>
+            <trans-unit id="54">
+                <source>date.label</source>
+                <target>Date</target>
+            </trans-unit>
+            <trans-unit id="55">
+                <source>start_date.label</source>
+                <target>Start date</target>
+            </trans-unit>
+            <trans-unit id="56">
+                <source>end_date.label</source>
+                <target>End date</target>
+            </trans-unit>
+            <trans-unit id="57">
+                <source>minimum_number_of_observations.label</source>
+                <target>Minimum number of observations</target>
+            </trans-unit>
+            <trans-unit id="58">
+                <source>observation_length.label</source>
+                <target>Observation length in minutes</target>
+            </trans-unit>
+            <trans-unit id="59">
+                <source>observation_type.label</source>
+                <target>Observation type</target>
+            </trans-unit>
+            <trans-unit id="60">
+                <source>abc_users.label</source>
+                <target>People allowed to take ABCs</target>
+            </trans-unit>
+            <trans-unit id="61">
+                <source>behavior_when.label</source>
+                <target>When</target>
+            </trans-unit>
+            <trans-unit id="62">
+                <source>behavior_function.label</source>
+                <target>Behaviour function</target>
+            </trans-unit>
+            <trans-unit id="63">
+                <source>behavior_function_empty_value.label</source>
+                <target>-- Behaviour function --</target>
+            </trans-unit>
+            <trans-unit id="64">
+                <source>note.label</source>
+                <target>Note</target>
+            </trans-unit>
+            <trans-unit id="65">
+                <source>observer.label</source>
+                <target>Observer</target>
+            </trans-unit>
+            <trans-unit id="66">
+                <source>observer_empty_value.label</source>
+                <target>- Observer -</target>
+            </trans-unit>
+            <trans-unit id="67">
+                <source>strategies.label</source>
+                <target>Strategies</target>
+            </trans-unit>
+            <trans-unit id="68">
+                <source>assign_to.label</source>
+                <target>Assign to</target>
+            </trans-unit>
+            <trans-unit id="69">
+                <source>assign_to_empty_value.label</source>
+                <target>-- Assign to --</target>
+            </trans-unit>
+            <trans-unit id="70">
+                <source>other_nation.label</source>
+                <target>Please specify the nationality</target>
+            </trans-unit>
+            <trans-unit id="71">
+                <source>school_date.placeholder</source>
+                <target>use the date format: yyyy-yy</target>
+            </trans-unit>
+            <trans-unit id="72">
+                <source>observation_type_empty_value.label</source>
+                <target>- Observation type -</target>
+            </trans-unit>
+            <trans-unit id="73">
+                <source>observation_type_frequency.option</source>
+                <target>Frequency</target>
+            </trans-unit>
+            <trans-unit id="74">
+                <source>observation_type_duration.option</source>
+                <target>Duration</target>
+            </trans-unit>
+            <trans-unit id="75">
+                <source>message_child.label</source>
+                <target>Child</target>
+            </trans-unit>
+            <trans-unit id="76">
+                <source>message_child_empty_value.label</source>
+                <target>-- Child --</target>
+            </trans-unit>
+            <trans-unit id="77">
+                <source>message_child_user_value.label</source>
+                <target>Recipients</target>
+            </trans-unit>
+            <trans-unit id="78">
+                <source>message_subject.label</source>
+                <target>Subject</target>
+            </trans-unit>
+            <trans-unit id="79">
+                <source>message_content.label</source>
+                <target>Message</target>
+            </trans-unit>
+            <trans-unit id="80">
+                <source>behavior_empty_value.label</source>
+                <target>-- Behaviour --</target>
+            </trans-unit>
+            <trans-unit id="81">
+                <source>behavior_category.label</source>
+                <target>Behaviour category</target>
+            </trans-unit>
+            <trans-unit id="82">
+                <source>behavior_category_empty_value.label</source>
+                <target>-- Behaviour category --</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

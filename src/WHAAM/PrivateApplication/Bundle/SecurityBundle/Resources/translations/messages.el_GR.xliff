@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>The presented password cannot be empty.</source>
+                <target>Παρακαλώ εισάγετε συνθηματικό</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>The presented password is invalid.</source>
+                <target>Το συνθηματικό δεν είναι έγκυρο</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>Bad credentials</source>
+                <target>Ανεπαρκή στοιχεία</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>User account is disabled.</source>
+                <target>Ο λογαριασμός χρήστη έχει απενεργοποιηθεί
+                </target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

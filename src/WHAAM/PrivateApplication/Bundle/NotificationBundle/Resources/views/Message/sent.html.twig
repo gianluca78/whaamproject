@@ -1,0 +1,45 @@
+{% extends '::base_private.html.twig' %}
+
+{% block breadcrumbs %}
+    {{ render_breadcrumbs() }}
+{% endblock %}
+
+{% block body %}
+
+    {% for flashMessage in app.session.flashbag.get('success') %}
+        <div class="Message Information">{{ flashMessage }}</div>
+    {% endfor %}
+
+    <div class="inbox-page">
+        <div class="table-main-container">
+            <div class="table-container">
+                <div class="table-title">
+                    <div class="button">
+                        <a href="{{ path('message_sent') }}" class="btn-inbox">{% trans from "interface" %}inbox{% endtrans %}</a>
+                        <a href="{{ path('message_new') }}" class="btn-new-message">{% trans from "interface" %}new_msg{% endtrans %}</a>
+                    </div>
+                </div>
+
+                <div class="table-content">
+                    <table class="tcontent">
+                        <tbody>
+                        <tr>
+                            <th>{% trans from "interface" %}recipients{% endtrans %}</th>
+                            <th>{% trans from "interface" %}subject{% endtrans %}</th>
+                            <th>{% trans from "interface" %}date{% endtrans %}</th>
+                        </tr>
+
+                        {% for message in messages %}
+                            <tr>
+                                <td>{{ message.recipientUsers | join('; ') }}</td>
+                                <td><a href="{{ path('message_view', { 'slug': message.slug } ) }}">{{ message.subject }}</a></td>
+                                <td>{{ message.createdAt | localizeddate('medium', 'short', null) }}</td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,60 @@
+{% extends '::base_form_page.html.twig' %}
+
+{% block breadcrumbs %}
+    {{ render_breadcrumbs() }}
+{% endblock %}
+
+{% block formTitle %}
+    New Message
+{% endblock %}
+
+{% block formFields %}
+    {{ include('WHAAMPrivateApplicationNotificationBundle:Message:form.html.twig', { 'form': form }) }}
+{% endblock %}
+
+{% block helpContent %}
+    {{ include('WHAAMPrivateApplicationNotificationBundle:Message:formHelp.html.twig') }}
+{% endblock %}
+
+{% block stylesheets %}
+    <link href="{{ asset('public/css/vendor/chosen/chosen.css') }}" rel="stylesheet" type="text/css"/>
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('public/js/vendor/chosen/chosen.jquery.min.js') }}" type="text/javascript"></script>
+    <script>
+        $("#message_recipientUsers").chosen({
+            placeholder_text_multiple: "{% trans from "interface" %}chosen_placeholder_text_multiple{% endtrans %}",
+            placeholder_text_single: "{% trans from "interface" %}chosen_placeholder_text_single{% endtrans %}",
+            no_results_text: "{% trans from "interface" %}chosen_no_results_text{% endtrans %}",
+            width: "95%"
+        });
+
+        $( "#message_child" ).change(function() {
+            if ($(this).val()) {
+                $.ajax({
+                    type: "POST",
+                    url: "/app_dev.php/children/network-data",
+                    data: { 'id': $(this).val() }
+                })
+                        .success(function (data, textStatus, jqXHR) {
+                            $('#message_recipientUsers option').remove();
+
+                            users = $.parseJSON(data);
+
+                            for(i = 0; i < users.length; i++) {
+                                $('#message_recipientUsers').append("<option value='" + users[i].id + "'>" + users[i].user + "</option>");
+                            }
+
+                            $('#message_recipientUsers').trigger("chosen:updated");
+                        })
+                        .error(function (xhr, ajaxOptions, thrownError) {
+                            console.log(thrownError);
+                        })
+            } else {
+                $('#message_recipientUsers option').remove();
+                $('#message_recipientUsers').trigger("chosen:updated");
+            }
+        });
+    </script>
+{% endblock %}

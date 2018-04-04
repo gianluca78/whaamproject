@@ -1,0 +1,55 @@
+parameters:
+#    whaam_private_application_user.example.class: WHAAM\PrivateApplication\Bundle\UserBundle\Example
+
+services:
+    whaam_user.form.type.user_edit:
+        class: WHAAM\PrivateApplication\Bundle\UserBundle\Form\Type\UserEditType
+        tags:
+            - { name: form.type, alias: user_edit }
+
+    whaam_user.form.type.user_edit_password:
+        class: WHAAM\PrivateApplication\Bundle\UserBundle\Form\Type\UserPasswordEditType
+        tags:
+            - { name: form.type, alias: user_edit_password }
+
+    whaam_user.form.type.user_email:
+        class: WHAAM\PrivateApplication\Bundle\UserBundle\Form\Type\EmailType
+        tags:
+            - { name: form.type, alias: user_email }
+
+    whaam_user.form.type.user:
+        class: WHAAM\PrivateApplication\Bundle\UserBundle\Form\Type\UserType
+        tags:
+            - { name: form.type, alias: user }
+
+    whaam_user.form.handler.user_edit_form_handler:
+        class: WHAAM\PrivateApplication\Bundle\UserBundle\Form\Handler\UserEditFormHandler
+        arguments: [@doctrine.orm.entity_manager, @session, @translator.default]
+
+    whaam_user.form.handler.user_edit_password_form_handler:
+        class: WHAAM\PrivateApplication\Bundle\UserBundle\Form\Handler\UserEditPasswordFormHandler
+        arguments: [@security.encoder_factory, @doctrine.orm.entity_manager, @session, @translator.default]
+
+    whaam_user.form.handler.user_forgot_password_form_handler:
+        class: WHAAM\PrivateApplication\Bundle\UserBundle\Form\Handler\UserForgotPasswordFormHandler
+        arguments: [@doctrine.orm.entity_manager, @whaam_user.util.email_forgot_password, @session, @translator.default, @whaam_user.util.user_manager]
+
+    whaam_user.form.handler.user_form_handler:
+        class: WHAAM\PrivateApplication\Bundle\UserBundle\Form\Handler\UserFormHandler
+        arguments: [@security.encoder_factory, @doctrine.orm.entity_manager, @session, @translator.default, @common_security.encoder.open_ssl_encoder]
+
+    whaam_user.util.email_account_activation:
+        class: WHAAM\PrivateApplication\Bundle\UserBundle\Util\EmailAccountActivation
+        arguments: [@mailer, @translator.default, @templating]
+
+    whaam_user.util.email_forgot_password:
+        class: WHAAM\PrivateApplication\Bundle\UserBundle\Util\EmailForgotPassword
+        arguments: [@mailer, @translator.default, @templating]
+
+    whaam_user.util.email_new_password:
+        class: WHAAM\PrivateApplication\Bundle\UserBundle\Util\EmailNewPassword
+        arguments: [@mailer, @translator.default, @templating]
+
+    whaam_user.util.user_manager:
+        class: WHAAM\PrivateApplication\Bundle\UserBundle\Util\UserManager
+        arguments: [@security.encoder_factory, @doctrine.orm.entity_manager]

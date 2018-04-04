@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>email.success</source>
+                <target>Η ηλεκτρονική αλληλογραφία πρόσκλησης έχει σταλεί επιτυχώς</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>email.error</source>
+                <target>Προέκυψε ενα λάθος κατά την αποστολή της πρόσκλησης μέσω ηλεκτρονικού ταχυδρομείου. Παρακαλούμε προσπαθήστε ξανά.</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>dear_user</source>
+                <target>Αγαπητέ χρήστη</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>invitation_sentence</source>
+                <target>σας προσκάλεσε να συμμετάσχετε στο δίκτυο του/της</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>within_WHAAM_sentence</source>
+                <target>στην εφαρμογή WHAAM</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>login_sentence</source>
+                <target>Συνδεθείτε στην εφαρμογή WHAAM για να συνεργαστείτε με το δίκτυο του παιδιού.</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>best_regards</source>
+                <target>Χαιρετισμούς,</target>
+            </trans-unit>
+            <trans-unit id="8">
+                <source>signature_sentence</source>
+                <target>Το προσωπικό του WHAAM</target>
+            </trans-unit>
+            <trans-unit id="9">
+                <source>whaam_description_sentence</source>
+                <target>Η εφαρμογή WHAAM είναι προσβάσιμη μέσα απο ηλεκτρονικούς υπολογιστές και κινητές συσκευές, επιτρέποντας σε δασκάλους, γονείς και επαγγελματίες υγείας να παρακολουθούν και να στηρίζουν συμπεριφορές παιδιών με ΔΕΠΥ </target>
+            </trans-unit>
+            <trans-unit id="10">
+                <source>register_sentence</source>
+                <target>Για την εγγραφή σας στην εφαρμογή WHAAM επισκεφθείτε την παρακάτω διεύθυνση ή επικολλήστε την στον φυλλομετρητή σας: </target>
+            </trans-unit>
+            <trans-unit id="11">
+                <source>email_invitation_moderation_subject</source>
+                <target>Αίτημα για εποπτεία</target>
+            </trans-unit>
+            <trans-unit id="12">
+                <source>email_invitation_moderation_first_paragraph</source>
+                <target>Χρειαζόμαστε τη βοήθειά σας! Είστε το άτομο που εισήγαγε το παιδί %s, έχετε την ευθύνη να αποφασίσετε ποιός θα συμμετέχει στο εικονικό δίκτυο WHAAM καθώς και ποιός θα μπορεί να βλέπει τα δεδομένα του παιδιού. Ο/Η %s έχει προσκαλέσει τον/την %s να συμμετάσχει στο δίκτυο αλλά δεν έχει γονική συναίνεση ή κάτι ισοδύναμο αυτής. Συνεπώς, ανατίθεται σε εσάς η ευθύνη αν θα επιτραπεί η αποστολή του αιτήματος</target>
+            </trans-unit>
+            <trans-unit id="13">
+                <source>email_invitation_moderation_second_paragraph</source>
+                <target>Αν πιστεύετε οτι ο/η %s μπορεί να προσκληθεί να συμμετάσχει στο δίκτυο του/της %s πατήστε στον ακόλουθο σύνδεσμο ή επικολλήστε το στο φυλλομετρητή σας</target>
+            </trans-unit>
+            <trans-unit id="14">
+                <source>email_invitation_moderation_third_paragraph</source>
+                <target>Εναλλακτικά, παρακαλώ πατήστε στον ακόλουθο σύνδεσο ή επικολλήστε τον στο φυλλομετρητή σας έτσι ώστε να ενημερώσετε τον/την %s οτι το αίτημα του έχει απορριφθεί.</target>
+            </trans-unit>
+            <trans-unit id="15">
+                <source>email_moderation.success</source>
+                <target>Το αίτημά σας έχει αποσταλλεί επιτυχώς σε κάποιο/α διαμεσολαβητή καθώς δε διαθέτετε γονική συναίνεση ή κάτι ισοδύναμο αυτής. Αν η πρόσκλησή σας γίνει αποδεκτή, θα λάβετε ένα επιβεβαιωτικό μήνυμα ηλεκτρονικής αλληλογραφίας</target>
+            </trans-unit>
+            <trans-unit id="16">
+                <source>email_moderation_approved_subject</source>
+                <target>Η πρόσκλησή σας έγινε δεκτή!</target>
+            </trans-unit>
+            <trans-unit id="17">
+                <source>email_moderation_approved_sentence</source>
+                <target>Το αίτημά σας για πρόσκληση του/της %s να συμμετάσχει στο δίκτυο του/της έχει γίνει δεκτό και ένα ηλεκτρονικό μήνυμα ειδοποίησης θα αποσταλλεί σε αυτόν/η.</target>
+            </trans-unit>
+            <trans-unit id="18">
+                <source>email_moderation_refused_subject</source>
+                <target>Η πρόσκλησή σας έχει απορριφθεί!</target>
+            </trans-unit>
+            <trans-unit id="19">
+                <source>email_moderation_refused_sentence</source>
+                <target>Λυπούμαστε αλλά το αίτημά σας για πρόσκληση του/της για να συμμετάσχει στο δίκτυο του/της έχει απορριφθεί. Αν επιθυμείτε να μάθετε περισσότερα, παρακαλώ επικοινωνήστε με το χρήστη που εισήγαγε το παιδί στην εφαρμογή WHAAM.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

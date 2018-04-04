@@ -1,0 +1,6 @@
+{% set first %}{% trans from "email_invitation" %}email_moderation_approved_sentence{% endtrans %}{% endset %}
+{% trans from "email_invitation" %}dear_user{% endtrans %},
+{{ first | format(childUserInvitation.email, childUserInvitation.child.getSurnameNameOrNickname) }}
+
+{% trans from "email_invitation" %}best_regards{% endtrans %}
+{% trans from "email_invitation" %}signature_sentence{% endtrans %}

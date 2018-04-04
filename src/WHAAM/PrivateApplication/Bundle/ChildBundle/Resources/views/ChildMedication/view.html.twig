@@ -1,0 +1,69 @@
+{% extends '::base_private.html.twig' %}
+
+{% block navigation %}
+    {{ include('WHAAMPrivateApplicationChildBundle:Child:menuAllEnabled.html.twig', {'child' : child}) }}
+{% endblock %}
+
+{% block breadcrumbs %}
+    {{ render_breadcrumbs() }}
+{% endblock %}
+
+{% block body %}
+    {% for flashMessage in app.session.flashbag.get('error') %}
+        <div class="Message Error">{{ flashMessage }}</div>
+    {% endfor %}
+
+    {% for flashMessage in app.session.flashbag.get('success') %}
+        <div class="Message Information">{{ flashMessage }}</div>
+    {% endfor %}
+
+    {% for flashMessage in app.session.flashbag.get('warning-' ~ child.slug) %}
+        <div class="Message Warning">{{ flashMessage|raw }}</div>
+    {% endfor %}
+
+    <div class="view-page">
+        <div class="main-container">
+            <div class="Box">
+                <div class="Box-title"><h1>{% trans from "interface" %}medication{% endtrans %}</h1></div>
+
+                <div class="Box-table">
+                    <div class="Box-table-row">
+                        <div class="CellName"><strong>{% trans from "interface" %}medication{% endtrans %}:</strong></div>
+                        <div class="CellValue">{{ childMedication.name  }}</div>
+                    </div>
+                </div>
+
+                <div class="Box-table">
+                    <div class="Box-table-row">
+                        <div class="CellName"><strong>{% trans from "interface" %}dosage{% endtrans %}:</strong></div>
+                        <div class="CellValue">{{ childMedication.dosage }}</div>
+                    </div>
+                </div>
+
+                <div class="Box-table">
+                    <div class="Box-table-row">
+                        <div class="CellName"><strong>{% trans from "interface" %}frequency{% endtrans %}:</strong></div>
+                        <div class="CellValue">{{ childMedication.frequency }}</div>
+                    </div>
+                </div>
+
+                <div class="Box-table">
+                    <div class="Box-table-row">
+                        <div class="CellName"><strong>{% trans from "interface" %}start_date{% endtrans %}:</strong></div>
+                        <div class="CellValue">{{ childMedication.startDate | localizeddate('medium', 'none', null) }}</div>
+                    </div>
+                </div>
+
+                {% set stillInUseLabel %}{% trans from "interface" %}still_in_use{% endtrans %}{% endset %}
+                {% set endDateLabel = (childMedication.endDate) ? childMedication.endDate | localizeddate('medium', 'none', null) : stillInUseLabel %}
+
+                <div class="Box-table">
+                    <div class="Box-table-row">
+                        <div class="CellName"><strong>{% trans from "interface" %}end_date{% endtrans %}:</strong></div>
+                        <div class="CellValue">{{ endDateLabel }}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

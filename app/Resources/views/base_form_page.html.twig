@@ -1,0 +1,19 @@
+{% extends '::base_private.html.twig' %}
+
+{% block body %}
+    <div class="form-page">
+    <div class="form-container">
+        <div class="form">
+            <div class="form-title"><h1>{% block formTitle %}{% endblock %}</h1></div>
+            {% block formFields %}{% endblock %}
+        </div>
+    </div>
+
+    <div class="form-container">
+        <div class="help">
+            <div class="help-icon"></div>
+            {% block helpContent %}{% endblock %}
+        </div>
+    </div>
+</div>
+{% endblock %}

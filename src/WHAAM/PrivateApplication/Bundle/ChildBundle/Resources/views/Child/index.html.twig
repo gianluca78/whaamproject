@@ -1,0 +1,188 @@
+{% extends '::base_private.html.twig' %}
+
+{% block breadcrumbs %}
+    {{ render_breadcrumbs() }}
+{% endblock %}
+
+{% block stylesheets %}
+    <link href="{{ asset('public/css/vendor/jquery-ui/jquery-ui.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('public/css/vendor/hopscotch/hopscotch.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('public/css/vendor/hopscotch/custom.css') }}" rel="stylesheet" type="text/css"/>
+{% endblock %}
+
+{% block icon_help %}
+    <a href="#" class="icon-bar icon-bar-guide" title="{% trans from "interface" %}get_help{% endtrans %}"></a>
+{% endblock %}
+
+{% block body %}
+    {% for flashMessage in app.session.flashbag.get('error') %}
+        <div class="Message Error">{{ flashMessage }}</div>
+    {% endfor %}
+
+    {% for flashMessage in app.session.flashbag.get('success') %}
+        <div class="Message Information">{{ flashMessage }}</div>
+    {% endfor %}
+
+    <div id="ButtonContainer">
+        <a href="{{ path('child_new') }}" class="add-button add-children" title="{% trans from "interface" %}new{% endtrans %}">{% trans from "interface" %}new{% endtrans %}</a>
+    </div>
+
+    <table class="TableContent">
+        {% set maleAvatars = ['placeholder-boy-01',
+        'placeholder-boy-02',
+        'placeholder-boy-03',
+        'placeholder-boy-04',
+        'placeholder-boy-05',
+        'placeholder-boy-06']
+        %}
+
+        {% set femaleAvatars = ['placeholder-girl-01',
+        'placeholder-girl-02',
+        'placeholder-girl-03',
+        'placeholder-girl-04',
+        'placeholder-girl-05',
+        'placeholder-girl-06']
+        %}
+
+        {% for child in children %}
+            {% set classPlaceholder = '' %}
+            {% set loggedChildUser = child.childUser(app.user) %}
+
+            {% set sibling_label %}{% trans from "interface" %} sibling {% endtrans %}{% endset %}
+
+            {% if child.sex.id == 1 %}
+                {% set classPlaceholder = cycle(maleAvatars, loop.index) %}
+            {% else %}
+                {% set classPlaceholder = cycle(femaleAvatars, loop.index) %}
+            {% endif %}
+
+            <tr>
+                <td>
+                    <div class="PlaceHolderContainer {{ classPlaceholder }}"></div>
+                </td>
+                <td>
+                    <div class="Content">
+                        <h2>{{ child.nickname }}</h2>
+
+                        {% if child.surnameOrName %}
+                            <h3><strong>{% trans from "interface" %}name{% endtrans %}: </strong> {{ child.surnameOrName }}</h3>
+                        {% endif %}
+                        <h3><strong>{% trans from "interface" %}year_old{% endtrans %}: </strong> {{ child.countYearsOld }}</h3>
+                        <h3><strong>{% trans from "interface" %}sex{% endtrans %}: </strong> {{ child.sex }}</h3>
+                        <h3><strong>{{ sibling_label |transchoice(child.siblings | length) | capitalize }}: </strong>
+                            {{ child.siblings | length  }}
+                        </h3>
+
+                        <div class="ToolContainer">
+                            <a href="{{ path('child_view', { 'slug': child.slug }) }}" class="icon-tool icon-tool-search"
+                               title="{% trans from "interface" %}view{% endtrans %}"></a>
+                            <a href="{{ path('child_edit', { 'slug': child.slug }) }}" class="icon-tool icon-tool-edit"
+                               title="{% trans from "interface" %}edit{% endtrans %}"></a>
+                            <a href="{{ path('child_delete', { 'slug': child.slug }) }}" class="icon-tool icon-tool-delete"
+                               title="{% trans from "interface" %}delete{% endtrans %}"></a>
+                        </div>
+                    </div>
+                </td>
+                <td class="Borderleft">
+                    <a href="{{ path('case_data_list', {'childSlug': child.slug}) }}" class="goto goto-casedata"
+                       title="{% trans from "interface" %}case_data{% endtrans %}">
+                        {% trans from "interface" %}case_data{% endtrans %}
+                    </a>
+                </td>
+                <td class="Borderleft">
+                    <a href="{{ path('behaviors_list', {'childSlug': child.slug}) }}" class="goto goto-behaviours"
+                       title="{% trans from "interface" %}behaviours{% endtrans %}">
+                        {% trans from "interface" %}behaviours{% endtrans %}
+                    </a>
+                </td>
+                <td class="Borderleft">
+                    <a href="{{ path('child_network_list', {'childSlug': child.slug}) }}" class="goto goto-network"
+                       title="{% trans from "interface" %}child_network{% endtrans %}">
+                        {% trans from "interface" %}child_network{% endtrans %}
+                    </a>
+                </td>
+                <td class="Borderleft">
+                    <a href="{{ path('invitation', {'childSlug': child.slug}) }}" class="goto goto-invitation"
+                       title="{% trans from "interface" %}invitation{% endtrans %}">
+                        {% trans from "interface" %}invitation{% endtrans %}
+                    </a>
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    {% set child_label %}{% trans from "interface" %} child {% endtrans %}{% endset %}
+
+    <div id="dialog-confirm" title="{% trans from "interface" %}delete{% endtrans %} {{ child_label | lower }}" class="not-displayed">
+        <p>{% trans from "interface" %}delete_child_alert{% endtrans %}</p>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    <script>
+        username = '{{ app.user.username }}';
+        tourContents = [
+            ['{% trans from "interface" %}tour_title_welcome{% endtrans %}',
+             '{% trans from "interface" %}tour_content_welcome{% endtrans %}'
+            ],
+            ['{% trans from "interface" %}tour_title_toolbar{% endtrans %}',
+             '{% trans from "interface" %}tour_content_toolbar_intro{% endtrans %} <ul class=\'tour-lists\'>' +
+                '<li><img src=\'{{ asset('public/icon/user.png') }}\'/> {% trans from "interface" %}tour_content_toolbar_user_profile{% endtrans %}</li>' +
+                '<li><img src=\'{{ asset('public/icon/guide.png') }}\'/> {% trans from "interface" %}tour_content_toolbar_guide{% endtrans %}</li>' +
+                '<li><img src=\'{{ asset('public/icon/mail.png') }}\'/> {% trans from "interface" %}tour_content_toolbar_mail{% endtrans %}</li>' +
+                '<li><img src=\'{{ asset('public/icon/notification.png') }}\'/> {% trans from "interface" %}tour_content_toolbar_notification{% endtrans %}</li>' +
+                '<li><img src=\'{{ asset('public/icon/logout.png') }}\'/> {% trans from "interface" %}tour_content_toolbar_logout{% endtrans %}</li>' +
+                '</ul>'
+            ],
+            ['{% trans from "interface" %}tour_title_breadcrumbs{% endtrans %}',
+             '{% trans from "interface" %}tour_content_breadcrumbs{% endtrans %}'
+            ],
+            ['{% trans from "interface" %}tour_title_child_button_new{% endtrans %}',
+             '{% trans from "interface" %}tour_content_child_button_new{% endtrans %}'
+            ],
+            ['{% trans from "interface" %}tour_title_child_data{% endtrans %}',
+             '{% trans from "interface" %}tour_content_child_data{% endtrans %}'
+            ],
+            ['{% trans from "interface" %}tour_title_toolbar_child{% endtrans %}', '{% trans from "interface" %}tour_content_toolbar_child_intro{% endtrans %} <ul class=\'tour-lists\'>' +
+                '<li><img src=\'{{ asset('public/icon/tool-search.png') }}\'/> {% trans from "interface" %}tour_content_toolbar_child_search{% endtrans %}</li>' +
+                '<li><img src=\'{{ asset('public/icon/tool-edit.png') }}\'/> {% trans from "interface" %}tour_content_toolbar_child_edit{% endtrans %}</li>' +
+                '<li><img src=\'{{ asset('public/icon/tool-delete.png') }}\'/> {% trans from "interface" %}tour_content_toolbar_child_delete{% endtrans %}</li>' +
+                '</ul>'],
+            ['{% trans from "interface" %}case_data{% endtrans %}', '{% trans from "interface" %}tour_content_case_data{% endtrans %}'],
+            ['{% trans from "interface" %}behaviours{% endtrans %}', '{% trans from "interface" %}tour_content_behaviour{% endtrans %}'],
+            ['{% trans from "interface" %}child_network{% endtrans %}', '{% trans from "interface" %}tour_content_child_network{% endtrans %}'],
+            ['{% trans from "interface" %}invitation{% endtrans %}', '{% trans from "interface" %}tour_content_invitation{% endtrans %}']
+        ];
+
+        //activate the tour on menu icon click
+        $( ".icon-bar-guide" ).click(function(e) {
+            e.preventDefault();
+            hopscotch.startTour(tour);
+        });
+
+        $(".icon-tool-delete").click(function(e) {
+            e.preventDefault();
+
+            redirectUrl = $(this).attr('href');
+
+            $("#dialog-confirm").dialog({
+                resizable: false,
+                height:220,
+                modal: true,
+                buttons: {
+                    "{% trans from "interface" %}delete{% endtrans %}": function() {
+                        $(this).dialog("close");
+                        window.location.href= redirectUrl;
+                    },
+                    "{% trans from "interface" %}cancel{% endtrans %}": function() {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+        });
+    </script>
+    <script src="{{ asset('public/js/vendor/jquery-ui/jquery-ui.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('bundles/whaamprivateapplicationchild/js/child-tour.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('public/js/vendor/hopscotch/hopscotch.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('public/js/vendor/hopscotch/translation-' ~ app.request.locale ~  '.js') }}" type="text/javascript"></script>
+{% endblock %}

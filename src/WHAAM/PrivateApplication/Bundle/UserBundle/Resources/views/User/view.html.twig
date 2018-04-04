@@ -1,0 +1,99 @@
+{% extends '::base_private.html.twig' %}
+
+{% block breadcrumbs %}
+    {{ render_breadcrumbs() }}
+{% endblock %}
+
+{% block body %}
+    <div class="view-page">
+        <div class="main-container">
+            <div class="Box">
+                <div class="Box-title"><h1>{% trans from "interface" %}user{% endtrans %}</h1></div>
+
+                <div class="Box-table">
+
+                    <div class="Box-table-row">
+                        <div class="CellName"><strong>{% trans from "interface" %}surname{% endtrans %}:</strong></div>
+                        <div class="CellValue">{{ user.surname }}</div>
+                    </div>
+
+                    <div class="Box-table-row">
+                        <div class="CellName"><strong>{% trans from "interface" %}name{% endtrans %}:</strong></div>
+                        <div class="CellValue">{{ user.name }}</div>
+                    </div>
+
+                    <div class="Box-table-row">
+                        <div class="CellName"><strong>{% trans from "interface" %}username{% endtrans %}:</strong></div>
+                        <div class="CellValue">{{ user.username }}</div>
+                    </div>
+
+                    <div class="Box-table-row">
+                        <div class="CellName"><strong>{% trans from "interface" %}email{% endtrans %}:</strong></div>
+                        <div class="CellValue">{{ user.email }}</div>
+                    </div>
+
+                    <div class="Box-table-row">
+                        <div class="CellName"><strong>{% trans from "interface" %}sex{% endtrans %}:</strong></div>
+                        <div class="CellValue">{{ user.sex }}</div>
+                    </div>
+
+                    <div class="Box-table-row">
+                        <div class="CellName"><strong>{% trans from "interface" %}date_of_birth{% endtrans %}:</strong></div>
+                        <div class="CellValue">{{ user.dateOfBirth | localizeddate('medium', 'none', null) }}</div>
+                    </div>
+
+                    <div class="Box-table-row">
+                        <div class="CellName"><strong>{% trans from "interface" %}nation{% endtrans %}:</strong></div>
+                        <div class="CellValue">{{ user.nation }}</div>
+                    </div>
+
+                    {% if user.isHealthProfessional %}
+                    <div class="Box-table-row">
+                        <div class="CellName"><strong>{% trans from "interface" %}hp_client_age_range{% endtrans %}:</strong></div>
+                        <div class="CellValue">
+                            <ul>
+                                {% for healthProfessionalClientAgeRange in user.healthProfessionalClientsAgeRange %}
+                                    <li>{{ healthProfessionalClientAgeRange.ageRange }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="Box-table-row">
+                        <div class="CellName"><strong>{% trans from "interface" %}hp_specialty{% endtrans %}:</strong></div>
+                        <div class="CellValue">
+                            <ul>
+                                {% for healthProfessionalSpeciality in user.healthProfessionalSpecialties %}
+                                    <li> {{ healthProfessionalSpeciality.specialty }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="Box-table-row">
+                        <div class="CellName"><strong>{% trans from "interface" %}hp_treatment_approach{% endtrans %}:</strong></div>
+                        <div class="CellValue">
+                            <ul>
+                                {% for healthProfessionalTreatmentApproach in user.healthProfessionalTreatmentApproaches %}
+                                    <li> {{ healthProfessionalTreatmentApproach.approach }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="Box-table-row">
+                        <div class="CellName"><strong>{% trans from "interface" %}hp_treatment_modalities{% endtrans %}:</strong></div>
+                        <div class="CellValue">
+                            <ul>
+                                {% for healthProfessionalTreatmentModality in user.healthProfessionalTreatmentModalities %}
+                                    <li> {{ healthProfessionalTreatmentModality.modality }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

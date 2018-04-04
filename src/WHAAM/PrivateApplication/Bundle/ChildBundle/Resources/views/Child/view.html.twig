@@ -1,0 +1,68 @@
+{% extends '::base_private.html.twig' %}
+
+{% set sibling_label %}{% trans from "interface" %}sibling{% endtrans %}{% endset %}
+
+{% block breadcrumbs %}
+    {{ render_breadcrumbs() }}
+{% endblock %}
+
+{% block body %}
+    {% for flashMessage in app.session.flashbag.get('warning-' ~ child.slug) %}
+        <div class="Message Warning">{{ flashMessage|raw }}</div>
+    {% endfor %}
+
+    <div class="view-page">
+        <div class="main-container">
+            <div class="Box">
+                <div class="Box-title"><h1>{% trans from "interface" %}personal_data{% endtrans %}</h1></div>
+
+                <div class="Box-table">
+
+                    <div class="Box-table-row">
+                        <div class="CellName"><strong>{% trans from "interface" %}nickname{% endtrans %}:</strong></div>
+                        <div class="CellValue">{{ child.nickname }}</div>
+                    </div>
+
+                    {% if child.surname %}
+                    <div class="Box-table-row">
+                        <div class="CellName"><strong>{% trans from "interface" %}surname{% endtrans %}:</strong></div>
+                        <div class="CellValue">{{ child.surname }}</div>
+                    </div>
+                    {% endif %}
+
+                    {% if child.name %}
+                    <div class="Box-table-row">
+                        <div class="CellName"><strong>{% trans from "interface" %}name{% endtrans %}:</strong></div>
+                        <div class="CellValue">{{ child.name }}</div>
+                    </div>
+                    {% endif %}
+
+                    <div class="Box-table-row">
+                        <div class="CellName"><strong>{% trans from "interface" %}year_of_birth{% endtrans %}:</strong></div>
+                        <div class="CellValue">{{ child.yearOfBirth }}</div>
+                    </div>
+
+                    <div class="Box-table-row">
+                        <div class="CellName"><strong>{% trans from "interface" %}sex{% endtrans %}:</strong></div>
+                        <div class="CellValue">{{ child.sex }}</div>
+                    </div>
+
+                    {% for sibling in child.siblings %}
+                        <div class="Box-table-row">
+                            <div class="CellName"><strong>{{ sibling_label | transchoice(0)  }} {{ loop.index }}:</strong></div>
+                            <div class="CellValue">
+                                <ul>
+                                    <li><strong>{% trans from "interface" %}nickname{% endtrans %}: </strong> {{ sibling.nickname }}</li>
+                                    <li><strong>{% trans from "interface" %}name{% endtrans %}: </strong> {{ sibling.name }}</li>
+                                    <li><strong>{% trans from "interface" %}year_of_birth{% endtrans %}: </strong> {{ sibling.yearOfBirth }}</li>
+                                    <li><strong>{% trans from "interface" %}sex{% endtrans %}: </strong> {{ sibling.sex }}</li>
+                                </ul>
+                            </div>
+                        </div>
+                    {% endfor %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends '::base_form_page.html.twig' %}
+
+{% block breadcrumbs %}
+    {{ render_breadcrumbs() }}
+{% endblock %}
+
+{% block formTitle %}
+    New Answer
+{% endblock %}
+
+{% block formFields %}
+    <form action="{{ form.vars.action }}" method="post" novalidate="true" {{ form_enctype(form) }}>
+        {{ form_row(form.base_message.content) }}
+
+        {{ form_row(form.submit) }}
+        {{ form_widget(form._token) }}
+    </form>
+{% endblock %}
+
+{% block helpContent %}
+    {{ include('WHAAMPrivateApplicationNotificationBundle:Message:formHelp.html.twig') }}
+{% endblock %}

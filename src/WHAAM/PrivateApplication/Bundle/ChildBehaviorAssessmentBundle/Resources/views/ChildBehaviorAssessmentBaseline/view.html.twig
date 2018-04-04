@@ -1,0 +1,74 @@
+{% extends '::base_private.html.twig' %}
+
+{% block navigation %}
+    {{ include('WHAAMPrivateApplicationChildBundle:Child:menuAllEnabled.html.twig', {'child' : child}) }}
+{% endblock %}
+{% set sibling_label %}{% trans from "interface" %}sibling{% endtrans %}{% endset %}
+
+{% block breadcrumbs %}
+    {{ render_breadcrumbs() }}
+{% endblock %}
+
+{% block body %}
+    {% for flashMessage in app.session.flashbag.get('warning-' ~ child.slug) %}
+        <div class="Message Warning">{{ flashMessage|raw }}</div>
+    {% endfor %}
+
+    <div class="view-page">
+        <div class="main-container">
+            <div class="Box">
+                <div class="Box-title"><h1>{% trans from "interface" %}Baseline{% endtrans %}</h1></div>
+
+                <div class="Box-table">
+
+                    <div class="Box-table-row">
+                        <div class="CellName"><strong>{% trans from "interface" %}start_date{% endtrans %}:</strong></div>
+                        <div class="CellValue">{{ baseline.startDate | localizeddate('short', 'none', null) }}</div>
+                    </div>
+
+                    <div class="Box-table-row">
+                        <div class="CellName"><strong>{% trans from "interface" %}end_date{% endtrans %}:</strong></div>
+                        <div class="CellValue">{{ baseline.endDate | localizeddate('short', 'none', null) }}</div>
+                    </div>
+
+                    <div class="Box-table-row">
+
+
+
+                        <div class="CellName"><strong>{% trans from "interface" %}observation_type{% endtrans %}:</strong></div>
+                        <div class="CellValue">
+                            {% if baseline.observationType == 'frequency' %}
+                                {% trans from "interface" %}frequency{% endtrans %}
+                            {% endif %}
+
+                            {% if baseline.observationType == 'duration' %}
+                                {% trans from "interface" %}duration{% endtrans %}
+                            {% endif %}
+                        </div>
+                    </div>
+
+                    <div class="Box-table-row">
+                        <div class="CellName"><strong>{% trans from "interface" %}minimum_number_of_observations{% endtrans %}:</strong></div>
+                        <div class="CellValue">{{ baseline.minimumNumberOfObservations }}</div>
+                    </div>
+
+                    <div class="Box-table-row">
+                        <div class="CellName"><strong>{% trans from "interface" %}observation_length{% endtrans %}:</strong></div>
+                        <div class="CellValue">{{ baseline.observationLength }} {% trans from "interface" %}minute_abbreviation{% endtrans %}</div>
+                    </div>
+
+                    <div class="Box-table-row">
+                        <div class="CellName"><strong>{% trans from "interface" %}observer{% endtrans %}:</strong></div>
+                        <div class="CellValue">{{ baseline.observer }}</div>
+                    </div>
+
+                    <div class="Box-table-row">
+                        <div class="CellName"><strong>{% trans from "interface" %}abc_users{% endtrans %}:</strong></div>
+                        <div class="CellValue">{{ baseline.ABCUsers | join(', ') }}</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,73 @@
+{% extends '::base_form_page.html.twig' %}
+
+{% block breadcrumbs %}
+    {{ render_breadcrumbs() }}
+{% endblock %}
+
+{% block formTitle %}{% trans from "interface" %}specify_role{% endtrans %}{% endblock %}
+
+{% block formFields %}
+    <form action="{{ form.vars.action }}" method="post" novalidate="true" {{ form_enctype(form) }}>
+        {{ form_row(form.role) }}
+
+        <div id="parental-consent">
+            {% trans from "interface" %}parental_consent{% endtrans %}
+        {{ form_widget(form.isAuthorizedToAccessData) }}
+        </div>
+
+        {{ form_row(form.submit) }}
+        {{ form_rest(form) }}
+    </form>
+{% endblock %}
+
+{% block helpContent %}
+    {{ include('WHAAMPrivateApplicationChildBundle:ChildUser:formHelp.html.twig') }}
+{% endblock %}
+
+{% block javascripts %}
+    <script>
+        $("#childUser_role").change(function(e) {
+            if($(this).val() == 3 || $(this).val() == 8) {
+                $('#parental-consent').hide();
+            } else {
+                $('#parental-consent').show();
+            }
+        })
+
+        $(document).ready(function() {
+            roleSelect = $('#childUser_role');
+
+            family = [8, 3, 9, 2, 5, 4, 12, 1, 6];
+            professionals = [7, 11, 10];
+
+            emptyOption = $("<option></option>");
+            emptyOption.val($("#childUser_role option:eq(0)").val());
+            emptyOption.text($("#childUser_role option:eq(0)").text());
+
+            var optgroupFamily = $('<optgroup>');
+            optgroupFamily.attr('label','{% trans from "interface" %}family{% endtrans %}');
+
+            $.each(family, function (index, value) {
+                var option = $("<option></option>");
+                option.val(value);
+                option.text($("#childUser_role option:eq(" + value + ")").text());
+
+                optgroupFamily.append(option);
+            });
+
+            var optgroupProfessionals = $('<optgroup>');
+            optgroupProfessionals.attr('label','{% trans from "interface" %}professionals{% endtrans %}');
+
+            $.each(professionals, function (index, value) {
+                var option = $("<option></option>");
+                option.val(value);
+                option.text($("#childUser_role option:eq(" + value + ")").text());
+
+                optgroupProfessionals.append(option);
+            });
+
+            $("#childUser_role").empty().append(emptyOption).append(optgroupFamily);
+            $("#childUser_role").append(optgroupProfessionals);
+        });
+    </script>
+{% endblock %}

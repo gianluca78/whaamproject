@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}WHAAM Project!{% endblock %}</title>
+    <link href="{{ asset('public/css/default.css') }}" rel="stylesheet" type="text/css"/>
+    {% block stylesheets %}{% endblock %}
+</head>
+
+<body>
+    <nav>
+        {% block navigation %}{% endblock %}
+
+        <ul id="breadcrumbs">{% block breadcrumbs %}{% endblock %}</ul>
+
+            {% if is_granted('IS_AUTHENTICATED_FULLY') or is_granted('IS_AUTHENTICATED_REMEMBERED') %}
+                <li>
+                    <a href="{{ path('_logout') }}" class="float-right">
+                        {% trans from "interface" %}logout{% endtrans %}
+                    </a>
+                </li>
+            {% endif %}
+    </nav>
+
+    {% block body %}{% endblock %}
+    <footer>{% trans from "interface" %}whaam_project{% endtrans %} | {% trans from "interface" %}contact_us{% endtrans %} | {% trans from "interface" %}privacy_policy{% endtrans %}</footer>
+
+    <script src="{{ asset('public/js/vendor/jquery/jquery-1.11.1.min.js') }}" type="text/javascript"></script>
+    {% block javascripts %}{% endblock %}
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+WHAAM\PrivateApplication\Bundle\NotificationBundle\Entity\Message:
+    properties:
+        content:
+            - Type:
+                type: string
+                message: "type.invalid"
+            - Length:
+                max: 255
+                maxMessage: "length.max"
+            - NotBlank:
+                message: "not_blank"
+        subject:
+            - Type:
+                type: string
+                message: "type.invalid"
+            - Length:
+                max: 255
+                maxMessage: "length.max"
+            - NotBlank:
+                message: "not_blank"
+        recipientUsers:
+            - Count:
+                min: 1
+                minMessage: "count_min.invalid"
+WHAAM\PrivateApplication\Bundle\NotificationBundle\Entity\Answer:
+    properties:
+        content:
+            - Type:
+                type: string
+                message: "type.invalid"
+            - Length:
+                max: 255
+                maxMessage: "length.max"
+            - NotBlank:
+                message: "not_blank"

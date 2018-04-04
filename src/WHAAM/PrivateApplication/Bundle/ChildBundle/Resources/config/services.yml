@@ -1,0 +1,109 @@
+parameters:
+#    whaam_private_application_child.example.class: WHAAM\PrivateApplication\Bundle\ChildBundle\Example
+
+services:
+    whaam_child.form.type.child:
+        class: WHAAM\PrivateApplication\Bundle\ChildBundle\Form\Type\ChildType
+        tags:
+            - { name: form.type, alias: child }
+
+    whaam_child.form.type.child_edit:
+        class: WHAAM\PrivateApplication\Bundle\ChildBundle\Form\Type\ChildEditType
+        tags:
+            - { name: form.type, alias: child_edit }
+
+    whaam_child.form.handler.child_form_handler:
+        class: WHAAM\PrivateApplication\Bundle\ChildBundle\Form\Handler\ChildFormHandler
+        arguments: [@whaam_child.util.child_user_manager, @doctrine.orm.entity_manager, @session, @translator.default]
+
+    whaam_child.form.type.child_user:
+            class: WHAAM\PrivateApplication\Bundle\ChildBundle\Form\Type\ChildUserType
+            tags:
+                - { name: form.type, alias: childUser }
+
+    whaam_child.form.handler.child_user_form_handler:
+        class: WHAAM\PrivateApplication\Bundle\ChildBundle\Form\Handler\ChildUserFormHandler
+        arguments: [@doctrine.orm.entity_manager, @session, @translator.default]
+
+    whaam_child.form.type.child_user_invitation:
+        class: WHAAM\PrivateApplication\Bundle\ChildBundle\Form\Type\ChildUserInvitationType
+        tags:
+            - { name: form.type, alias: childUserInvitation }
+
+    whaam_child.form.handler.child_user_invitation_form_handler:
+        class: WHAAM\PrivateApplication\Bundle\ChildBundle\Form\Handler\ChildUserInvitationFormHandler
+        arguments: [@whaam_child.util.child_user_manager, @doctrine.orm.entity_manager, @session, @translator.default, @whaam_child.util.child_user_invitation_email, @security.context]
+
+    whaam_child_ADHDDiagnosis.form.type.child_ADHDDiagnosis:
+         class: WHAAM\PrivateApplication\Bundle\ChildBundle\Form\Type\ChildADHDDiagnosisType
+         tags:
+             - { name: form.type, alias: childADHDDiagnosis }
+
+    whaam_child_ADHDDiagnosis.form.handler.child_ADHDDiagnosis_form_handler:
+        class: WHAAM\PrivateApplication\Bundle\ChildBundle\Form\Handler\ChildADHDDiagnosisFormHandler
+        arguments: [@doctrine.orm.entity_manager, @session, @translator.default]
+
+    whaam_child_behavior.form.type.child:
+            class: WHAAM\PrivateApplication\Bundle\ChildBundle\Form\Type\ChildBehaviorType
+            arguments: [@doctrine.orm.entity_manager]
+            tags:
+                - { name: form.type, alias: childBehavior }
+
+    whaam_child_behavior.form.handler.child_behavior_form_handler:
+        class: WHAAM\PrivateApplication\Bundle\ChildBundle\Form\Handler\ChildBehaviorFormHandler
+        arguments: [@doctrine.orm.entity_manager, @session, @translator.default]
+
+    whaam_child.child_user_repository:
+        class: Doctrine\ORM\EntityRepository
+        factory_service: doctrine.orm.entity_manager
+        factory_method: getRepository
+        arguments:
+            - WHAAM\PrivateApplication\Bundle\ChildBundle\Entity\ChildUser
+
+    whaam_child_discipline_referral.form.type.child_discipline_referral:
+         class: WHAAM\PrivateApplication\Bundle\ChildBundle\Form\Type\ChildDisciplineReferralType
+         tags:
+             - { name: form.type, alias: childDisciplineReferral }
+
+    whaam_child_discipline_referral.form.handler.child_discipline_referral_form_handler:
+        class: WHAAM\PrivateApplication\Bundle\ChildBundle\Form\Handler\ChildDisciplineReferralFormHandler
+        arguments: [@doctrine.orm.entity_manager, @session, @translator.default]
+
+    whaam_child_event.form.type.child_event:
+         class: WHAAM\PrivateApplication\Bundle\ChildBundle\Form\Type\ChildGeneralEventType
+         tags:
+             - { name: form.type, alias: childGeneralEvent }
+
+    whaam_child_event.form.handler.child_event_form_handler:
+        class: WHAAM\PrivateApplication\Bundle\ChildBundle\Form\Handler\ChildGeneralEventFormHandler
+        arguments: [@doctrine.orm.entity_manager, @session, @translator.default]
+
+    whaam_child_medication.form.type.child_medication:
+         class: WHAAM\PrivateApplication\Bundle\ChildBundle\Form\Type\ChildMedicationType
+         tags:
+             - { name: form.type, alias: childMedication }
+
+    whaam_child_medication.form.handler.child_medication_form_handler:
+        class: WHAAM\PrivateApplication\Bundle\ChildBundle\Form\Handler\ChildMedicationFormHandler
+        arguments: [@doctrine.orm.entity_manager, @session, @translator.default]
+
+    whaam_child_school_information.form.type.child_school_information:
+         class: WHAAM\PrivateApplication\Bundle\ChildBundle\Form\Type\ChildSchoolInformationType
+         tags:
+             - { name: form.type, alias: childSchoolInformation }
+
+    whaam_child_school_information.form.handler.child_school_information_form_handler:
+        class: WHAAM\PrivateApplication\Bundle\ChildBundle\Form\Handler\ChildSchoolInformationFormHandler
+        arguments: [@doctrine.orm.entity_manager, @session, @translator.default]
+
+    whaam_child.util.child_user_invitation_email:
+        class: WHAAM\PrivateApplication\Bundle\ChildBundle\Util\ChildUserInvitationEmail
+        arguments: [@mailer, @translator.default, @templating]
+
+    whaam_child.util.child_user_invitation_manager:
+        class: WHAAM\PrivateApplication\Bundle\ChildBundle\Util\ChildUserInvitationManager
+        arguments: [@doctrine.orm.entity_manager, @whaam_child.util.child_user_manager]
+
+    whaam_child.util.child_user_manager:
+        class: WHAAM\PrivateApplication\Bundle\ChildBundle\Util\ChildUserManager
+        arguments: [@doctrine.orm.entity_manager]

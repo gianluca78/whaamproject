@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>home</source>
+                <target>Home</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>tour</source>
+                <target>Tour</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>adhd</source>
+                <target>ADHD</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>about_us</source>
+                <target>About Us</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>contact_us</source>
+                <target>Contact Us</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>sign_up_title</source>
+                <target>Sign up to the WHAAM application</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>sign_up</source>
+                <target>Sign Up</target>
+            </trans-unit>
+            <trans-unit id="8">
+                <source>sign_in</source>
+                <target>Sign In</target>
+            </trans-unit>
+            <trans-unit id="9">
+                <source>remember_me</source>
+                <target>Remember me</target>
+            </trans-unit>
+            <trans-unit id="10">
+                <source>forgot_password</source>
+                <target>I forgot my password. Help me!</target>
+            </trans-unit>
+            <trans-unit id="11">
+                <source>forgot_password_message</source>
+                <target>Enter your email address. We will send you a link to reset your password. </target>
+            </trans-unit>
+            <trans-unit id="12">
+                <source>pwd_recovery</source>
+                <target>Forgot Password</target>
+            </trans-unit>
+            <trans-unit id="13">
+                <source>send_pwd</source>
+                <target>Send me a link to reset my password</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

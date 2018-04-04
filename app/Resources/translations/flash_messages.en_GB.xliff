@@ -1,0 +1,207 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>success</source>
+                <target>Success!</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>user.new.success</source>
+                <target>The user has been created successfully. In order to activate your account, an email message has been sent to the email address specified during the registration. This message contains a link that you must click on in order to verify your email address and activate your account.</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>child.new.success</source>
+                <target>The child profile has been created successfully</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>child.edit.success</source>
+                <target>The child profile has been modified successfully</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>child.delete.success</source>
+                <target>The child profile has been deleted successfully</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>behavior.new.success</source>
+                <target>The behaviour section has been created successfully</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>behavior.edit.success</source>
+                <target>The behaviour section has been modified successfully</target>
+            </trans-unit>
+            <trans-unit id="8">
+                <source>behavior.delete.success</source>
+                <target>This behaviour has been deleted successfully</target>
+            </trans-unit>
+            <trans-unit id="9">
+                <source>child_user.edit.success</source>
+                <target>The role has been updated successfully</target>
+            </trans-unit>
+            <trans-unit id="10">
+                <source>child.delete.error</source>
+                <target>It is not possible to delete the child profile</target>
+            </trans-unit>
+            <trans-unit id="11">
+                <source>behavior.delete.error</source>
+                <target>It is not possible to delete the behaviour section</target>
+            </trans-unit>
+            <trans-unit id="12">
+                <source>warning</source>
+                <target>Warning!</target>
+            </trans-unit>
+            <trans-unit id="13">
+                <source>child_network_role_missing.warning</source>
+                <target>Your role in the child network has not been defined clearly. Please click on the following link to specify it:</target>
+            </trans-unit>
+            <trans-unit id="14">
+                <source>diagnosis.new.success</source>
+                <target>The diagnosis section has been created successfully</target>
+            </trans-unit>
+            <trans-unit id="15">
+                <source>medication.new.success</source>
+                <target>The medication section has been created successfully</target>
+            </trans-unit>
+            <trans-unit id="16">
+                <source>event.new.success</source>
+                <target>The event has been created successfully</target>
+            </trans-unit>
+            <trans-unit id="17">
+                <source>school_information.new.success</source>
+                <target>The school information section has been created successfully</target>
+            </trans-unit>
+            <trans-unit id="18">
+                <source>discipline_referral.new.success</source>
+                <target>The discipline referrals section has been created with successfully</target>
+            </trans-unit>
+            <trans-unit id="19">
+                <source>diagnosis.edit.success</source>
+                <target>The diagnosis has been updated successfully</target>
+            </trans-unit>
+            <trans-unit id="20">
+                <source>diagnosis.delete.success</source>
+                <target>The diagnosis section has been deleted successfully</target>
+            </trans-unit>
+            <trans-unit id="21">
+                <source>medication.edit.success</source>
+                <target>The medication section has been updated successfully</target>
+            </trans-unit>
+            <trans-unit id="22">
+                <source>medication.delete.success</source>
+                <target>The medication has been deleted</target>
+            </trans-unit>
+            <trans-unit id="23">
+                <source>general_event.edit.success</source>
+                <target>The event has been updated</target>
+            </trans-unit>
+            <trans-unit id="24">
+                <source>general_event.delete.success</source>
+                <target>The event has been deleted</target>
+            </trans-unit>
+            <trans-unit id="25">
+                <source>school_information.edit.success</source>
+                <target>The scholastic information has been updated successfully</target>
+            </trans-unit>
+            <trans-unit id="26">
+                <source>school_information.delete.success</source>
+                <target>The scholastic information has been deleted successfully</target>
+            </trans-unit>
+            <trans-unit id="27">
+                <source>discipline_referral.edit.success</source>
+                <target>The discipline referral has been updated</target>
+            </trans-unit>
+            <trans-unit id="28">
+                <source>discipline_referral.delete.success</source>
+                <target>The discipline referral has been deleted</target>
+            </trans-unit>
+            <trans-unit id="29">
+                <source>baseline.new.success</source>
+                <target>The baseline has been created successfully</target>
+            </trans-unit>
+            <trans-unit id="30">
+                <source>function.new.success</source>
+                <target>The function has been created successfully</target>
+            </trans-unit>
+            <trans-unit id="31">
+                <source>function.edit.success</source>
+                <target>The function has been modified successfully</target>
+            </trans-unit>
+            <trans-unit id="32">
+                <source>baseline.delete.success</source>
+                <target>The baseline has been deleted successfully</target>
+            </trans-unit>
+            <trans-unit id="33">
+                <source>baseline.delete.error</source>
+                <target>It is not possible to delete the baseline</target>
+            </trans-unit>
+            <trans-unit id="34">
+                <source>intervention.edit.success</source>
+                <target>The intervention has been modified successfully</target>
+            </trans-unit>
+            <trans-unit id="35">
+                <source>intervention.delete.success</source>
+                <target>The intervention has been deleted successfully</target>
+            </trans-unit>
+            <trans-unit id="36">
+                <source>intervention.new.success</source>
+                <target>The intervention has been created successfully</target>
+            </trans-unit>
+            <trans-unit id="37">
+                <source>user.edit.success</source>
+                <target>The user has been modified successfully</target>
+            </trans-unit>
+            <trans-unit id="38">
+                <source>user.edit_password.success</source>
+                <target>The user password has been modified successfully</target>
+            </trans-unit>
+            <trans-unit id="39">
+                <source>user.forgot_password.success</source>
+                <target>The instructions to reset the password has been sent at your email address</target>
+            </trans-unit>
+            <trans-unit id="40">
+                <source>baseline.edit.success</source>
+                <target>The baseline has been modified successfully</target>
+            </trans-unit>
+            <trans-unit id="41">
+                <source>function.delete.success</source>
+                <target>The function has been deleted successfully</target>
+            </trans-unit>
+            <trans-unit id="42">
+                <source>function.delete.error</source>
+                <target>It is not possible to delete the function</target>
+            </trans-unit>
+            <trans-unit id="43">
+                <source>assessment.delete.error</source>
+                <target>It is not possible to delete the assessment</target>
+            </trans-unit>
+            <trans-unit id="44">
+                <source>assessment.delete.success</source>
+                <target>The assessment has been deleted successfully</target>
+            </trans-unit>
+            <trans-unit id="45">
+                <source>notification.delete.success</source>
+                <target>The notification has been deleted successfully</target>
+            </trans-unit>
+            <trans-unit id="46">
+                <source>notification.delete.all.success</source>
+                <target>All notification have been deleted successfully</target>
+            </trans-unit>
+            <trans-unit id="47">
+                <source>moderation.authorization.error</source>
+                <target>You are not authorized to moderate this request</target>
+            </trans-unit>
+            <trans-unit id="48">
+                <source>moderation.authorization.success</source>
+                <target>Moderation process completed with success: you have approved the request</target>
+            </trans-unit>
+            <trans-unit id="49">
+                <source>message.new.success</source>
+                <target>The message has been delivered successfully</target>
+            </trans-unit>
+            <trans-unit id="50">
+                <source>message.reply.success</source>
+                <target>The reply has been delivered successfully</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

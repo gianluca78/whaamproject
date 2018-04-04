@@ -1,0 +1,9 @@
+<form action="{{ form.vars.action }}" method="post" novalidate="true" {{ form_enctype(form) }}>
+    {{ form_row(form.child) }}
+    {{ form_row(form.recipientUsers) }}
+    {{ form_row(form.subject) }}
+    {{ form_row(form.base_message.content) }}
+
+    {{ form_row(form.submit) }}
+    {{ form_widget(form._token) }}
+</form>

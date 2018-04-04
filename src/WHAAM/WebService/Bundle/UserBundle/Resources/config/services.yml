@@ -1,0 +1,4 @@
+services:
+    whaam_web_service_user.util.mobile_app_session_id_validator:
+        class: WHAAM\WebService\Bundle\UserBundle\Util\MobileAppSessionIdValidator
+        arguments: [@doctrine.orm.entity_manager]

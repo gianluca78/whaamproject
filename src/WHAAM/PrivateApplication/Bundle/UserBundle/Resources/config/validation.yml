@@ -1,0 +1,126 @@
+WHAAM\PrivateApplication\Bundle\UserBundle\Entity\User:
+    constraints:
+        - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity:
+            message: "user.unique"
+            fields: username
+            groups: [global]
+        - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity:
+            message: "email.unique"
+            fields: email
+            groups: [global]
+        - WHAAM\PrivateApplication\Common\Validator\Constraints\IsNotEmailInTheDatabase:
+            message: "is_not_email_in_the_database.invalid"
+            groups: [forgot-password]
+    properties:
+        surname:
+            - Type:
+                type: string
+                message: "type.invalid"
+                groups: [global, edit]
+            - Length:
+                min: 2
+                max: 255
+                minMessage: "length.min"
+                maxMessage: "length.max"
+                groups: [global, edit]
+        name:
+            - Type:
+                type: string
+                message: "type.invalid"
+                groups: [global, edit]
+            - Length:
+                min: 2
+                max: 255
+                minMessage: "length.min"
+                maxMessage: "length.max"
+                groups: [global, edit]
+        sex:
+            - NotBlank:
+                message: "not_blank"
+                groups: [global, edit]
+        dateOfBirth:
+            - NotBlank:
+                message: "not_blank"
+                groups: [global, edit]
+            - Date:
+                message: "invalid_date"
+                groups: [global, edit]
+        username:
+            - Type:
+                type: string
+                message: "type.invalid"
+                groups: [global]
+            - Length:
+                min: 2
+                max: 255
+                minMessage: "length.min"
+                maxMessage: "length.max"
+                groups: [global]
+            - NotBlank:
+                message: "not_blank"
+                groups: [global]
+        password:
+            - Type:
+                type: string
+                message: "type.invalid"
+                groups: [global, user-password-edit]
+            - Length:
+                min: 2
+                max: 255
+                minMessage: "length.min"
+                maxMessage: "length.max"
+                groups: [global, user-password-edit]
+            - NotBlank:
+                message: "not_blank"
+                groups: [global, user-password-edit]
+        email:
+            - NotBlank:
+                message: "not_blank"
+                groups: [global, forgot-password]
+            - Email:
+                message: "email.invalid"
+                checkMX: true
+                groups: [global, forgot-password]
+        isHealthProfessional:
+            - Type:
+                type: boolean
+                message: "data.invalid"
+                groups: [global, edit]
+        otherNation:
+            - NotBlank:
+                message: "not_blank"
+                groups: [other-nation]
+            - Type:
+                type: string
+                message: "type.invalid"
+                groups: [global, edit, other-nation]
+            - Length:
+                min: 2
+                max: 50
+                minMessage: "length.min"
+                maxMessage: "length.max"
+                groups: [global, edit, other-nation]
+        nation:
+            - NotBlank:
+                message: "not_blank"
+                groups: [global]
+        healthProfessionalClientsAgeRange:
+            - Count:
+                min: 1
+                minMessage: "count_min.invalid"
+                groups: [health-professional-registration]
+        healthProfessionalSpecialties:
+            - Count:
+                min: 1
+                minMessage: "count_min.invalid"
+                groups: [health-professional-registration]
+        healthProfessionalTreatmentApproaches:
+            - Count:
+                min: 1
+                minMessage: "count_min.invalid"
+                groups: [health-professional-registration]
+        healthProfessionalTreatmentModalities:
+            - Count:
+                min: 1
+                minMessage: "count_min.invalid"
+                groups: [health-professional-registration]

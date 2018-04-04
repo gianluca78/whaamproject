@@ -1,0 +1,19 @@
+WHAAMPrivateApplicationChildBehaviorAssessmentBundle_ChildBehaviorAssessmentController:
+    resource: "@WHAAMPrivateApplicationChildBehaviorAssessmentBundle/Controller/ChildBehaviorAssessmentController.php"
+    type: annotation
+
+WHAAMPrivateApplicationChildBehaviorAssessmentBundle_ChildBehaviorAssessmentBaselineController:
+    resource: "@WHAAMPrivateApplicationChildBehaviorAssessmentBundle/Controller/ChildBehaviorAssessmentBaselineController.php"
+    type: annotation
+
+WHAAMPrivateApplicationChildBehaviorAssessmentBundle_ChildBehaviorAssessmentPlanController:
+    resource: "@WHAAMPrivateApplicationChildBehaviorAssessmentBundle/Controller/ChildBehaviorAssessmentPlanController.php"
+    type: annotation
+
+WHAAMPrivateApplicationChildBehaviorAssessmentBundle_ChildBehaviorAssessmentFunctionController:
+    resource: "@WHAAMPrivateApplicationChildBehaviorAssessmentBundle/Controller/ChildBehaviorAssessmentFunctionController.php"
+    type: annotation
+
+WHAAMPrivateApplicationChildBehaviorAssessmentBundle_ChildBehaviorAssessmentInterventionController:
+    resource: "@WHAAMPrivateApplicationChildBehaviorAssessmentBundle/Controller/ChildBehaviorAssessmentInterventionController.php"
+    type: annotation

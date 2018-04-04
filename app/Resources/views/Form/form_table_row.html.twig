@@ -1,0 +1,13 @@
+{% block form_row -%}
+    <tr>
+        <td>
+            {{- form_label(form) -}}
+        </td>
+        <td>
+            <div class="MessageRequired">
+                {{- form_errors(form) -}}
+            </div>
+            {{- form_widget(form) -}}
+        </td>
+    </tr>
+{%- endblock form_row %}

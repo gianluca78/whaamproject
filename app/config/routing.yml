@@ -1,0 +1,38 @@
+_login:
+    path: /login/{_locale}
+    defaults:  { _controller: WHAAMPrivateApplicationSecurityBundle:Security:login, _locale: en_GB }
+    requirements:
+        _locale: en_GB|el_GR|it_IT|pt_PT
+_logout:
+    path: /logout
+_security_check:
+    path: /security_check
+
+NelmioApiDocBundle:
+    resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
+    prefix:   /api/doc
+
+WhaamPrivateApplicationChild:
+    resource: "@WHAAMPrivateApplicationChildBundle/Resources/config/routing.yml"
+    prefix:   /
+
+WhaamPrivateApplicationChildBehaviorAssessment:
+    resource: "@WHAAMPrivateApplicationChildBehaviorAssessmentBundle/Resources/config/routing.yml"
+    prefix:   /
+
+
+WhaamPrivateApplicationNotification:
+    resource: "@WHAAMPrivateApplicationNotificationBundle/Resources/config/routing.yml"
+    prefix:   /
+
+WhaamPrivateApplicationUser:
+    resource: "@WHAAMPrivateApplicationUserBundle/Resources/config/routing.yml"
+    prefix:   /
+
+WhaamWebServiceChildBehaviorAssessment:
+    resource: "@WHAAMWebServiceChildBehaviorAssessmentBundle/Resources/config/routing.yml"
+    prefix:   /
+
+WhaamWebServiceUser:
+    resource: "@WHAAMWebServiceUserBundle/Resources/config/routing.yml"
+    prefix:   /

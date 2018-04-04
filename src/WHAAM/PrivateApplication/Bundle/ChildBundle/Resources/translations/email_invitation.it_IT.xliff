@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>email.success</source>
+                <target>L'invito è stato inviato con successo</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>email.error</source>
+                <target>Si è verificato un errore durante l'invio dell'email. Per favore riprova</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>dear_user</source>
+                <target>Gentile utente</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>invitation_sentence</source>
+                <target>ti ha invitato ad unirti alla network di</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>within_WHAAM_sentence</source>
+                <target>all'interno dell'applicazione WHAAM.</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>login_sentence</source>
+                <target>Effettua il login all'applicazione WHAAM per unirti alla rete del bambino</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>best_regards</source>
+                <target>Cordiali saluti,</target>
+            </trans-unit>
+            <trans-unit id="8">
+                <source>signature_sentence</source>
+                <target>Lo staff di WHAAM</target>
+            </trans-unit>
+            <trans-unit id="9">
+                <source>whaam_description_sentence</source>
+                <target>L'applicazione WHAAM è accessibile attraverso personal computer e dispositivi mobili
+                    e consente ad insegnanti, genitori, e professionisti della salute di monitorare e supportare
+                    i comportamenti dei bambini con ADHD.
+                </target>
+            </trans-unit>
+            <trans-unit id="10">
+                <source>register_sentence</source>
+                <target>Per favore registrati all'applicazione WHAAM, cliccando sul seguente URL o incollandolo nella barra degli indirizzi del browser:</target>
+            </trans-unit>
+            <trans-unit id="11">
+                <source>email_invitation_moderation_subject</source>
+                <target>Richiesta di moderazione</target>
+            </trans-unit>
+            <trans-unit id="12">
+                <source>email_invitation_moderation_first_paragraph</source>
+                <target>Abbiamo bisogno del tuo suppporto! In qualità di utente che ha inserito il bambino %s, hai la responsabilità di decidere chi può entrare a far parte della sua rete e, di conseguenza, accedere ai suoi dati personali. %s ha invitato %s a partecipare alla rete del bambino, ma non ha ancora il consenso dei genitori per accedere. Decidi tu se accettare o meno la richiesta.</target>
+            </trans-unit>
+            <trans-unit id="13">
+                <source>email_invitation_moderation_second_paragraph</source>
+                <target>Se pensi che %s possa essere autorizzato ad accedere alla rete di %s clicca sul seguente link o incollalo sul tuo browser.</target>
+            </trans-unit>
+            <trans-unit id="14">
+                <source>email_invitation_moderation_third_paragraph</source>
+                <target>Altrimenti, per favore clicca sul seguente link o incollalo sul tuo browser per informare %s che la sua richiesta è stata rifiutata.</target>
+            </trans-unit>
+            <trans-unit id="15">
+                <source>email_moderation.success</source>
+                <target>La tua richiesta è stata inviata con successo al moderatore perchè non hai il consenso dei genitori o l'autorizzazione equivalente. Se il tuo invito sarà approvato riceverai una mail di conferma.</target>
+            </trans-unit>
+            <trans-unit id="16">
+                <source>email_moderation_approved_subject</source>
+                <target>Il tuo invito è stato approvato!</target>
+            </trans-unit>
+            <trans-unit id="17">
+                <source>email_moderation_approved_sentence</source>
+                <target>La tua richiesta di invito a %s a partecipare alla rete di %s è stata approvata ed una email di notifica è stata inviata all'utente invitato.</target>
+            </trans-unit>
+            <trans-unit id="18">
+                <source>email_moderation_refused_subject</source>
+                <target>Il tuo invito è stato rifiutato!</target>
+            </trans-unit>
+            <trans-unit id="19">
+                <source>email_moderation_refused_sentence</source>
+                <target>Ci dispiace ma la tua richiesta di invito a %s di partecipare alla rete di %s è stata rifiutata.
+                    Se vuoi sapene di più, per favore contatta l'utente che ha creato il il profilo del bambino nella applicazione WHAAM.
+                </target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

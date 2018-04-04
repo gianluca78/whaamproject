@@ -1,0 +1,3 @@
+WhaamPrivateApplicationUserBundle_UserController:
+    resource: "@WHAAMPrivateApplicationUserBundle/Controller/UserController.php"
+    type: annotation

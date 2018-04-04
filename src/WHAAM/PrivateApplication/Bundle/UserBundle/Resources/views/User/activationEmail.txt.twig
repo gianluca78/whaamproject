@@ -1,0 +1,8 @@
+{% trans from "email_activation" %}dear{% endtrans %} {{ user.getSurnameNameOrUsername }},
+{% trans from "email_activation" %}thank_you_sentence{% endtrans %}
+{% trans from "email_activation" %}last_step_sentence{% endtrans %}
+{% trans from "email_activation" %}complete_registration_sentence{% endtrans %}
+
+{{ url('user_account_activation', {'emailToken': user.emailToken, 'userSlug': user.slug} ) }}
+
+{% trans from "email_activation" %}signature_sentence{% endtrans %}

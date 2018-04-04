@@ -1,0 +1,264 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>child_new</source>
+                <target>The child "%s" has been added by %s</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>child_edit</source>
+                <target>"%s" data has been updated by %s</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>child_delete</source>
+                <target>The child "%s" has been deleted by %s</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>child_new_title</source>
+                <target>new child</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>child_edit_title</source>
+                <target>child edited</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>child_delete_title</source>
+                <target>child deleted</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>diagnosis_new</source>
+                <target>A diagnosis has been inserted for %s by %s</target>
+            </trans-unit>
+            <trans-unit id="8">
+                <source>diagnosis_edit</source>
+                <target>A diagnosis has been edited for %s by %s</target>
+            </trans-unit>
+            <trans-unit id="9">
+                <source>diagnosis_delete</source>
+                <target>A diagnosis has been deleted for %s by %s</target>
+            </trans-unit>
+            <trans-unit id="10">
+                <source>diagnosis_new_title</source>
+                <target>new diagnosis</target>
+            </trans-unit>
+            <trans-unit id="11">
+                <source>diagnosis_edit_title</source>
+                <target>diagnosis edited</target>
+            </trans-unit>
+            <trans-unit id="12">
+                <source>diagnosis_delete_title</source>
+                <target>diagnosis deleted</target>
+            </trans-unit>
+            <trans-unit id="13">
+                <source>medication_new</source>
+                <target>A medication has been inserted for %s by %s</target>
+            </trans-unit>
+            <trans-unit id="14">
+                <source>medication_edit</source>
+                <target>A medication has been edited for %s by %s</target>
+            </trans-unit>
+            <trans-unit id="15">
+                <source>medication_delete</source>
+                <target>A medication has been deleted for %s by %s</target>
+            </trans-unit>
+            <trans-unit id="16">
+                <source>medication_new_title</source>
+                <target>new medication</target>
+            </trans-unit>
+            <trans-unit id="17">
+                <source>medication_edit_title</source>
+                <target>medication edited</target>
+            </trans-unit>
+            <trans-unit id="18">
+                <source>medication_delete_title</source>
+                <target>medication deleted</target>
+            </trans-unit>
+            <trans-unit id="19">
+                <source>event_new</source>
+                <target>An event has been inserted for %s by %s</target>
+            </trans-unit>
+            <trans-unit id="20">
+                <source>event_edit</source>
+                <target>An event has been edited for %s by %s</target>
+            </trans-unit>
+            <trans-unit id="21">
+                <source>event_delete</source>
+                <target>An event has been deleted for %s by %s</target>
+            </trans-unit>
+            <trans-unit id="22">
+                <source>event_new_title</source>
+                <target>new event</target>
+            </trans-unit>
+            <trans-unit id="23">
+                <source>event_edit_title</source>
+                <target>event edited</target>
+            </trans-unit>
+            <trans-unit id="24">
+                <source>event_delete_title</source>
+                <target>event deleted</target>
+            </trans-unit>
+            <trans-unit id="25">
+                <source>discipline_referral_new</source>
+                <target>A discipline referral has been inserted for %s by %s</target>
+            </trans-unit>
+            <trans-unit id="26">
+                <source>discipline_referral_edit</source>
+                <target>A discipline referral has been edited for %s by %s</target>
+            </trans-unit>
+            <trans-unit id="27">
+                <source>discipline_referral_delete</source>
+                <target>A discipline referral has been deleted for %s by %s</target>
+            </trans-unit>
+            <trans-unit id="28">
+                <source>discipline_referral_new_title</source>
+                <target>new discipline referral</target>
+            </trans-unit>
+            <trans-unit id="29">
+                <source>discipline_referral_edit_title</source>
+                <target>discipline referral edited</target>
+            </trans-unit>
+            <trans-unit id="30">
+                <source>discipline_referral_delete_title</source>
+                <target>discipline referral deleted</target>
+            </trans-unit>
+            <trans-unit id="31">
+                <source>behavior_new</source>
+                <target>A behavior has been inserted for %s by %s</target>
+            </trans-unit>
+            <trans-unit id="32">
+                <source>behavior_edit</source>
+                <target>A behavior has been edited for %s by %s</target>
+            </trans-unit>
+            <trans-unit id="33">
+                <source>behavior_delete</source>
+                <target>A behavior has been deleted for %s by %s</target>
+            </trans-unit>
+            <trans-unit id="34">
+                <source>behavior_new_title</source>
+                <target>new behavior</target>
+            </trans-unit>
+            <trans-unit id="35">
+                <source>behavior_edit_title</source>
+                <target>behavior edited</target>
+            </trans-unit>
+            <trans-unit id="36">
+                <source>behavior_delete_title</source>
+                <target>behavior deleted</target>
+            </trans-unit>
+            <trans-unit id="37">
+                <source>invitation_new</source>
+                <target>%s has been invited to join the %s network</target>
+            </trans-unit>
+            <trans-unit id="38">
+                <source>invitation_new_title</source>
+                <target>new invitation</target>
+            </trans-unit>
+            <trans-unit id="39">
+                <source>assessment_new</source>
+                <target>A new assessment has been created starting from the behaviour %s of %s</target>
+            </trans-unit>
+            <trans-unit id="40">
+                <source>assessment_delete</source>
+                <target>An assessment for the behaviour %s of %s has been deleted</target>
+            </trans-unit>
+            <trans-unit id="41">
+                <source>assessment_new_title</source>
+                <target>new assessment</target>
+            </trans-unit>
+            <trans-unit id="42">
+                <source>assessment_delete_title</source>
+                <target>assessment deleted</target>
+            </trans-unit>
+            <trans-unit id="43">
+                <source>baseline_new</source>
+                <target>A new baseline has been planned for the behaviour %s from %s to %s</target>
+            </trans-unit>
+            <trans-unit id="44">
+                <source>baseline_new_title</source>
+                <target>new baseline</target>
+            </trans-unit>
+            <trans-unit id="45">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="46">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="47">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="48">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="49">
+                <source>behavior_function_new</source>
+                <target>The function of the behaviour %s has been hypothesized</target>
+            </trans-unit>
+            <trans-unit id="50">
+                <source>behavior_function_title</source>
+                <target>new behavior function</target>
+            </trans-unit>
+            <trans-unit id="51">
+                <source>intervention_new</source>
+                <target>A new intervention has been planned for the behaviour %s from %s to %s</target>
+            </trans-unit>
+            <trans-unit id="52">
+                <source>intervention_new_title</source>
+                <target>new intervention</target>
+            </trans-unit>
+            <trans-unit id="53">
+                <source>intervention_strategy_assignment</source>
+                <target>The intervention strategy %s has been assigned to %s</target>
+            </trans-unit>
+            <trans-unit id="54">
+                <source>intervention_strategy_assignment_title</source>
+                <target>new intervention strategy</target>
+            </trans-unit>
+            <trans-unit id="55">
+                <source>observation_new</source>
+                <target>A new set of observations have been gathered for the behaviour %s</target>
+            </trans-unit>
+            <trans-unit id="56">
+                <source>observation_new_title</source>
+                <target>new observation</target>
+            </trans-unit>
+            <trans-unit id="57">
+                <source>abc_new</source>
+                <target>A new set of ABCs have been gathered for the behaviour %s</target>
+            </trans-unit>
+            <trans-unit id="58">
+                <source>abc_new_title</source>
+                <target>new ABC</target>
+            </trans-unit>
+            <trans-unit id="59">
+                <source>school_information_new</source>
+                <target>A school information has been inserted for %s by %s</target>
+            </trans-unit>
+            <trans-unit id="60">
+                <source>school_information_edit</source>
+                <target>A school information has been edited for %s by %s</target>
+            </trans-unit>
+            <trans-unit id="61">
+                <source>school_information_delete</source>
+                <target>A school information has been deleted for %s by %s</target>
+            </trans-unit>
+            <trans-unit id="62">
+                <source>school_information_new_title</source>
+                <target>new school information</target>
+            </trans-unit>
+            <trans-unit id="63">
+                <source>school_information_edit_title</source>
+                <target>school information edited</target>
+            </trans-unit>
+            <trans-unit id="64">
+                <source>school_information_delete_title</source>
+                <target>school information deleted</target>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>

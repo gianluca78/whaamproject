@@ -1,0 +1,7 @@
+Company:
+    BeneficiaryCompany:
+        edit:
+            Home:
+            Aziende Beneficiarie: beneficiary_company_list
+            %beneficiary_company_name%: beneficiary_company_view
+            Modifica:

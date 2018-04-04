@@ -1,0 +1,263 @@
+WHAAM\PrivateApplication\Bundle\ChildBundle\Entity\Child:
+    constraints:
+        - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity:
+            message: "child.unique"
+            fields: [nickname]
+    properties:
+        nickname:
+            - Type:
+                type: string
+                message: "type.invalid"
+            - Length:
+                min: 5
+                max: 255
+                minMessage: "length.min"
+                maxMessage: "length.max"
+            - NotBlank:
+                message: "not_blank"
+        surname:
+            - Type:
+                type: string
+                message: "type.invalid"
+            - Length:
+                max: 255
+                maxMessage: "length.max"
+        name:
+            - Type:
+                type: string
+                message: "type.invalid"
+            - Length:
+                max: 255
+                maxMessage: "length.max"
+        yearOfBirth:
+            - NotBlank:
+                message: "not_blank"
+            - Regex:
+                pattern: "/^\d{4}$/"
+                message: "year.invalid"
+        sex:
+            - NotBlank:
+                message: "not_blank"
+
+WHAAM\PrivateApplication\Bundle\ChildBundle\Entity\ChildADHDDiagnosis:
+    properties:
+        diagnosisDate:
+            - NotBlank:
+                message: "not_blank"
+            - Date:
+                message: "invalid_date"
+        onsetAge:
+            - NotBlank:
+                message: "not_blank"
+            - Range:
+                min: 0
+                max: 30
+                minMessage: "age.min"
+                maxMessage: "age.max"
+        subtype:
+            - NotBlank:
+                message: "not_blank"
+
+WHAAM\PrivateApplication\Bundle\ChildBundle\Entity\ChildBehavior:
+    properties:
+        behaviorCategory:
+            - NotBlank:
+                message: "not_blank"
+                groups: [vocabulary]
+        behavior:
+            - NotBlank:
+                message: "not_blank"
+                groups: [vocabulary]
+        otherBehavior:
+            - Type:
+                type: string
+                message: "type.invalid"
+                groups: [not-vocabulary]
+            - Length:
+                max: 255
+                maxMessage: "length.max"
+                groups: [not-vocabulary]
+            - NotBlank:
+                message: "not_blank"
+                groups: [not-vocabulary]
+        description:
+            - Type:
+                type: string
+                message: "type.invalid"
+            - Length:
+                max: 255
+                maxMessage: "length.max"
+            - NotBlank:
+                message: "not_blank"
+        place:
+            - Type:
+                type: string
+                message: "type.invalid"
+            - Length:
+                max: 255
+                maxMessage: "length.max"
+            - NotBlank:
+                message: "not_blank"
+        setting:
+              - Type:
+                  type: string
+                  message: "type.invalid"
+              - Length:
+                  max: 255
+                  maxMessage: "length.max"
+              - NotBlank:
+                  message: "not_blank"
+
+WHAAM\PrivateApplication\Bundle\ChildBundle\Entity\ChildDisciplineReferral:
+    properties:
+        motivation:
+            - Type:
+                type: string
+                message: "type.invalid"
+            - Length:
+                max: 255
+                maxMessage: "length.max"
+            - NotBlank:
+                message: "not_blank"
+        date:
+            - NotBlank:
+                message: "not_blank"
+            - Date:
+                message: "invalid_date"
+        disciplineReferralType:
+            - NotBlank:
+                message: "not_blank"
+
+WHAAM\PrivateApplication\Bundle\ChildBundle\Entity\ChildGeneralEvent:
+    properties:
+        description:
+            - Type:
+                type: string
+                message: "type.invalid"
+            - Length:
+                max: 255
+                maxMessage: "length.max"
+            - NotBlank:
+                message: "not_blank"
+        date:
+            - NotBlank:
+                message: "not_blank"
+            - Date:
+                message: "invalid_date"
+
+WHAAM\PrivateApplication\Bundle\ChildBundle\Entity\ChildMedication:
+    properties:
+        name:
+            - Type:
+                type: string
+                message: "type.invalid"
+            - Length:
+                max: 255
+                maxMessage: "length.max"
+            - NotBlank:
+                message: "not_blank"
+        dosage:
+            - Type:
+                type: string
+                message: "type.invalid"
+            - Length:
+                max: 255
+                maxMessage: "length.max"
+            - NotBlank:
+                message: "not_blank"
+        frequency:
+            - Type:
+                type: string
+                message: "type.invalid"
+            - Length:
+                max: 255
+                maxMessage: "length.max"
+            - NotBlank:
+                message: "not_blank"
+        startDate:
+            - NotBlank:
+                message: "not_blank"
+            - Date:
+                message: "invalid_date"
+        endDate:
+            - Date:
+                message: "invalid_date"
+
+WHAAM\PrivateApplication\Bundle\ChildBundle\Entity\ChildSchoolInformation:
+    properties:
+        year:
+            - Type:
+                type: string
+                message: "type.invalid"
+            - Length:
+                min: 7
+                max: 7
+                minMessage: "length.min"
+                maxMessage: "length.max"
+            - Regex:
+                pattern: "/^\d{4}-\d{2}$/"
+                message: "year.invalid"
+            - NotBlank:
+                message: "not_blank"
+        schoolName:
+            - Type:
+                type: string
+                message: "type.invalid"
+            - Length:
+                max: 255
+                maxMessage: "length.max"
+            - NotBlank:
+                message: "not_blank"
+        grade:
+            - Type:
+                type: string
+                message: "type.invalid"
+            - Length:
+                max: 255
+                maxMessage: "length.max"
+            - NotBlank:
+                message: "not_blank"
+
+WHAAM\PrivateApplication\Bundle\ChildBundle\Entity\ChildSibling:
+    properties:
+        nickname:
+            - Type:
+                type: string
+                message: "type.invalid"
+            - Length:
+                min: 5
+                max: 255
+                minMessage: "length.min"
+                maxMessage: "length.max"
+            - NotBlank:
+                message: "not_blank"
+        name:
+            - Type:
+                type: string
+                message: "type.invalid"
+            - Length:
+                max: 255
+                maxMessage: "length.max"
+        yearOfBirth:
+            - NotBlank:
+                message: "not_blank"
+            - Regex:
+                pattern: "/^\d{4}$/"
+                message: "year.invalid"
+        sex:
+            - NotBlank:
+                message: "not_blank"
+
+WHAAM\PrivateApplication\Bundle\ChildBundle\Entity\ChildUserInvitation:
+    constraints:
+        - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity:
+            message: "invitation.unique"
+            fields: [email, child]
+        - Callback: [isSelfInvitation, hasSpecifiedRole]
+    properties:
+        email:
+            - NotBlank:
+                message: "not_blank"
+            - Email:
+                message: "email.invalid"
+                checkMX:

@@ -1,0 +1,50 @@
+{% extends '::base_private.html.twig' %}
+
+{% block navigation %}
+    {{ include('WHAAMPrivateApplicationChildBundle:Child:menuAllEnabled.html.twig', {'child' : child}) }}
+{% endblock %}
+{% set sibling_label %}{% trans from "interface" %}sibling{% endtrans %}{% endset %}
+
+{% block breadcrumbs %}
+    {{ render_breadcrumbs() }}
+{% endblock %}
+
+{% block body %}
+    {% for flashMessage in app.session.flashbag.get('warning-' ~ child.slug) %}
+        <div class="Message Warning">{{ flashMessage|raw }}</div>
+    {% endfor %}
+
+    <div class="view-page">
+        <div class="main-container">
+            <div class="Box">
+                <div class="Box-title"><h1>{% trans from "interface" %}intervention{% endtrans %}</h1></div>
+
+                <div class="Box-table">
+
+                    <div class="Box-table-row">
+                        <div class="CellName"><strong>{% trans from "interface" %}start_date{% endtrans %}:</strong></div>
+                        <div class="CellValue">{{ intervention.startDate | localizeddate('short', 'none', null) }}</div>
+                    </div>
+
+                    <div class="Box-table-row">
+                        <div class="CellName"><strong>{% trans from "interface" %}end_date{% endtrans %}:</strong></div>
+                        <div class="CellValue">{{ intervention.endDate | localizeddate('short', 'none', null) }}</div>
+                    </div>
+
+                    {% for strategy in intervention.strategies %}
+                        <div class="Box-table-row">
+                            <div class="CellName"><strong>{{ strategy.name }}:</strong></div>
+                            <div class="CellValue">{{ strategy.description }}</div>
+                        </div>
+
+                        <div class="Box-table-row">
+                            <div class="CellName"><strong>{% trans from "interface" %}assigned_to{% endtrans %}:</strong></div>
+                            <div class="CellValue">{{ strategy.stringifyAssignedUsers }}</div>
+                        </div>
+                    {% endfor %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

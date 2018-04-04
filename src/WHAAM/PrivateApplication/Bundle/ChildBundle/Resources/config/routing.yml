@@ -1,0 +1,39 @@
+WhaamPrivateApplicationChildBundle_BehaviorController:
+    resource: "@WHAAMPrivateApplicationChildBundle/Controller/BehaviorController.php"
+    type: annotation
+
+WhaamPrivateApplicationChildBundle_ChildController:
+    resource: "@WHAAMPrivateApplicationChildBundle/Controller/ChildController.php"
+    type: annotation
+
+WhaamPrivateApplicationChildBundle_ChildBehaviorController:
+    resource: "@WHAAMPrivateApplicationChildBundle/Controller/ChildBehaviorController.php"
+    type: annotation
+
+WhaamPrivateApplicationChildBundle_ChildADHDDiagnosisController:
+    resource: "@WHAAMPrivateApplicationChildBundle/Controller/ChildADHDDiagnosisController.php"
+    type: annotation
+
+WhaamPrivateApplicationChildBundle_ChildMedicationController:
+    resource: "@WHAAMPrivateApplicationChildBundle/Controller/ChildMedicationController.php"
+    type: annotation
+
+WhaamPrivateApplicationChildBundle_ChildGeneralEventController:
+    resource: "@WHAAMPrivateApplicationChildBundle/Controller/ChildGeneralEventController.php"
+    type: annotation
+
+WhaamPrivateApplicationChildBundle_ChildSchoolInformationController:
+    resource: "@WHAAMPrivateApplicationChildBundle/Controller/ChildSchoolInformationController.php"
+    type: annotation
+
+WhaamPrivateApplicationChildBundle_ChildDisciplineReferralController:
+    resource: "@WHAAMPrivateApplicationChildBundle/Controller/ChildDisciplineReferralController.php"
+    type: annotation
+
+WhaamPrivateApplicationChildBundle_ChildCaseDataController:
+    resource: "@WHAAMPrivateApplicationChildBundle/Controller/ChildCaseDataController.php"
+    type: annotation
+
+WhaamPrivateApplicationChildBundle_ChildUserController:
+    resource: "@WHAAMPrivateApplicationChildBundle/Controller/ChildUserController.php"
+    type: annotation

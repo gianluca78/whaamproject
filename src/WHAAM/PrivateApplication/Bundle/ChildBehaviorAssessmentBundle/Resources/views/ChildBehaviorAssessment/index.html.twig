@@ -1,0 +1,108 @@
+{% extends '::base_private.html.twig' %}
+
+{% block breadcrumbs %}
+    {{ render_breadcrumbs() }}
+{% endblock %}
+
+{% block stylesheets %}
+    <link href="{{ asset('public/css/vendor/jquery-ui/jquery-ui.css') }}" rel="stylesheet" type="text/css"/>
+{% endblock %}
+
+{% block body %}
+
+    {% for flashMessage in app.session.flashbag.get('error') %}
+        <div class="Message Error">{{ flashMessage }}</div>
+    {% endfor %}
+
+    {% for flashMessage in app.session.flashbag.get('success') %}
+        <div class="Message Information">{{ flashMessage }}</div>
+    {% endfor %}
+
+    {% for flashMessage in app.session.flashbag.get('warning-' ~ child.slug) %}
+        <div class="Message Warning">{{ flashMessage|raw }}</div>
+    {% endfor %}
+
+    <div class="assessment-all-page">
+        <div class="table-main-container">
+            <div class="table-container">
+                <div class="table-title">
+                    <div class="button">
+                        <a href="{{ path('child_behavior_assessments_new', {'behaviorId': childBehavior.id  }) }}">{% trans from "interface" %}new_assessment{% endtrans %}</a>
+                    </div>
+                </div>
+                <div class="table-content">
+                    <table class="tcontent">
+                        <tr>
+                            <th>{% trans from "interface" %}created_at{% endtrans %}</th>
+                            <th>{% trans from "interface" %}phase{% endtrans %}</th>
+                            <th>{% trans from "interface" %}state{% endtrans %}</th>
+                            <th>{% trans from "interface" %}observation_gathered{% endtrans %}</th>
+                            <th>{% trans from "interface" %}abc_gathered{% endtrans %}</th>
+                            <th>{% trans from "interface" %}from{% endtrans %}</th>
+                            <th>{% trans from "interface" %}to{% endtrans %}</th>
+                            <th></th>
+                        </tr>
+
+                        {% for assessment in assessments %}
+                            <tr>
+                                <td>{{ assessment.createdAt | localizeddate('medium', 'none', null) }}</td>
+                                <td>{{ assessment.phaseName }}</td>
+                                <td>{{ assessment.phaseState }}</td>
+                                <td>{{ assessment.observationNumber }}</td>
+                                <td>{{ assessment.ABCNumber }}</td>
+                                {% if assessment.startDate.timestamp is defined %}
+                                    <td>{{ assessment.startDate | localizeddate('medium', 'none', null) }}</td>
+                                {% else %}
+                                    <td>{{ assessment.startDate }}</td>
+                                {% endif %}
+                                {% if assessment.endDate.timestamp is defined %}
+                                    <td>{{ assessment.endDate | localizeddate('medium', 'none', null) }}</td>
+                                {% else %}
+                                    <td>{{ assessment.endDate }}</td>
+                                {% endif %}
+
+                                <td class="border-none">
+                                    <a href="{{ path('child_behavior_assessment_plan_list', {'childBehaviorAssessmentId' : assessment.id }) }}" class="icon-tool icon-tool-search"></a>
+                                    <a href="{{ path('child_behavior_assessments_delete', { 'assessmentId': assessment.id }) }}" class="icon-tool icon-tool-delete"></a>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="dialog-confirm" title="Remove assessment" class="not-displayed">
+        <p>{% trans from "interface" %}remove_assessment{% endtrans %}</p>
+
+    </div>
+{% endblock %}
+
+
+
+{% block javascripts %}
+    <script>
+        $(".icon-tool-delete").click(function(e) {
+            e.preventDefault();
+
+            deleteUrl = $(this).attr('href');
+
+            $("#dialog-confirm").dialog({
+                resizable: false,
+                height:220,
+                modal: true,
+                buttons: {
+                    "{% trans from "interface" %}delete{% endtrans %}": function() {
+                        $(this).dialog("close");
+                        window.location.href = deleteUrl;
+                    },
+                    "{% trans from "interface" %}cancel{% endtrans %}": function() {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+        });
+    </script>
+    <script src="{{ asset('public/js/vendor/jquery-ui/jquery-ui.min.js') }}" type="text/javascript"></script>
+{% endblock %}

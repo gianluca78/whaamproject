@@ -1,0 +1,66 @@
+parameters:
+#    whaam_private_application_child_behavior_assessment.example.class: WHAAM\PrivateApplication\Bundle\ChildBehaviorAssessmentBundle\Example
+
+services:
+    whaam_child_behavior_assessment.form.type.baseline:
+        class: WHAAM\PrivateApplication\Bundle\ChildBehaviorAssessmentBundle\Form\Type\ChildBehaviorAssessmentBaselineType
+        tags:
+            - { name: form.type, alias: child_behavior_assessment_baseline }
+
+    whaam_child_behavior_assessment.form.type.other_baseline:
+        class: WHAAM\PrivateApplication\Bundle\ChildBehaviorAssessmentBundle\Form\Type\ChildBehaviorAssessmentOtherBaselineType
+        tags:
+            - { name: form.type, alias: child_behavior_assessment_other_baseline }
+
+    whaam_child.behavior_assessment.form.handler.baseline_form_handler:
+        class: WHAAM\PrivateApplication\Bundle\ChildBehaviorAssessmentBundle\Form\Handler\ChildBehaviorAssessmentBaselineFormHandler
+        arguments: [@doctrine.orm.entity_manager, @session, @security.context, @translator.default]
+
+    whaam_child_behavior_function.form.type.function:
+        class: WHAAM\PrivateApplication\Bundle\ChildBehaviorAssessmentBundle\Form\Type\ChildBehaviorFunctionType
+        tags:
+            - { name: form.type, alias: childBehaviorFunction }
+
+    whaam_child_behavior_function.form.handler.child_behavior_function_form_handler:
+        class: WHAAM\PrivateApplication\Bundle\ChildBehaviorAssessmentBundle\Form\Handler\ChildBehaviorFunctionFormHandler
+        arguments: [@doctrine.orm.entity_manager, @session, @translator.default]
+
+    whaam_child_behavior_assessment.form.type.intervention:
+        class: WHAAM\PrivateApplication\Bundle\ChildBehaviorAssessmentBundle\Form\Type\ChildBehaviorAssessmentInterventionType
+        tags:
+            - { name: form.type, alias: child_behavior_assessment_intervention }
+
+    whaam_child_behavior_assessment.form.type.other_intervention:
+        class: WHAAM\PrivateApplication\Bundle\ChildBehaviorAssessmentBundle\Form\Type\ChildBehaviorAssessmentOtherInterventionType
+        tags:
+            - { name: form.type, alias: child_behavior_assessment_other_intervention }
+
+    whaam_child_behavior_assessment.form.handler.intervention_form_handler:
+        class: WHAAM\PrivateApplication\Bundle\ChildBehaviorAssessmentBundle\Form\Handler\ChildBehaviorAssessmentInterventionFormHandler
+        arguments: [@doctrine.orm.entity_manager, @session, @translator.default]
+
+    whaam_child_behavior_assessment.util.assessment_plan_checker:
+        class: WHAAM\PrivateApplication\Bundle\ChildBehaviorAssessmentBundle\Util\AssessmentPlanChecker
+        arguments: [@session]
+
+    whaam_child_behavior_assessment.util.assessment_summary:
+        class: WHAAM\PrivateApplication\Bundle\ChildBehaviorAssessmentBundle\Util\AssessmentSummary
+        arguments: [@translator.default]
+
+    whaam_child_behavior_assessment.util.behavioral_data_chart.behavioral_chart_generator:
+        class: WHAAM\PrivateApplication\Bundle\ChildBehaviorAssessmentBundle\Util\BehavioralDataChart\BehavioralChartGenerator
+        arguments: [@whaam_child_behavior_assessment.util.behavioral_data_chart.behavioral_data_generator, @translator.default]
+
+    whaam_child_behavior_assessment.util.behavioral_data_chart.behavioral_data_generator:
+        class: WHAAM\PrivateApplication\Bundle\ChildBehaviorAssessmentBundle\Util\BehavioralDataChart\BehavioralDataGenerator
+
+    whaam_child_behavior_assessment.util.r.r_manager:
+        class: WHAAM\PrivateApplication\Bundle\ChildBehaviorAssessmentBundle\Util\R\RManager
+        arguments: ["%data_r_file_path%",  @whaam_child_behavior_assessment.util.behavioral_data_chart.behavioral_data_generator, "%tau_script_path%", @translator.default, ]
+
+    whaam_child_behavior_assessment.validator.assessment_overlap:
+        class: WHAAM\PrivateApplication\Bundle\ChildBehaviorAssessmentBundle\Form\Validator\Constraints\AssessmentOverlapValidator
+        arguments: [@doctrine.orm.entity_manager]
+        tags:
+            - { name: validator.constraint_validator, alias: assessment_overlap }
+

@@ -1,0 +1,207 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>success</source>
+                <target>Sucesso!</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>user.new.success</source>
+                <target>O utilizador foi criado com sucesso</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>child.new.success</source>
+                <target>A criança foi criada com sucesso</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>child.edit.success</source>
+                <target>A criança foi modificada com sucesso</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>child.delete.success</source>
+                <target>A criança foi eliminada com sucesso</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>behaviour.new.success</source>
+                <target>O comportamento foi criado com sucesso</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>behavior.edit.success</source>
+                <target>O comportamento foi modificado com sucesso</target>
+            </trans-unit>
+            <trans-unit id="8">
+                <source>behavior.delete.success</source>
+                <target>O comportamento foi eliminado com sucesso</target>
+            </trans-unit>
+            <trans-unit id="9">
+                <source>child_user.edit.success</source>
+                <target>O papel foi atualizado com sucesso</target>
+            </trans-unit>
+            <trans-unit id="10">
+                <source>child.delete.error</source>
+                <target>Não é possível eliminar a criança</target>
+            </trans-unit>
+            <trans-unit id="11">
+                <source>behavior.delete.error</source>
+                <target>Não é possível eliminar o comportamento</target>
+            </trans-unit>
+            <trans-unit id="12">
+                <source>warning</source>
+                <target>Alerta!</target>
+            </trans-unit>
+            <trans-unit id="13">
+                <source>child_network_role_missing.warning</source>
+                <target>O seu papel na rede da criança não foi definido. Por favor, clique no endereço que se segue para especificar o seu papel:</target>
+            </trans-unit>
+            <trans-unit id="14">
+                <source>diagnosis.new.success</source>
+                <target>O diagnóstico foi criado com sucesso</target>
+            </trans-unit>
+            <trans-unit id="15">
+                <source>medication.new.success</source>
+                <target>A medicação foi criada com sucesso</target>
+            </trans-unit>
+            <trans-unit id="16">
+                <source>event.new.success</source>
+                <target>O evento foi criado com sucesso</target>
+            </trans-unit>
+            <trans-unit id="17">
+                <source>school_information.new.success</source>
+                <target>A informação escolar foi criada com sucesso</target>
+            </trans-unit>
+            <trans-unit id="18">
+                <source>discipline_referral.new.success</source>
+                <target>O procedimento disciplinar foi criado com sucesso</target>
+            </trans-unit>
+            <trans-unit id="19">
+                <source>diagnosis.edit.success</source>
+                <target>O diagnóstico foi atualizado com sucesso</target>
+            </trans-unit>
+            <trans-unit id="20">
+                <source>diagnosis.delete.success</source>
+                <target>O diagnóstico foi eliminado com sucesso</target>
+            </trans-unit>
+            <trans-unit id="21">
+                <source>medication.edit.success</source>
+                <target>A medicação foi modificada com sucesso</target>
+            </trans-unit>
+            <trans-unit id="22">
+                <source>medication.delete.success</source>
+                <target>A medicação foi eliminada com sucesso</target>
+            </trans-unit>
+            <trans-unit id="23">
+                <source>general_event.edit.success</source>
+                <target>O evento foi atualizado com sucesso</target>
+            </trans-unit>
+            <trans-unit id="24">
+                <source>general_event.delete.success</source>
+                <target>O evento foi eliminado com sucesso</target>
+            </trans-unit>
+            <trans-unit id="25">
+                <source>school_information.edit.success</source>
+                <target>A informação escolar foi atualizada com sucesso</target>
+            </trans-unit>
+            <trans-unit id="26">
+                <source>school_information.delete.success</source>
+                <target>A informação escolar foi eliminada com sucesso</target>
+            </trans-unit>
+            <trans-unit id="27">
+                <source>discipline_referral.edit.success</source>
+                <target>O procedimento disciplinar foi atualizado com sucesso</target>
+            </trans-unit>
+            <trans-unit id="28">
+                <source>discipline_referral.delete.success</source>
+                <target>O procedimento disciplinar foi eliminado com sucesso</target>
+            </trans-unit>
+            <trans-unit id="29">
+                <source>baseline.new.success</source>
+                <target>A linha de base foi criada com sucesso</target>
+            </trans-unit>
+            <trans-unit id="30">
+                <source>function.new.success</source>
+                <target>A função foi criada com sucesso</target>
+            </trans-unit>
+            <trans-unit id="31">
+                <source>function.edit.success</source>
+                <target>A função foi modificada com sucesso</target>
+            </trans-unit>
+            <trans-unit id="32">
+                <source>baseline.delete.success</source>
+                <target>A linha de base foi eliminada com sucesso</target>
+            </trans-unit>
+            <trans-unit id="33">
+                <source>baseline.delete.error</source>
+                <target>Não é possível eliminar a linha de base</target>
+            </trans-unit>
+            <trans-unit id="34">
+                <source>intervention.edit.success</source>
+                <target>A intervenção foi modificada com sucesso</target>
+            </trans-unit>
+            <trans-unit id="35">
+                <source>intervention.delete.success</source>
+                <target>A intervenção foi eliminada com sucesso</target>
+            </trans-unit>
+            <trans-unit id="36">
+                <source>intervention.new.success</source>
+                <target>A intervenção foi criada com sucesso</target>
+            </trans-unit>
+            <trans-unit id="37">
+                <source>user.edit.success</source>
+                <target>O utilizador foi modificado com successo</target>
+            </trans-unit>
+            <trans-unit id="38">
+                <source>user.edit_password.success</source>
+                <target>A palavra-chave do utilizador foi modificada com sucesso</target>
+            </trans-unit>
+            <trans-unit id="39">
+                <source>user.forgot_password.success</source>
+                <target>As instruções para redefinir a palavra-chave foram enviadas para o seu endereço de email</target>
+            </trans-unit>
+            <trans-unit id="40">
+                <source>baseline.edit.success</source>
+                <target>A linha de base foi modificada com sucesso</target>
+            </trans-unit>
+            <trans-unit id="41">
+                <source>function.delete.success</source>
+                <target>A função foi eliminada com sucesso</target>
+            </trans-unit>
+            <trans-unit id="42">
+                <source>function.delete.error</source>
+                <target>Não é possível eliminar a função</target>
+            </trans-unit>
+            <trans-unit id="43">
+                <source>assessment.delete.error</source>
+                <target>Não é possível eliminar a avaliação</target>
+            </trans-unit>
+            <trans-unit id="44">
+                <source>assessment.delete.success</source>
+                <target>A avaliação foi eliminada com sucesso</target>
+            </trans-unit>
+            <trans-unit id="45">
+                <source>notification.delete.success</source>
+                <target>A notificação foi eliminada com sucesso</target>
+            </trans-unit>
+            <trans-unit id="46">
+                <source>notification.delete.all.success</source>
+                <target>Todas as notificações foram eliminadas com sucesso</target>
+            </trans-unit>
+            <trans-unit id="47">
+                <source>moderation.authorization.error</source>
+                <target>Não está autorizado a gerir esta solicitação</target>
+            </trans-unit>
+            <trans-unit id="48">
+                <source>moderation.authorization.success</source>
+                <target>Processo de moderação concluído com sucesso: você aprovou o pedido</target>
+            </trans-unit>
+            <trans-unit id="49">
+                <source>message.new.success</source>
+                <target>A mensagem foi enviada com sucesso</target>
+            </trans-unit>
+            <trans-unit id="50">
+                <source>message.reply.success</source>
+                <target>A resposta foi enviada com sucesso</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

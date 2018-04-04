@@ -1,0 +1,90 @@
+security:
+    encoders:
+        Symfony\Component\Security\Core\User\User: plaintext
+        WHAAM\PrivateApplication\Bundle\UserBundle\Entity\User: plaintext
+
+    role_hierarchy:
+        ROLE_ADMIN:       ROLE_USER
+        ROLE_SUPER_ADMIN: [ROLE_USER, ROLE_ADMIN, ROLE_ALLOWED_TO_SWITCH]
+
+    providers:
+        chain_provider:
+          chain:
+              providers: [in_memory, user_db]
+        in_memory:
+            memory:
+                users:
+                    AUTH_API_DOC:  { password: "%auth_api_doc%", roles: [ 'ROLE_API_DOC' ] }
+                    AUTH_API_KEY_DEV:  { password: "%auth_api_key_dev%", roles: [ 'ROLE_API' ] }
+                    AUTH_API_KEY_PROD: { password: "%auth_api_key_prod%", roles: [ 'ROLE_API' ] }
+                    TEST_API_KEY:  { password: "%test_api_key%", roles: [ 'ROLE_API' ] }
+        user_db:
+            entity: { class: WHAAM\PrivateApplication\Bundle\UserBundle\Entity\User, property: username }
+    firewalls:
+        account_activation:
+            pattern: ^/users/account-activation
+            anonymous: ~
+
+        dev:
+            pattern:  ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+
+        forgot_password:
+            pattern: ^/users/forgot-password$
+            anonymous: ~
+
+        login:
+            pattern:  ^/login
+            anonymous: ~
+
+        registration:
+            pattern: ^/users/new
+            anonymous: ~
+
+        reset_password:
+            pattern: ^/users/reset-password
+            anonymous: ~
+
+        web_service_doc:
+            pattern:   ^/api/doc
+            http_basic:
+                realm: "Secured web service documentation"
+
+        #wsse_secured:
+        #    pattern:   ^/api/
+        #    stateless: true
+        #    wsse:      true
+
+        api_key_secured:
+            pattern: ^/api/
+            stateless: true
+            simple_preauth:
+                authenticator: api_key.security.authentication.authenticator
+
+        secured_area:
+            pattern:    ^/
+            #anonymous: ~
+            form_login:
+                check_path: _security_check
+                login_path: _login
+                always_use_default_target_path: false
+                default_target_path: children_list
+            remember_me:
+                key: "%secret%"
+                lifetime: 604800
+                path:     /
+                domain:   ~
+            logout:
+                path:   _logout
+                target: _login
+                invalidate_session: false #to be removed in production
+
+    access_control:
+        - { path: ^/account-activation, roles: IS_AUTHENTICATED_ANONYMOUSLY, requires_channel: http }
+        - { path: ^/api/doc, roles: ROLE_API_DOC, requires_channel: http }
+        - { path: ^/api/, roles: ROLE_API, requires_channel: http }
+        - { path: ^/children, roles: [ROLE_USER], requires_channel: http }
+        - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY, requires_channel: http }
+        - { path: ^/users/forgot-password, roles: IS_AUTHENTICATED_ANONYMOUSLY, requires_channel: http }
+        - { path: ^/users/new, roles: IS_AUTHENTICATED_ANONYMOUSLY, requires_channel: http }
+        - { path: ^/users/reset-password, roles: IS_AUTHENTICATED_ANONYMOUSLY, requires_channel: http }

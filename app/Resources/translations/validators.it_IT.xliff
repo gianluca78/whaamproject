@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>type.invalid</source>
+                <target>Il valore {{ value }} non è un valido {{ type }}</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>length.min</source>
+                <target>Il campo deve contenere almeno {{ limit }} caratteri</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>length.max</source>
+                <target>Il campo non può contenere testi di lunghezza superiore a {{ limit }} caratteri</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>not_blank</source>
+                <target>Campo obbligatorio</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>date.invalid</source>
+                <target>La data non è valida</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>user.unique</source>
+                <target>Questo username è stato già utilizzato</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>email.invalid</source>
+                <target>L'email "{{ value }}" non un indirizzo valido</target>
+            </trans-unit>
+            <trans-unit id="8">
+                <source>password_repeat.invalid</source>
+                <target>I campi password e ripeti la password non sono uguali</target>
+            </trans-unit>
+            <trans-unit id="9">
+                <source>mime_type.invalid</source>
+                <target>Il tipo del file è invalido ({{ type }}). I tipi consentiti sono {{ types }}</target>
+            </trans-unit>
+            <trans-unit id="10">
+                <source>max_size.invalid</source>
+                <target>Il file è troppo grande ({{ size }} {{ suffix }}). La grandezza massima è {{ limit }} {{ suffix }}</target>
+            </trans-unit>
+            <trans-unit id="11">
+                <source>upload_ini_size.invalid</source>
+                <target>Il file è troppo grande. La grandezza massima consentita è {{ limit }} {{ suffix }}.</target>
+            </trans-unit>
+            <trans-unit id="12">
+                <source>file_not_found.invalid</source>
+                <target>Il file non è stato trovato</target>
+            </trans-unit>
+            <trans-unit id="13">
+                <source>file_not_readable.invalid</source>
+                <target>Il file non è leggibile</target>
+            </trans-unit>
+            <trans-unit id="14">
+                <source>upload_form_size.invalid</source>
+                <target>Il file è troppo grande</target>
+            </trans-unit>
+            <trans-unit id="15">
+                <source>upload.invalid</source>
+                <target>Il file non può essere caricato</target>
+            </trans-unit>
+            <trans-unit id="16">
+                <source>email.unique</source>
+                <target>L'email non è disponibile o non è valida</target>
+            </trans-unit>
+            <trans-unit id="17">
+                <source>child.unique</source>
+                <target>Questo nickname è stato già utilizzato</target>
+            </trans-unit>
+            <trans-unit id="18">
+                <source>count_min.invalid</source>
+                <target>Devi scegliere almeno un'opzione</target>
+            </trans-unit>
+            <trans-unit id="19">
+                <source>data.invalid</source>
+                <target>Valore non valido</target>
+            </trans-unit>
+            <trans-unit id="20">
+                <source>terms_acceptance.invalid</source>
+                <target>Devi accettare i termini e le condizioni dell'applicazione WHAAM per registrare un nuovo account</target>
+            </trans-unit>
+            <trans-unit id="21">
+                <source>year.invalid</source>
+                <target>L'anno inserito non è valido. Utilizzare il formato "aaaa-aa"</target>
+            </trans-unit>
+            <trans-unit id="22">
+                <source>invitation.unique</source>
+                <target>L'utente è già stato invitato ad unirsi alla rete</target>
+            </trans-unit>
+            <trans-unit id="23">
+                <source>self_invitation.error</source>
+                <target>Non puoi invitare te stesso</target>
+            </trans-unit>
+            <trans-unit id="24">
+                <source>baseline_dates.error</source>
+                <target>La data di fine deve essere successiva alla data di inizio</target>
+            </trans-unit>
+            <trans-unit id="25">
+                <source>assessment_dates_overlap.error</source>
+                <target>Una fase di assessment si sovrappone con l'intervallo delle date inserito</target>
+            </trans-unit>
+            <trans-unit id="26">
+                <source>greater_than.invalid</source>
+                <target>Il valore deve essere maggiore di {{ compared_value }}</target>
+            </trans-unit>
+            <trans-unit id="27">
+                <source>password_current.invalid</source>
+                <target>Il valore deve coincidere con la password corrente</target>
+            </trans-unit>
+            <trans-unit id="28">
+                <source>is_not_email_in_the_database.invalid</source>
+                <target>La mail inserita non è valida</target>
+            </trans-unit>
+            <trans-unit id="29">
+                <source>age.min</source>
+                <target>L'età minima è 0 anni</target>
+            </trans-unit>
+            <trans-unit id="30">
+                <source>age.max</source>
+                <target>L'età massima è 30 anni</target>
+            </trans-unit>
+            <trans-unit id="31">
+                <source>no_role_invitation.error</source>
+                <target>Tu non puoi invitare nuove persone poichè non hai specificato il tuo ruolo nella rete del bambino.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

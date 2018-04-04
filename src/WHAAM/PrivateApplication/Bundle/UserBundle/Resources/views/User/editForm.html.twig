@@ -1,0 +1,17 @@
+<form action="{{ form.vars.action }}" method="post" novalidate="true" {{ form_enctype(form) }}>
+    {{ form_row(form.base_user.surname) }}
+    {{ form_row(form.base_user.name) }}
+    {{ form_row(form.base_user.sex) }}
+    {{ form_row(form.base_user.dateOfBirth) }}
+    {{ form_row(form.base_user.nation) }}
+    {{ form_row(form.base_user.otherNation) }}
+    {{ form_row(form.base_user.isHealthProfessional) }}
+    {{ form_row(form.base_user.healthProfessionalClientsAgeRange) }}
+    {{ form_row(form.base_user.healthProfessionalTreatmentApproaches) }}
+    {{ form_row(form.base_user.healthProfessionalTreatmentModalities) }}
+    {{ form_row(form.base_user.healthProfessionalSpecialties) }}
+
+    {{ form_row(form.submit) }}
+
+    {{ form_rest(form) }}
+</form>

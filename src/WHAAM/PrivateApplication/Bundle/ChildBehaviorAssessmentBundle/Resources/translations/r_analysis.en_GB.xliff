@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>treatment_effect</source>
+                <target>The treatment has a %s effect on the %s of the behaviour occurrence</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>treatment_no_effect</source>
+                <target>The treatment doesn't have effect on the behaviour occurrence</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>small</source>
+                <target>small</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>medium</source>
+                <target>medium</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>large</source>
+                <target>large</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>increase</source>
+                <target>increase</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>decrease</source>
+                <target>decrease</target>
+            </trans-unit>
+            <trans-unit id="8">
+                <source>effect_size_sentence</source>
+                <target>The effect size is: %s.</target>
+            </trans-unit>
+            <trans-unit id="9">
+                <source>null</source>
+                <target>null</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

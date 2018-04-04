@@ -1,0 +1,5 @@
+users:
+    type: rest
+    prefix: api
+    resource: @WHAAMWebServiceUserBundle/Controller/UserController.php
+    schemes:  [http, https]

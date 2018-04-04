@@ -1,0 +1,96 @@
+{% extends '::base_private.html.twig' %}
+
+{% block navigation %}
+    {{ include('WHAAMPrivateApplicationChildBundle:Child:menuAllEnabled.html.twig', {'child' : child}) }}
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('public/js/vendor/jquery-ui/jquery-ui.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('bundles/whaamprivateapplicationchildbehaviorassessment/js/child-behavior-assessment-abc.js') }}"></script>
+    <script src="{{ asset('public/js/vendor/momentjs/moment-with-locales.js') }}" type="text/javascript"></script>
+{% endblock %}
+
+{% block breadcrumbs %}
+    {{ render_breadcrumbs() }}
+{% endblock %}
+
+{% block body %}
+    <div class="abcview-page">
+        <div id="user-locale" style="display: none">{{ app.request.locale }}</div>
+        <div class="wrapper">
+            {% if ABCs | length > 0 %}
+            <div>
+                <div>
+                    <table class="table-content">
+                        <tbody>
+                        <tr>
+                            <th>{% trans from "interface" %}date{% endtrans %}</th>
+                            <th>{% trans from "interface" %}observer{% endtrans %}</th>
+                            <th>{% trans from "interface" %}where{% endtrans %}</th>
+                            <th></th>
+                        </tr>
+                        {% for ABCrow in ABCs %}
+                            {% set class = (ABCs|length == 0 or loop.index == 1) ? 'selected' : '' %}
+                            <tr class="{{ class }}">
+                                <td>{{ ABCrow.ABCDate | localizeddate('medium', 'none', null) }}</td>
+                                <td>{{ ABCrow.user }}</td>
+                                <td>{{ ABCrow.antecedentWhere }}</td>
+                                <td class="border-none">
+                                    <a class="icon-tool icon-tool-select-abc" href="#">
+                                        <input type="hidden" value="{{ ABCrow.id }}">
+                                    </a>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <div>
+                        <h3>{% trans from "interface" %}date{% endtrans %}</h3>
+                        <p id="abc-date">{{ ABC.ABCDate | localizeddate('medium', 'none', null) }}</p>
+                    </div>
+
+                    <div>
+                        <h3>{% trans from "interface" %}where_was{% endtrans %}</h3>
+                        <p id="abc-antecedent-where">{{ ABC.antecedentWhere }}</p>
+                    </div>
+
+                    <div>
+                        <h3>{% trans from "interface" %}what_was_doing{% endtrans %}</h3>
+                        <p id="abc-antecedent-what">{{ ABC.antecedentWhat }}</p>
+                    </div>
+
+                    <div>
+                        <h3>{% trans from "interface" %}who_was_there{% endtrans %}</h3>
+                        <p id="abc-antecedent-who">{{ ABC.antecedentWho }}</p>
+                    </div>
+
+                    <div>
+                        <h3>{% trans from "interface" %}what_happens{% endtrans %}</h3>
+                        <p id="abc-antecedent-trigger">{{ ABC.antecedentTrigger }}</p>
+                    </div>
+
+                    <div>
+                        <h3>{% trans from "interface" %}what_child_reaction{% endtrans %}</h3>
+                        <p id="abc-antecedent-child-reaction">{{ ABC.consequenceChildReaction }}</p>
+                    </div>
+
+                    <div>
+                        <h3>{% trans from "interface" %}what_others_reaction{% endtrans %}</h3>
+                        <p id="abc-antecedent-others-reaction">{{ ABC.consequenceOthersReaction }}</p>
+                    </div>
+
+                    <div class="bordernone">
+                        <h3>{% trans from "interface" %}observer{% endtrans %}</h3>
+                        <p id="abc-observer">{{ ABC.user }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}

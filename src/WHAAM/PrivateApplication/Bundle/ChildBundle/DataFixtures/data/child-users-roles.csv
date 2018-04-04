@@ -1,0 +1,12 @@
+Aunt|Θεία|Zia|Tia|ROLE_RELATIVE
+Brother|Αδελφός|Fratello|Irmão|ROLE_RELATIVE
+Father|Πατέρας|Padre|Pai|ROLE_PARENT
+Grandfather|Παππούς|Nonno|Avô|ROLE_RELATIVE
+Grandmother|Γιαγιά|Nonna|Avó|ROLE_RELATIVE
+Grandson|Εγγονός|Nipote|Neto|ROLE_RELATIVE
+Health Professional|Επαγγελματίας Υγείας|Professionista della salute|Profissional de Saúde|ROLE_HEALTH_PROFESSIONAL
+Mother|Μητέρα|Madre|Mãe|ROLE_PARENT
+Sister|Αδελφή|Sorella|Irmã|ROLE_RELATIVE
+Support Teacher|Δάσκαλος υποστήριξης|Insegnante di sostegno|Professor de Apoio|ROLE_TEACHER
+Teacher|Δάσκαλος|Insegnante|Professor|ROLE_TEACHER
+Uncle|Θείος|Zio|Tio|ROLE_RELATIVE

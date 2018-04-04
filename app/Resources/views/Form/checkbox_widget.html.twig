@@ -1,0 +1,11 @@
+{% block choice_widget_expanded %}
+    {% spaceless %}
+        <div class="checkbox-list">
+            <ul {% if id is not empty %}id="{{ id }}" {% endif %}>
+            {% for child in form %}
+                <li>{{ form_widget(child) }} {{ child.vars.label }} </li>
+            {% endfor %}
+            </ul>
+        </div>
+    {% endspaceless %}
+{% endblock choice_widget_expanded %}
