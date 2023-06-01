@@ -74,3 +74,8 @@ The address of the api doc is:
 http://localhost/whaam/web/app.php/api/doc/
 
 You can access with the user AUTH_API_DOC and the password you entered in parameters.yml.
+
+Developers
+-------------------------
+* Lead developer: Gianluca Merlo
+* Other developers: Alberto Mirisola, Giuseppe Chiazzese
